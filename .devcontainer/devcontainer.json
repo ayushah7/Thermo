@@ -1,0 +1,6 @@
+{
+    "name": "AVD Thermo",
+    "image": "ghcr.io/aristanetworks/avd/universal:python3.12-avd-v5.4.0",
+    "remoteUser": "avd",
+    "postCreateCommand": "zsh ./.devcontainer/postCreateCommand.sh"
+}

@@ -1,0 +1,473 @@
+veos:
+  # Define the global vEOS node parameters
+  username: cvpadmin
+  password: cvp123!
+  version: 4.32.2.1F
+tools-server:
+  # Define global generic node parameters
+  username: cvpadmin
+  password: cvp123!
+  version: ubuntu-2204-lts
+cvp:
+  # Define global cvp node parameters
+  username: root
+  password: cvproot
+  version: 2024.3.2
+  instance: singlenode
+nodes:
+- cvp:
+    ip_addr: 192.168.0.1
+    node_type: cvp
+    auto_configuration: true
+- super-spine-1:
+    ip_addr: 192.168.0.2
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod1-spine-1
+      neighborPort: Ethernet1
+      port: Ethernet1
+    - neighborDevice: pod1-spine-2
+      neighborPort: Ethernet1
+      port: Ethernet2
+    - neighborDevice: pod2-spine-1
+      neighborPort: Ethernet1
+      port: Ethernet3
+    - neighborDevice: pod2-spine-2
+      neighborPort: Ethernet1
+      port: Ethernet4
+    - neighborDevice: pod3-spine-1
+      neighborPort: Ethernet1
+      port: Ethernet5
+    - neighborDevice: pod3-spine-2
+      neighborPort: Ethernet1
+      port: Ethernet6
+    - neighborDevice: pod4-spine-1
+      neighborPort: Ethernet1
+      port: Ethernet7
+    - neighborDevice: pod4-spine-2
+      neighborPort: Ethernet1
+      port: Ethernet8
+    - neighborDevice: services-leaf-1
+      neighborPort: Ethernet1
+      port: Ethernet9
+    - neighborDevice: services-leaf-2
+      neighborPort: Ethernet1
+      port: Ethernet10
+- super-spine-2:
+    ip_addr: 192.168.0.3
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod1-spine-1
+      neighborPort: Ethernet2
+      port: Ethernet1
+    - neighborDevice: pod1-spine-2
+      neighborPort: Ethernet2
+      port: Ethernet2
+    - neighborDevice: pod2-spine-1
+      neighborPort: Ethernet2
+      port: Ethernet3
+    - neighborDevice: pod2-spine-2
+      neighborPort: Ethernet2
+      port: Ethernet4
+    - neighborDevice: pod3-spine-1
+      neighborPort: Ethernet2
+      port: Ethernet5
+    - neighborDevice: pod3-spine-2
+      neighborPort: Ethernet2
+      port: Ethernet6
+    - neighborDevice: pod4-spine-1
+      neighborPort: Ethernet2
+      port: Ethernet7
+    - neighborDevice: pod4-spine-2
+      neighborPort: Ethernet2
+      port: Ethernet8
+    - neighborDevice: services-leaf-1
+      neighborPort: Ethernet2
+      port: Ethernet9
+    - neighborDevice: services-leaf-2
+      neighborPort: Ethernet2
+      port: Ethernet10
+- pod1-spine-1:
+    ip_addr: 192.168.0.4
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: super-spine-1
+      neighborPort: Ethernet1
+      port: Ethernet1
+    - neighborDevice: super-spine-2
+      neighborPort: Ethernet1
+      port: Ethernet2
+    - neighborDevice: pod1-leaf-1
+      neighborPort: Ethernet1
+      port: Ethernet3
+    - neighborDevice: pod1-leaf-2
+      neighborPort: Ethernet1
+      port: Ethernet4
+    - neighborDevice: pod1-leaf-3
+      neighborPort: Ethernet1
+      port: Ethernet5
+    - neighborDevice: pod1-leaf-4
+      neighborPort: Ethernet1
+      port: Ethernet6
+- pod1-spine-2:
+    ip_addr: 192.168.0.5
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: super-spine-1
+      neighborPort: Ethernet2
+      port: Ethernet1
+    - neighborDevice: super-spine-2
+      neighborPort: Ethernet2
+      port: Ethernet2
+    - neighborDevice: pod1-leaf-1
+      neighborPort: Ethernet2
+      port: Ethernet3
+    - neighborDevice: pod1-leaf-2
+      neighborPort: Ethernet2
+      port: Ethernet4
+    - neighborDevice: pod1-leaf-3
+      neighborPort: Ethernet2
+      port: Ethernet5
+    - neighborDevice: pod1-leaf-4
+      neighborPort: Ethernet2
+      port: Ethernet6
+- pod2-spine-1:
+    ip_addr: 192.168.0.6
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: super-spine-1
+      neighborPort: Ethernet3
+      port: Ethernet1
+    - neighborDevice: super-spine-2
+      neighborPort: Ethernet3
+      port: Ethernet2
+    - neighborDevice: pod2-leaf-1
+      neighborPort: Ethernet1
+      port: Ethernet3
+    - neighborDevice: pod2-leaf-2
+      neighborPort: Ethernet1
+      port: Ethernet4
+    - neighborDevice: pod2-leaf-3
+      neighborPort: Ethernet1
+      port: Ethernet5
+    - neighborDevice: pod2-leaf-4
+      neighborPort: Ethernet1
+      port: Ethernet6
+- pod2-spine-2:
+    ip_addr: 192.168.0.7
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: super-spine-1
+      neighborPort: Ethernet4
+      port: Ethernet1
+    - neighborDevice: super-spine-2
+      neighborPort: Ethernet4
+      port: Ethernet2
+    - neighborDevice: pod2-leaf-1
+      neighborPort: Ethernet2
+      port: Ethernet3
+    - neighborDevice: pod2-leaf-2
+      neighborPort: Ethernet2
+      port: Ethernet4
+    - neighborDevice: pod2-leaf-3
+      neighborPort: Ethernet2
+      port: Ethernet5
+    - neighborDevice: pod2-leaf-4
+      neighborPort: Ethernet2
+      port: Ethernet6
+- pod3-spine-1:
+    ip_addr: 192.168.0.8
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: super-spine-1
+      neighborPort: Ethernet5
+      port: Ethernet1
+    - neighborDevice: super-spine-2
+      neighborPort: Ethernet5
+      port: Ethernet2
+    - neighborDevice: pod3-leaf-1
+      neighborPort: Ethernet1
+      port: Ethernet3
+    - neighborDevice: pod3-leaf-2
+      neighborPort: Ethernet1
+      port: Ethernet4
+    - neighborDevice: pod3-leaf-3
+      neighborPort: Ethernet1
+      port: Ethernet5
+    - neighborDevice: pod3-leaf-4
+      neighborPort: Ethernet1
+      port: Ethernet6
+- pod3-spine-2:
+    ip_addr: 192.168.0.9
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: super-spine-1
+      neighborPort: Ethernet6
+      port: Ethernet1
+    - neighborDevice: super-spine-2
+      neighborPort: Ethernet6
+      port: Ethernet2
+    - neighborDevice: pod3-leaf-1
+      neighborPort: Ethernet2
+      port: Ethernet3
+    - neighborDevice: pod3-leaf-2
+      neighborPort: Ethernet2
+      port: Ethernet4
+    - neighborDevice: pod3-leaf-3
+      neighborPort: Ethernet2
+      port: Ethernet5
+    - neighborDevice: pod3-leaf-4
+      neighborPort: Ethernet2
+      port: Ethernet6
+- pod4-spine-1:
+    ip_addr: 192.168.0.10
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: super-spine-1
+      neighborPort: Ethernet7
+      port: Ethernet1
+    - neighborDevice: super-spine-2
+      neighborPort: Ethernet7
+      port: Ethernet2
+    - neighborDevice: pod4-leaf-1
+      neighborPort: Ethernet1
+      port: Ethernet3
+    - neighborDevice: pod4-leaf-2
+      neighborPort: Ethernet1
+      port: Ethernet4
+    - neighborDevice: pod4-leaf-3
+      neighborPort: Ethernet1
+      port: Ethernet5
+    - neighborDevice: pod4-leaf-4
+      neighborPort: Ethernet1
+      port: Ethernet6
+- pod4-spine-2:
+    ip_addr: 192.168.0.11
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: super-spine-1
+      neighborPort: Ethernet8
+      port: Ethernet1
+    - neighborDevice: super-spine-2
+      neighborPort: Ethernet8
+      port: Ethernet2
+    - neighborDevice: pod4-leaf-1
+      neighborPort: Ethernet2
+      port: Ethernet3
+    - neighborDevice: pod4-leaf-2
+      neighborPort: Ethernet2
+      port: Ethernet4
+    - neighborDevice: pod4-leaf-3
+      neighborPort: Ethernet2
+      port: Ethernet5
+    - neighborDevice: pod4-leaf-4
+      neighborPort: Ethernet2
+      port: Ethernet6
+- pod1-leaf-1:
+    ip_addr: 192.168.0.12
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod1-spine-1
+      neighborPort: Ethernet3
+      port: Ethernet1
+    - neighborDevice: pod1-spine-2
+      neighborPort: Ethernet3
+      port: Ethernet2
+- pod1-leaf-2:
+    ip_addr: 192.168.0.13
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod1-spine-1
+      neighborPort: Ethernet4
+      port: Ethernet1
+    - neighborDevice: pod1-spine-2
+      neighborPort: Ethernet4
+      port: Ethernet2
+- pod1-leaf-3:
+    ip_addr: 192.168.0.14
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod1-spine-1
+      neighborPort: Ethernet5
+      port: Ethernet1
+    - neighborDevice: pod1-spine-2
+      neighborPort: Ethernet5
+      port: Ethernet2
+- pod1-leaf-4:
+    ip_addr: 192.168.0.15
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod1-spine-1
+      neighborPort: Ethernet6
+      port: Ethernet1
+    - neighborDevice: pod1-spine-2
+      neighborPort: Ethernet6
+      port: Ethernet2
+- pod2-leaf-1:
+    ip_addr: 192.168.0.16
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod2-spine-1
+      neighborPort: Ethernet3
+      port: Ethernet1
+    - neighborDevice: pod2-spine-2
+      neighborPort: Ethernet3
+      port: Ethernet2
+- pod2-leaf-2:
+    ip_addr: 192.168.0.17
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod2-spine-1
+      neighborPort: Ethernet4
+      port: Ethernet1
+    - neighborDevice: pod2-spine-2
+      neighborPort: Ethernet4
+      port: Ethernet2
+- pod2-leaf-3:
+    ip_addr: 192.168.0.18
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod2-spine-1
+      neighborPort: Ethernet5
+      port: Ethernet1
+    - neighborDevice: pod2-spine-2
+      neighborPort: Ethernet5
+      port: Ethernet2
+- pod2-leaf-4:
+    ip_addr: 192.168.0.19
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod2-spine-1
+      neighborPort: Ethernet6
+      port: Ethernet1
+    - neighborDevice: pod2-spine-2
+      neighborPort: Ethernet6
+      port: Ethernet2
+- pod3-leaf-1:
+    ip_addr: 192.168.0.20
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod3-spine-1
+      neighborPort: Ethernet3
+      port: Ethernet1
+    - neighborDevice: pod3-spine-2
+      neighborPort: Ethernet3
+      port: Ethernet2
+- pod3-leaf-2:
+    ip_addr: 192.168.0.21
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod3-spine-1
+      neighborPort: Ethernet4
+      port: Ethernet1
+    - neighborDevice: pod3-spine-2
+      neighborPort: Ethernet4
+      port: Ethernet2
+- pod3-leaf-3:
+    ip_addr: 192.168.0.22
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod3-spine-1
+      neighborPort: Ethernet5
+      port: Ethernet1
+    - neighborDevice: pod3-spine-2
+      neighborPort: Ethernet5
+      port: Ethernet2
+- pod3-leaf-4:
+    ip_addr: 192.168.0.23
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod3-spine-1
+      neighborPort: Ethernet6
+      port: Ethernet1
+    - neighborDevice: pod3-spine-2
+      neighborPort: Ethernet6
+      port: Ethernet2
+- pod4-leaf-1:
+    ip_addr: 192.168.0.24
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod4-spine-1
+      neighborPort: Ethernet3
+      port: Ethernet1
+    - neighborDevice: pod4-spine-2
+      neighborPort: Ethernet3
+      port: Ethernet2
+- pod4-leaf-2:
+    ip_addr: 192.168.0.25
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod4-spine-1
+      neighborPort: Ethernet4
+      port: Ethernet1
+    - neighborDevice: pod4-spine-2
+      neighborPort: Ethernet4
+      port: Ethernet2
+- pod4-leaf-3:
+    ip_addr: 192.168.0.26
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod4-spine-1
+      neighborPort: Ethernet5
+      port: Ethernet1
+    - neighborDevice: pod4-spine-2
+      neighborPort: Ethernet5
+      port: Ethernet2
+- pod4-leaf-4:
+    ip_addr: 192.168.0.27
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: pod4-spine-1
+      neighborPort: Ethernet6
+      port: Ethernet1
+    - neighborDevice: pod4-spine-2
+      neighborPort: Ethernet6
+      port: Ethernet2
+- services-leaf-1:
+    ip_addr: 192.168.0.28
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: super-spine-1
+      neighborPort: Ethernet9
+      port: Ethernet1
+    - neighborDevice: super-spine-2
+      neighborPort: Ethernet9
+      port: Ethernet2
+- services-leaf-2:
+    ip_addr: 192.168.0.29
+    node_type: veos
+    internet_access: true
+    neighbors:
+    - neighborDevice: super-spine-1
+      neighborPort: Ethernet10
+      port: Ethernet1
+    - neighborDevice: super-spine-2
+      neighborPort: Ethernet10
+      port: Ethernet2
