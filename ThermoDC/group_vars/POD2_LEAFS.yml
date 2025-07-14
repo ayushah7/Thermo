@@ -1,0 +1,37 @@
+---
+type: l3leaf
+
+l3leaf:
+  defaults:
+    platform: vEOS-LAB
+    loopback_ipv4_pool: 100.100.0.64/26
+    loopback_ipv4_offset: 2
+    vtep_loopback_ipv4_pool: 10.100.1.64/26
+    uplink_switches: ['pod2-spine-1', 'pod2-spine-2']
+    uplink_ipv4_pool: 10.255.254.0/24
+    mlag_peer_ipv4_pool: 10.255.1.64/27
+    mlag_peer_l3_ipv4_pool: 10.255.1.96/27
+    virtual_router_mac_address: 00:1c:73:00:00:99
+    spanning_tree_priority: 4096
+    spanning_tree_mode: mstp
+
+  node_groups:
+    - group: POD2_MLAG01
+      bgp_as: 65103
+      nodes:
+        - name: pod2-leaf-1
+          id: 5
+          mgmt_ip: 192.168.0.15/24
+        - name: pod2-leaf-2
+          id: 6
+          mgmt_ip: 192.168.0.16/24
+
+    - group: POD2_MLAG02
+      bgp_as: 65104
+      nodes:
+        - name: pod2-leaf-3
+          id: 7
+          mgmt_ip: 192.168.0.17/24
+        - name: pod2-leaf-4
+          id: 8
+          mgmt_ip: 192.168.0.18/24

@@ -1,0 +1,18 @@
+---
+type: super-spine
+
+super_spine: # dynamic_key: node_type
+  defaults:
+    platform: vEOS-LAB
+    bgp_as: 65000
+    loopback_ipv4_pool: 100.103.0.0/26
+    loopback_ipv4_offset: 0
+    #evpn_route_servers: ['super-spine-1', 'super-spine-2']
+
+  nodes:
+    - name: super-spine-1
+      id: 1
+      mgmt_ip: 192.168.0.1/24
+    - name: super-spine-2
+      id: 2
+      mgmt_ip: 192.168.0.2/24

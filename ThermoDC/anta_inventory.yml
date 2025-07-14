@@ -1,0 +1,60 @@
+anta_inventory:
+  hosts:
+  - host: 192.168.0.1
+    name: cvp
+  - host: 192.168.0.2
+    name: super-spine-1
+  - host: 192.168.0.3
+    name: super-spine-2
+  - host: 192.168.0.4
+    name: pod1-spine-1
+  - host: 192.168.0.5
+    name: pod1-spine-2
+  - host: 192.168.0.12
+    name: pod1-leaf-1
+  - host: 192.168.0.13
+    name: pod1-leaf-2
+  - host: 192.168.0.14
+    name: pod1-leaf-3
+  - host: 192.168.0.15
+    name: pod1-leaf-4
+  - host: 192.168.0.6
+    name: pod2-spine-1
+  - host: 192.168.0.7
+    name: pod2-spine-2
+  - host: 192.168.0.16
+    name: pod2-leaf-1
+  - host: 192.168.0.17
+    name: pod2-leaf-2
+  - host: 192.168.0.18
+    name: pod2-leaf-3
+  - host: 192.168.0.19
+    name: pod2-leaf-4
+  - host: 192.168.0.8
+    name: pod3-spine-1
+  - host: 192.168.0.9
+    name: pod3-spine-2
+  - host: 192.168.0.20
+    name: pod3-leaf-1
+  - host: 192.168.0.21
+    name: pod3-leaf-2
+  - host: 192.168.0.22
+    name: pod3-leaf-3
+  - host: 192.168.0.23
+    name: pod3-leaf-4
+  - host: 192.168.0.10
+    name: pod4-spine-1
+  - host: 192.168.0.11
+    name: pod4-spine-2
+  - host: 192.168.0.24
+    name: pod4-leaf-1
+  - host: 192.168.0.25
+    name: pod4-leaf-2
+  - host: 192.168.0.26
+    name: pod4-leaf-3
+  - host: 192.168.0.27
+    name: pod4-leaf-4
+  - host: 192.168.0.28
+    name: services-leaf-1
+  - host: 192.168.0.29
+    name: services-leaf-2

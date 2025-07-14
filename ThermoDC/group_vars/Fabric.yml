@@ -1,0 +1,148 @@
+---
+# Ansible connectivity definitions
+# eAPI connectivity via HTTPS is specified (as opposed to CLI via SSH)
+ansible_connection: ansible.netcommon.httpapi
+# Specifies that we are indeed using Arista EOS
+ansible_network_os: arista.eos.eos
+# This user/password must exist on the switches to enable Ansible access
+ansible_user: ansible
+ansible_password: ansible
+# User escalation (to enter enable mode)
+ansible_become: true
+ansible_become_method: enable
+# Use SSL (HTTPS)
+ansible_httpapi_use_ssl: true
+# Do not try to validate certs
+ansible_httpapi_validate_certs: false
+
+# api on default vrf 
+custom_structured_configuration_management_api_http:
+  enable_vrfs:
+    - name: default
+
+# Common AVD group variables
+fabric_name: FABRIC
+
+# Define underlay and overlay routing protocol
+underlay_routing_protocol: ebgp
+overlay_routing_protocol: ebgp
+
+local_users: 
+  - name: ansible
+    privilege: 15
+    role: network-admin
+    sha512_password: "{{ansible_pass}}"
+  # - name: admin
+  #   privilege: 15
+  #   role: network-admin
+  #   no_password: true
+  - name: cvpadmin
+    privilege: 15
+    role: network-admin
+    sha512_password: "{{cvpadmin_pass}}"
+    #sha512_password: $6$oRPZBIPJ.wUGiRb7$uXCUbVPHeKTaqFgn8E3QpWhm9yqEC7iEeLE3SGc5xAtGD8rhZlIcrsiqsOtfMdXJiE/qMK7LWhz/RZLk2orXE1
+
+eos_cli: |
+  no aaa root
+  no username admin
+  username cwomble secret *
+  aaa authorization exec default local
+  username cwomble ssh-key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDOZFQIhHNghkuJryYiNyFUbkVPyGH2tU1gFuoJ/wDDg420VY9tb1OQn7k+XoDaVWWoEoOek07sJzns0Yy7WYUhgHP3T8Q3qW2DRjRDCUgUXnt9iW9N/axh4U4OP71UbWJNw3D6b5JE4EWt56okFcR6eSAyyKoYZvUAiCX1oUGVbRDz0cTNTbbnYHXp8DFBM/3fLNrO7Ntif+1ZtY8IQoZoDaOZpQLqTt40QGBAJgyXy0xP3urSaSJP2alSZP0g2IY9WebHaJAKnzP+SCuU4pMpcWYE3EoevYB6RLy12WylXq7Ht8sy2cjB9HH19BM4lNvRJ7ArjsL8enBP4OdqdyCH/SfLy6YrQ2EFidNpxnGBNVxIA7lkK82jLGFiqKJJNapZW4nRljT+KVMFEh/NTDP61wYmUPCR331+e3TiKsapwcIN/Q1+20WBVf11RseChjLqZzu54y9PDw/MA8ra8mPbuenhNJ6Xw8nkZbeUr+o/jZHwTP0sTLFyv4uJKvOACBc=
+  username ec2-user shell /bin/bash nopassword
+  username ec2-user ssh-key ssh-rsa ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBzWRoRn12EsQtIEXKKKuDcut8X/vvpIan3gAZ1LI/w45s/wxBikXWTRirOavYth7h7/wrTSoBYlbr27rLa8pBUwtHIUk+5n1WuTV7S/ZHB56y3qz033AdoyRnPK2IWx6aq8CYQMB4NIqOK9/LYWTtA8Gih4KWqZhf9u+QSqGmFP6g+zW3ztKxjrmWvPD2t3DPB6U6ghfTpiJusL9zkgVCcZFgyGqtmy9Kl+qf51bQLIoT0FrsRi6M7lNr5LHo68Zi0g2krDajibJVecZAVa8oBgHj5Nu/W8jffDxM3irR7bL5M/o4YwhlVNsPLWQMof7lh92QTD4ggZcNDyzOOpQ/U5l8SEGf6poy2Kv6zTvc4WDhadJK/G8naZvt+m5/wy24d6ve1OImlRRgHi7H9ATEYE5EG6kr2JoACk1JNKA0WK6y+Ic1OkAGuq/d6u9XUKjMHNQnxynikFUeDXn9OQ3wjr5ddHZ8G2SGp1L4qxDi13cMmRWJjnM30GXh+LhO2Ps= nonroot@buildkitsandbox
+  username gcp-user secret *
+  username gcp-user ssh-key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGPEoZ2l67eEEwrlGfBAHPMx44IoqhyfjqXj2Ka4PxLuHgi1mv131VuCRlyWjOjddccyFUilfR1Bprdmd1Tj7o4Q11YQ138LOqFWJT3h0pxgHFdIHo70y4rI8aL15ixukZYa+g9KX8qTN+ZpFfea2d3CEFzMp+Y3xVPiWwLKzalq1JwT5J4MK2VHCbcnpN3zRON+gca/iZH9upA0WaXWJXNBnYXrgXFVGCJFk6Yl1ZXIGnEcKGe44c77zWgF4C66VhltsW999XD5vF31f6TTs25qxGScsiKMDg2uM1AzVg5KfxxhVy5HKd23YJJMytvUXL9h5Wq1HEEluSCcFtNI81
+  username mircea secret *
+  username mircea ssh-key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDw26o1dbfin+wgiYhiHybYebcYlS1EpucVdzfZASTkaMnCiaGy61mLtCaiZA82MEMNbkHLr9WgO2f9pHN2fiIiJc2gmlZPAUvSDzOHQapGuWzoPbeoKTaPyEzkDD5IzerV8wgMooaJOIWU9dWRjVPpUyj2GJ3JirC3HiLRnhkHFh3F+vUkEL81lMzJ/0HdnW3WrIjU6JnuOnpjiJ+np1OEPSbBdANT89tzaEm87QUioPQF7hHknKFUYK2Zqh5SXR6vQaLEcIhRqlAvZyjc95vDtYFWzqrdrHTdznyr8Hs/R2OeLmPGArGm6V8sGC9Q1bGfbhwjxvoWH9igUO6d82HKL2h8PJ1gXJU4XCb6Dkft7y0M4CDx6tIOo9jDxwFRtim9oC0uwxsRoXL4xCDYGH+jO4RAQSVxP6MQsJBEOvXez6whUev1lR91CiXmtUwQfzfmol03U8xMsBkdZ+Y4B7AkBUIpi/+8aEbMwRACyDZJB0+FzkYuWIYpiqoQ4pwUVw8=
+  username service shell /bin/bash secret sha512 $6$UsyZmaoGmcp3lrqe$SywidSZARI7V5UYyfxIRCeOZBv.4COucd4lEUvuhG/E.0g0vAU2d6t25RSzdqoH2ayIAh9giILovWyCOtrsEq1
+  !
+  agent KernelFib environment KERNELFIB_PROGRAM_ALL_ECMP='true'
+  system l1
+    unsupported speed action error
+    unsupported error-correction action error
+
+bgp_peer_groups: 
+  evpn_overlay_peers:
+    password: Q4fqtbqcZ7oQuKfuWtNGRQ==
+  ipv4_underlay_peers:
+    password: 7x4B4rnJhZB438m9+BrBfQ==
+  mlag_ipv4_underlay_peer:
+    password: 4b21pAdCvWeAqpcKDFMdWw==
+
+p2p_uplinks_mtu: 1500 
+cvp_instance_ips: ['192.168.0.1']
+#cvp_instance_ips: ['apiserver.arista.io']
+terminattr_disable_aaa: true
+
+custom_structured_configuration_daemon_terminattr:
+  cvaddrs:
+  - apiserver.arista.io:443
+  cvauth:
+    method: token-secure
+    token_file: /tmp/cv-onboarding-token
+  cvvrf: default
+  disable_aaa: true
+  ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
+  smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
+
+# DNS Server
+# name_servers:
+#   - 169.254.169.254
+
+# DNS servers.
+custom_structured_configuration_ip_name_servers:
+  - ip_address: 8.8.8.8
+    vrf: default
+  - ip_address: 8.8.4.4
+    vrf: default
+
+# NTP Servers IP or DNS name, first NTP server will be prefered
+# ntp_settings: 
+#   server_vrf: use_mgmt_interface_vrf
+#   servers:
+#     - name: 192.168.200.5
+
+# Set default uplink, downlink, and MLAG interfaces based on node type
+default_interfaces:
+  - types: [ super-spine ]
+    platforms: [ default ]
+    downlink_interfaces: [ Ethernet1-20 ]
+  - types: [ spine ]
+    platforms: [ default ]
+    uplink_interfaces: [ Ethernet1-2 ]
+    downlink_interfaces: [ Ethernet3-20 ]
+  - types: [ l3leaf ]
+    platforms: [ default ]
+    uplink_interfaces: [ Ethernet1-4 ]
+    mlag_interfaces: [ Ethernet49-50 ]
+    downlink_interfaces: [ Ethernet7-20]
+  # - types: [ l2leaf ]
+  #   platforms: [ default ]
+  #   uplink_interfaces: [ Ethernet1-2 ]
+
+  #mgmt_gateway: 192.168.0.1
+
+# generate_cv_tags:
+#   topology_hints: true
+#   device_tags:
+  #   - name: Role
+  #     data_path: type
+    # - name: Fabric
+    #   value: ThermoLab
+  # device_tags:
+  #   - name: Role
+  #     data_path: myvalue
+  # interface_tags:
+  #   - name: myinterfacetag
+  #     value: myinterfacevalue
+
+custom_node_type_keys:
+  - key: spine
+    type: spine
+    default_evpn_role: none
+    default_ptp_priority1: 20
+    cv_tags_topology_type: spine
+  - key: super_spine
+    type: super-spine
+    cv_tags_topology_type: core
+    default_evpn_role: server

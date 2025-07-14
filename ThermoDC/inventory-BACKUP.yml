@@ -1,0 +1,112 @@
+all:
+  vars:
+    ansible_user: root
+    ansible_password: cvproot
+    ansible_connection: httpapi
+    ansible_network_os: eos
+    ansible_httpapi_use_ssl: true
+    ansible_httpapi_validate_certs: false
+    ansible_httpapi_port: 443
+
+  children:
+    CLOUDVISION:
+      hosts:
+        cvp:
+          ansible_host: 192.168.0.1
+
+    FABRIC:
+      children:
+        SUPERSPINES:
+          hosts:
+            super-spine-1:
+              ansible_host: 192.168.0.2
+            super-spine-2:
+              ansible_host: 192.168.0.3
+        PODS:
+          children:
+            POD1:
+              children:
+                POD1_SPINES:
+                  hosts:
+                    pod1-spine-1:
+                      ansible_host: 192.168.0.4
+                    pod1-spine-2:
+                      ansible_host: 192.168.0.5
+                POD1_LEAFS:
+                  hosts:
+                    pod1-leaf-1:
+                      ansible_host: 192.168.0.12
+                    pod1-leaf-2:
+                      ansible_host: 192.168.0.13
+                    pod1-leaf-3:
+                      ansible_host: 192.168.0.14
+                    pod1-leaf-4:
+                      ansible_host: 192.168.0.15
+            POD2:
+              children:
+                POD2_SPINES:
+                  hosts:
+                    pod2-spine-1:
+                      ansible_host: 192.168.0.6
+                    pod2-spine-2:
+                      ansible_host: 192.168.0.7
+                POD2_LEAFS:
+                  hosts:
+                    pod2-leaf-1:
+                      ansible_host: 192.168.0.16
+                    pod2-leaf-2:
+                      ansible_host: 192.168.0.17
+                    pod2-leaf-3:
+                      ansible_host: 192.168.0.18
+                    pod2-leaf-4:
+                      ansible_host: 192.168.0.19
+            POD3:
+              children:
+                POD3_SPINES:
+                  hosts:
+                    pod3-spine-1:
+                      ansible_host: 192.168.0.8
+                    pod3-spine-2:
+                      ansible_host: 192.168.0.9
+                POD3_LEAFS:
+                  hosts:
+                    pod3-leaf-1:
+                      ansible_host: 192.168.0.20
+                    pod3-leaf-2:
+                      ansible_host: 192.168.0.21
+                    pod3-leaf-3:
+                      ansible_host: 192.168.0.22
+                    pod3-leaf-4:
+                      ansible_host: 192.168.0.23
+            POD4:
+              children:
+                POD4_SPINES:
+                  hosts:
+                    pod4-spine-1:
+                      ansible_host: 192.168.0.10
+                    pod4-spine-2:
+                      ansible_host: 192.168.0.11
+                POD4_LEAFS:
+                  hosts:
+                    pod4-leaf-1:
+                      ansible_host: 192.168.0.24
+                    pod4-leaf-2:
+                      ansible_host: 192.168.0.25
+                    pod4-leaf-3:
+                      ansible_host: 192.168.0.26
+                    pod4-leaf-4:
+                      ansible_host: 192.168.0.27
+        SERVICES:
+          hosts:
+            services-leaf-1:
+              ansible_host: 192.168.0.28
+            services-leaf-2:
+              ansible_host: 192.168.0.29
+
+    NETWORK_SERVICES:
+      children:
+        FABRIC: {}
+
+    CONNECTED_ENDPOINTS:
+      children:
+        FABRIC: {}
