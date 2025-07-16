@@ -2,16 +2,16 @@
   hosts: FABRIC # EOS device to deploy to
   connection: local
   gather_facts: false
-  # vars_files: ../vault.yml
+  vars_files: ../vault.yml
   tasks:
     - name: Deploy configurations and tags to CloudVision
       ansible.builtin.import_role:
         name: arista.avd.cv_deploy
       vars:
         # Define CVP server from Ansible inventory
-        #cv_inventory_hostname: ACT_CVP
+        cv_inventory_hostname: cvp
         # overwrite server data if not defined in Ansible)
-        cv_server: www.cv-prod-us-central1-a.arista.io
+        #cv_server: www.cv-prod-us-central1-a.arista.io
 
         # Workspace state
         cv_submit_workspace: false
@@ -25,5 +25,5 @@
         # Set the template to be used to generate the configlet names in CloudVision Static Config Studio.
         cv_configlet_name_template: "AVD-Demo-${hostname}"
         cv_verify_certs: false
-        cv_token: "{{lookup('file', '/workspaces/Lab/DC/playbooks/service_token')}}" 
+        cv_token: "{{lookup('file', '/workspaces/thermo/ThermoDC/playbooks/service_token')}}" 
 

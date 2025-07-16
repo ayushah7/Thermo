@@ -19,6 +19,7 @@ ansible_httpapi_validate_certs: false
 custom_structured_configuration_management_api_http:
   enable_vrfs:
     - name: default
+    - name: MGMT
 
 # Common AVD group variables
 fabric_name: FABRIC
@@ -70,20 +71,20 @@ bgp_peer_groups:
     password: 4b21pAdCvWeAqpcKDFMdWw==
 
 p2p_uplinks_mtu: 1500 
-cvp_instance_ips: ['192.168.0.1']
+cvp_instance_ips: ['192.168.0.5']
 #cvp_instance_ips: ['apiserver.arista.io']
 terminattr_disable_aaa: true
 
 custom_structured_configuration_daemon_terminattr:
-  cvaddrs:
-  - apiserver.arista.io:443
-  cvauth:
-    method: token-secure
-    token_file: /tmp/cv-onboarding-token
-  cvvrf: default
-  disable_aaa: true
-  ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
-  smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
+#   cvaddrs:
+#   - apiserver.arista.io:443
+#   cvauth:
+#     method: token-secure
+#     token_file: /tmp/cv-onboarding-token
+    cvvrf: MGMT
+#   disable_aaa: true
+#   ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
+#   smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
 
 # DNS Server
 # name_servers:
@@ -92,9 +93,12 @@ custom_structured_configuration_daemon_terminattr:
 # DNS servers.
 custom_structured_configuration_ip_name_servers:
   - ip_address: 8.8.8.8
-    vrf: default
+    vrf: MGMT
   - ip_address: 8.8.4.4
-    vrf: default
+    vrf: MGMT
+
+# Configure IP routing for the OOB Management VRF.
+mgmt_vrf_routing: true
 
 # NTP Servers IP or DNS name, first NTP server will be prefered
 # ntp_settings: 
@@ -146,3 +150,22 @@ custom_node_type_keys:
     type: super-spine
     cv_tags_topology_type: core
     default_evpn_role: server
+
+# PREVIEW: This option is marked as "preview", meaning the data models or generated configuration can change at any time.
+# Global settings to configure the Digital Twin of the Fabric.
+#digital_twin:
+
+  # Targeted Digital Twin environment.
+  #environment: <str; "act"; default="act">
+
+  # Settings for Digital Twin fabric devices.
+  #fabric: 
+
+    # OS version for ACT Digital Twin fabric devices.
+    #act_os_version: <str>
+
+    # Username for ACT Digital Twin fabric devices.
+    #act_username: <str; default="admin">
+
+    # Cleartext password for ACT Digital Twin fabric devices.
+    #act_password: <str; default="admin">

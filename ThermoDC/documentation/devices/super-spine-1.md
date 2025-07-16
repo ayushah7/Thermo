@@ -70,14 +70,14 @@ interface Management1
 
 | Name Server | VRF | Priority |
 | ----------- | --- | -------- |
-| 8.8.8.8 | default | - |
-| 8.8.4.4 | default | - |
+| 8.8.8.8 | MGMT | - |
+| 8.8.4.4 | MGMT | - |
 
 #### IP Name Servers Device Configuration
 
 ```eos
-ip name-server vrf default 8.8.4.4
-ip name-server vrf default 8.8.8.8
+ip name-server vrf MGMT 8.8.4.4
+ip name-server vrf MGMT 8.8.8.8
 ```
 
 ### Management API HTTP
@@ -141,14 +141,14 @@ Enable password has been disabled
 
 | CV Compression | CloudVision Servers | VRF | Authentication | Smash Excludes | Ingest Exclude | Bypass AAA |
 | -------------- | ------------------- | --- | -------------- | -------------- | -------------- | ---------- |
-| gzip | 192.168.0.1:9910,apiserver.arista.io:443 | default | token-secure,/tmp/cv-onboarding-token | ale,flexCounter,hardware,kni,pulse,strata | /Sysdb/cell/1/agent,/Sysdb/cell/2/agent | True |
+| gzip | 192.168.0.5:9910 | MGMT | token,/tmp/token | ale,flexCounter,hardware,kni,pulse,strata | /Sysdb/cell/1/agent,/Sysdb/cell/2/agent | True |
 
 #### TerminAttr Daemon Device Configuration
 
 ```eos
 !
 daemon TerminAttr
-   exec /usr/bin/TerminAttr -cvaddr=192.168.0.1:9910,apiserver.arista.io:443 -cvauth=token-secure,/tmp/cv-onboarding-token -cvvrf=default -disableaaa -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -taillogs
+   exec /usr/bin/TerminAttr -cvaddr=192.168.0.5:9910 -cvauth=token,/tmp/token -cvvrf=MGMT -disableaaa -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -taillogs
    no shutdown
 ```
 
@@ -327,14 +327,14 @@ service routing protocols model multi-agent
 | VRF | Routing Enabled |
 | --- | --------------- |
 | default | True |
-| MGMT | False |
+| MGMT | True |
 
 #### IP Routing Device Configuration
 
 ```eos
 !
 ip routing
-no ip routing vrf MGMT
+ip routing vrf MGMT
 ```
 
 ### IPv6 Routing
@@ -398,6 +398,22 @@ ASN Notation: asplain
 | 10.255.250.29 | 65153 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 | 10.255.251.65 | 65200 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 | 10.255.251.69 | 65200 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 100.100.0.3 | 65101 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.4 | 65101 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.5 | 65102 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.6 | 65102 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.71 | 65103 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.72 | 65103 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.73 | 65104 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.74 | 65104 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.139 | 65105 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.140 | 65105 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.141 | 65106 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.142 | 65106 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.207 | 65107 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.208 | 65107 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.209 | 65108 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.210 | 65108 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 100.101.0.17 | 65200 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 100.101.0.18 | 65200 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 
@@ -460,6 +476,54 @@ router bgp 65000
    neighbor 10.255.251.69 peer group IPv4-UNDERLAY-PEERS
    neighbor 10.255.251.69 remote-as 65200
    neighbor 10.255.251.69 description services-leaf-2_Ethernet1
+   neighbor 100.100.0.3 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.3 remote-as 65101
+   neighbor 100.100.0.3 description pod1-leaf-1_Loopback0
+   neighbor 100.100.0.4 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.4 remote-as 65101
+   neighbor 100.100.0.4 description pod1-leaf-2_Loopback0
+   neighbor 100.100.0.5 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.5 remote-as 65102
+   neighbor 100.100.0.5 description pod1-leaf-3_Loopback0
+   neighbor 100.100.0.6 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.6 remote-as 65102
+   neighbor 100.100.0.6 description pod1-leaf-4_Loopback0
+   neighbor 100.100.0.71 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.71 remote-as 65103
+   neighbor 100.100.0.71 description pod2-leaf-1_Loopback0
+   neighbor 100.100.0.72 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.72 remote-as 65103
+   neighbor 100.100.0.72 description pod2-leaf-2_Loopback0
+   neighbor 100.100.0.73 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.73 remote-as 65104
+   neighbor 100.100.0.73 description pod2-leaf-3_Loopback0
+   neighbor 100.100.0.74 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.74 remote-as 65104
+   neighbor 100.100.0.74 description pod2-leaf-4_Loopback0
+   neighbor 100.100.0.139 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.139 remote-as 65105
+   neighbor 100.100.0.139 description pod3-leaf-1_Loopback0
+   neighbor 100.100.0.140 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.140 remote-as 65105
+   neighbor 100.100.0.140 description pod3-leaf-2_Loopback0
+   neighbor 100.100.0.141 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.141 remote-as 65106
+   neighbor 100.100.0.141 description pod3-leaf-3_Loopback0
+   neighbor 100.100.0.142 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.142 remote-as 65106
+   neighbor 100.100.0.142 description pod3-leaf-4_Loopback0
+   neighbor 100.100.0.207 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.207 remote-as 65107
+   neighbor 100.100.0.207 description pod4-leaf-1_Loopback0
+   neighbor 100.100.0.208 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.208 remote-as 65107
+   neighbor 100.100.0.208 description pod4-leaf-2_Loopback0
+   neighbor 100.100.0.209 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.209 remote-as 65108
+   neighbor 100.100.0.209 description pod4-leaf-3_Loopback0
+   neighbor 100.100.0.210 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.210 remote-as 65108
+   neighbor 100.100.0.210 description pod4-leaf-4_Loopback0
    neighbor 100.101.0.17 peer group EVPN-OVERLAY-PEERS
    neighbor 100.101.0.17 remote-as 65200
    neighbor 100.101.0.17 description services-leaf-1_Loopback0
@@ -538,7 +602,7 @@ route-map RM-CONN-2-BGP permit 10
 
 | VRF Name | IP Routing |
 | -------- | ---------- |
-| MGMT | disabled |
+| MGMT | enabled |
 
 ### VRF Instances Device Configuration
 

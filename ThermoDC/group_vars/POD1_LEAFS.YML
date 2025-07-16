@@ -14,6 +14,7 @@ l3leaf:
     virtual_router_mac_address: 00:1c:73:00:00:99
     spanning_tree_priority: 4096
     spanning_tree_mode: mstp
+    evpn_route_servers: ['super-spine-1', 'super-spine-2']
 
   node_groups:
     - group: POD1_MLAG01

@@ -3,12 +3,11 @@ aaa_root:
 config_end: true
 daemon_terminattr:
   cvaddrs:
-  - 192.168.0.1:9910
-  - apiserver.arista.io:443
+  - 192.168.0.5:9910
   cvauth:
-    method: token-secure
-    token_file: /tmp/cv-onboarding-token
-  cvvrf: default
+    method: token
+    token_file: /tmp/token
+  cvvrf: MGMT
   disable_aaa: true
   ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
   smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
@@ -78,20 +77,20 @@ ethernet_interfaces:
 hostname: pod2-spine-2
 ip_name_servers:
 - ip_address: 8.8.8.8
-  vrf: default
+  vrf: MGMT
 - ip_address: 8.8.4.4
-  vrf: default
+  vrf: MGMT
 ip_routing: true
 is_deployed: true
 local_users:
 - name: ansible
   privilege: 15
   role: network-admin
-  sha512_password: '{{ansible_pass}}'
+  sha512_password: $6$.ulIyJhLC2Pxc6on$Qxx/ve24E.YETM7XRiEEg5K23eqaxbPfPl.7lxfKL2ZSK7wakkQGncRSQKdAXYv1BnLBJdWhAZMxy/NuYcbzV/
 - name: cvpadmin
   privilege: 15
   role: network-admin
-  sha512_password: '{{cvpadmin_pass}}'
+  sha512_password: $6$GeJ12JeC9MSE5n5t$XREVcGC5vIcKC2vow9pM2Ly7CCAm8XV.DvcS7dI8WsAOJ0f.H7EPkI3ysLkAqVUTxG7heDd.AN6RKeT5Tck3K1
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
@@ -191,4 +190,4 @@ vlan_internal_order:
     ending: 1199
 vrfs:
 - name: MGMT
-  ip_routing: false
+  ip_routing: true

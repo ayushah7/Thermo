@@ -32,6 +32,7 @@ all:
                       ansible_host: 192.168.0.4
                     pod1-spine-2:
                       ansible_host: 192.168.0.5
+                      
                 POD1_LEAFS:
                   hosts:
                     pod1-leaf-1:
@@ -102,6 +103,36 @@ all:
               ansible_host: 192.168.0.28
             services-leaf-2:
               ansible_host: 192.168.0.29
+
+    POD_SPINES:
+      hosts:
+        pod1-spine-1:
+        pod1-spine-2:
+        pod2-spine-1:
+        pod2-spine-2:
+        pod3-spine-1:
+        pod3-spine-2:
+        pod4-spine-1:
+        pod4-spine-2:
+
+    POD_LEAFS:
+      hosts:
+        pod1-leaf-1:
+        pod1-leaf-2:
+        pod1-leaf-3:
+        pod1-leaf-4:
+        pod2-leaf-1:
+        pod2-leaf-2:
+        pod2-leaf-3:
+        pod2-leaf-4:
+        pod3-leaf-1:
+        pod3-leaf-2:
+        pod3-leaf-3:
+        pod3-leaf-4:
+        pod4-leaf-1:
+        pod4-leaf-2:
+        pod4-leaf-3:
+        pod4-leaf-4:
 
     NETWORK_SERVICES:
       children:

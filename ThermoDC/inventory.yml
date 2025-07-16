@@ -12,16 +12,16 @@ all:
     CLOUDVISION:
       hosts:
         cvp:
-          ansible_host: 192.168.0.1
+          ansible_host: 10.18.147.74
 
     FABRIC:
       children:
         SUPERSPINES:
           hosts:
             super-spine-1:
-              ansible_host: 192.168.0.2
+              ansible_host: 10.18.139.121
             super-spine-2:
-              ansible_host: 192.168.0.3
+              ansible_host: 10.18.134.87
         PODS:
           children:
             POD1:
@@ -29,79 +29,79 @@ all:
                 POD1_SPINES:
                   hosts:
                     pod1-spine-1:
-                      ansible_host: 192.168.0.4
+                      ansible_host: 10.18.129.87
                     pod1-spine-2:
-                      ansible_host: 192.168.0.5
+                      ansible_host: 10.18.128.205
                 POD1_LEAFS:
                   hosts:
                     pod1-leaf-1:
-                      ansible_host: 192.168.0.12
+                      ansible_host: 10.18.132.86
                     pod1-leaf-2:
-                      ansible_host: 192.168.0.13
+                      ansible_host: 10.18.136.186
                     pod1-leaf-3:
-                      ansible_host: 192.168.0.14
+                      ansible_host: 10.18.130.173
                     pod1-leaf-4:
-                      ansible_host: 192.168.0.15
+                      ansible_host: 10.18.136.119
             POD2:
               children:
                 POD2_SPINES:
                   hosts:
                     pod2-spine-1:
-                      ansible_host: 192.168.0.6
+                      ansible_host: 10.18.139.120
                     pod2-spine-2:
-                      ansible_host: 192.168.0.7
+                      ansible_host: 10.18.130.254
                 POD2_LEAFS:
                   hosts:
                     pod2-leaf-1:
-                      ansible_host: 192.168.0.16
+                      ansible_host: 10.18.130.253
                     pod2-leaf-2:
-                      ansible_host: 192.168.0.17
+                      ansible_host: 10.18.134.111
                     pod2-leaf-3:
-                      ansible_host: 192.168.0.18
+                      ansible_host: 10.18.129.29
                     pod2-leaf-4:
-                      ansible_host: 192.168.0.19
+                      ansible_host: 10.18.133.117
             POD3:
               children:
                 POD3_SPINES:
                   hosts:
                     pod3-spine-1:
-                      ansible_host: 192.168.0.8
+                      ansible_host: 10.18.130.208
                     pod3-spine-2:
-                      ansible_host: 192.168.0.9
+                      ansible_host: 10.18.133.118
                 POD3_LEAFS:
                   hosts:
                     pod3-leaf-1:
-                      ansible_host: 192.168.0.20
+                      ansible_host: 10.18.129.114
                     pod3-leaf-2:
-                      ansible_host: 192.168.0.21
+                      ansible_host: 10.18.128.113
                     pod3-leaf-3:
-                      ansible_host: 192.168.0.22
+                      ansible_host: 10.18.131.13
                     pod3-leaf-4:
-                      ansible_host: 192.168.0.23
+                      ansible_host: 10.18.135.0
             POD4:
               children:
                 POD4_SPINES:
                   hosts:
                     pod4-spine-1:
-                      ansible_host: 192.168.0.10
+                      ansible_host: 10.18.145.228
                     pod4-spine-2:
-                      ansible_host: 192.168.0.11
+                      ansible_host: 10.18.134.75
                 POD4_LEAFS:
                   hosts:
                     pod4-leaf-1:
-                      ansible_host: 192.168.0.24
+                      ansible_host: 10.18.133.37
                     pod4-leaf-2:
-                      ansible_host: 192.168.0.25
+                      ansible_host: 10.18.136.155
                     pod4-leaf-3:
-                      ansible_host: 192.168.0.26
+                      ansible_host: 10.18.140.25
                     pod4-leaf-4:
-                      ansible_host: 192.168.0.27
+                      ansible_host: 10.18.129.100
         SERVICES:
           hosts:
             services-leaf-1:
-              ansible_host: 192.168.0.28
+              ansible_host: 10.18.128.191
             services-leaf-2:
-              ansible_host: 192.168.0.29
+              ansible_host: 10.18.129.91
 
     POD_SPINES:
       hosts:
@@ -140,3 +140,4 @@ all:
     CONNECTED_ENDPOINTS:
       children:
         FABRIC: {}
+

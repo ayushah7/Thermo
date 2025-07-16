@@ -7,7 +7,6 @@ super_spine: # dynamic_key: node_type
     bgp_as: 65000
     loopback_ipv4_pool: 100.103.0.0/26
     loopback_ipv4_offset: 0
-    #evpn_route_servers: ['super-spine-1', 'super-spine-2']
 
   nodes:
     - name: super-spine-1

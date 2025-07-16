@@ -82,14 +82,14 @@ interface Management1
 
 | Name Server | VRF | Priority |
 | ----------- | --- | -------- |
-| 8.8.8.8 | default | - |
-| 8.8.4.4 | default | - |
+| 8.8.8.8 | MGMT | - |
+| 8.8.4.4 | MGMT | - |
 
 #### IP Name Servers Device Configuration
 
 ```eos
-ip name-server vrf default 8.8.4.4
-ip name-server vrf default 8.8.8.8
+ip name-server vrf MGMT 8.8.4.4
+ip name-server vrf MGMT 8.8.8.8
 ```
 
 ### Management API HTTP
@@ -153,14 +153,14 @@ Enable password has been disabled
 
 | CV Compression | CloudVision Servers | VRF | Authentication | Smash Excludes | Ingest Exclude | Bypass AAA |
 | -------------- | ------------------- | --- | -------------- | -------------- | -------------- | ---------- |
-| gzip | 192.168.0.1:9910,apiserver.arista.io:443 | default | token-secure,/tmp/cv-onboarding-token | ale,flexCounter,hardware,kni,pulse,strata | /Sysdb/cell/1/agent,/Sysdb/cell/2/agent | True |
+| gzip | 192.168.0.5:9910 | MGMT | token,/tmp/token | ale,flexCounter,hardware,kni,pulse,strata | /Sysdb/cell/1/agent,/Sysdb/cell/2/agent | True |
 
 #### TerminAttr Daemon Device Configuration
 
 ```eos
 !
 daemon TerminAttr
-   exec /usr/bin/TerminAttr -cvaddr=192.168.0.1:9910,apiserver.arista.io:443 -cvauth=token-secure,/tmp/cv-onboarding-token -cvvrf=default -disableaaa -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -taillogs
+   exec /usr/bin/TerminAttr -cvaddr=192.168.0.5:9910 -cvauth=token,/tmp/token -cvvrf=MGMT -disableaaa -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -taillogs
    no shutdown
 ```
 
@@ -441,14 +441,14 @@ ip virtual-router mac-address 00:1c:73:00:00:99
 | VRF | Routing Enabled |
 | --- | --------------- |
 | default | True |
-| MGMT | False |
+| MGMT | True |
 
 #### IP Routing Device Configuration
 
 ```eos
 !
 ip routing
-no ip routing vrf MGMT
+ip routing vrf MGMT
 ```
 
 ### IPv6 Routing
@@ -667,7 +667,7 @@ route-map RM-MLAG-PEER-IN permit 10
 
 | VRF Name | IP Routing |
 | -------- | ---------- |
-| MGMT | disabled |
+| MGMT | enabled |
 
 ### VRF Instances Device Configuration
 

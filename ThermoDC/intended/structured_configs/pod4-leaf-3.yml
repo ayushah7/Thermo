@@ -3,12 +3,11 @@ aaa_root:
 config_end: true
 daemon_terminattr:
   cvaddrs:
-  - 192.168.0.1:9910
-  - apiserver.arista.io:443
+  - 192.168.0.5:9910
   cvauth:
-    method: token-secure
-    token_file: /tmp/cv-onboarding-token
-  cvvrf: default
+    method: token
+    token_file: /tmp/token
+  cvvrf: MGMT
   disable_aaa: true
   ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
   smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
@@ -58,9 +57,9 @@ ip_igmp_snooping:
   globally_enabled: true
 ip_name_servers:
 - ip_address: 8.8.8.8
-  vrf: default
+  vrf: MGMT
 - ip_address: 8.8.4.4
-  vrf: default
+  vrf: MGMT
 ip_routing: true
 ip_virtual_router_mac_address: 00:1c:73:00:00:99
 is_deployed: true
@@ -68,11 +67,11 @@ local_users:
 - name: ansible
   privilege: 15
   role: network-admin
-  sha512_password: '{{ansible_pass}}'
+  sha512_password: $6$.ulIyJhLC2Pxc6on$Qxx/ve24E.YETM7XRiEEg5K23eqaxbPfPl.7lxfKL2ZSK7wakkQGncRSQKdAXYv1BnLBJdWhAZMxy/NuYcbzV/
 - name: cvpadmin
   privilege: 15
   role: network-admin
-  sha512_password: '{{cvpadmin_pass}}'
+  sha512_password: $6$GeJ12JeC9MSE5n5t$XREVcGC5vIcKC2vow9pM2Ly7CCAm8XV.DvcS7dI8WsAOJ0f.H7EPkI3ysLkAqVUTxG7heDd.AN6RKeT5Tck3K1
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
@@ -189,6 +188,16 @@ router_bgp:
     remote_as: '65153'
     peer: pod4-spine-2
     description: pod4-spine-2_Ethernet17
+  - ip_address: 100.103.0.1
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65000'
+    peer: super-spine-1
+    description: super-spine-1_Loopback0
+  - ip_address: 100.103.0.2
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65000'
+    peer: super-spine-2
+    description: super-spine-2_Loopback0
   redistribute:
     connected:
       enabled: true
@@ -243,7 +252,7 @@ vlans:
   tenant: system
 vrfs:
 - name: MGMT
-  ip_routing: false
+  ip_routing: true
 vxlan_interface:
   vxlan1:
     description: pod4-leaf-3_VTEP
