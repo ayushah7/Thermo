@@ -202,41 +202,42 @@
 
 | Loopback Pool | Available Addresses | Assigned addresses | Assigned Address % |
 | ------------- | ------------------- | ------------------ | ------------------ |
-| 100.100.0.0/26 | 64 | 12 | 18.75 % |
+| 100.100.0.0/26 | 64 | 4 | 6.25 % |
 | 100.100.0.64/26 | 64 | 4 | 6.25 % |
 | 100.100.0.128/26 | 64 | 4 | 6.25 % |
 | 100.100.0.192/26 | 64 | 4 | 6.25 % |
 | 100.101.0.0/26 | 64 | 2 | 3.13 % |
 | 100.103.0.0/26 | 64 | 2 | 3.13 % |
+| 100.104.0.0/26 | 64 | 8 | 12.5 % |
 
 ### Loopback0 Interfaces Node Allocation
 
 | POD | Node | Loopback0 |
 | --- | ---- | --------- |
-| FABRIC | pod1-leaf-1 | 100.100.0.9/32 |
-| FABRIC | pod1-leaf-2 | 100.100.0.10/32 |
-| FABRIC | pod1-leaf-3 | 100.100.0.11/32 |
-| FABRIC | pod1-leaf-4 | 100.100.0.12/32 |
-| FABRIC | pod1-spine-1 | 100.100.0.1/32 |
-| FABRIC | pod1-spine-2 | 100.100.0.2/32 |
+| FABRIC | pod1-leaf-1 | 100.100.0.1/32 |
+| FABRIC | pod1-leaf-2 | 100.100.0.2/32 |
+| FABRIC | pod1-leaf-3 | 100.100.0.3/32 |
+| FABRIC | pod1-leaf-4 | 100.100.0.4/32 |
+| FABRIC | pod1-spine-1 | 100.104.0.1/32 |
+| FABRIC | pod1-spine-2 | 100.104.0.2/32 |
 | FABRIC | pod2-leaf-1 | 100.100.0.71/32 |
 | FABRIC | pod2-leaf-2 | 100.100.0.72/32 |
 | FABRIC | pod2-leaf-3 | 100.100.0.73/32 |
 | FABRIC | pod2-leaf-4 | 100.100.0.74/32 |
-| FABRIC | pod2-spine-1 | 100.100.0.3/32 |
-| FABRIC | pod2-spine-2 | 100.100.0.4/32 |
+| FABRIC | pod2-spine-1 | 100.104.0.3/32 |
+| FABRIC | pod2-spine-2 | 100.104.0.4/32 |
 | FABRIC | pod3-leaf-1 | 100.100.0.139/32 |
 | FABRIC | pod3-leaf-2 | 100.100.0.140/32 |
 | FABRIC | pod3-leaf-3 | 100.100.0.141/32 |
 | FABRIC | pod3-leaf-4 | 100.100.0.142/32 |
-| FABRIC | pod3-spine-1 | 100.100.0.5/32 |
-| FABRIC | pod3-spine-2 | 100.100.0.6/32 |
+| FABRIC | pod3-spine-1 | 100.104.0.5/32 |
+| FABRIC | pod3-spine-2 | 100.104.0.6/32 |
 | FABRIC | pod4-leaf-1 | 100.100.0.207/32 |
 | FABRIC | pod4-leaf-2 | 100.100.0.208/32 |
 | FABRIC | pod4-leaf-3 | 100.100.0.209/32 |
 | FABRIC | pod4-leaf-4 | 100.100.0.210/32 |
-| FABRIC | pod4-spine-1 | 100.100.0.7/32 |
-| FABRIC | pod4-spine-2 | 100.100.0.8/32 |
+| FABRIC | pod4-spine-1 | 100.104.0.7/32 |
+| FABRIC | pod4-spine-2 | 100.104.0.8/32 |
 | FABRIC | services-leaf-1 | 100.101.0.17/32 |
 | FABRIC | services-leaf-2 | 100.101.0.18/32 |
 | FABRIC | super-spine-1 | 100.103.0.1/32 |
@@ -255,10 +256,10 @@
 
 | POD | Node | Loopback1 |
 | --- | ---- | --------- |
-| FABRIC | pod1-leaf-1 | 10.100.1.9/32 |
-| FABRIC | pod1-leaf-2 | 10.100.1.9/32 |
-| FABRIC | pod1-leaf-3 | 10.100.1.11/32 |
-| FABRIC | pod1-leaf-4 | 10.100.1.11/32 |
+| FABRIC | pod1-leaf-1 | 10.100.1.1/32 |
+| FABRIC | pod1-leaf-2 | 10.100.1.1/32 |
+| FABRIC | pod1-leaf-3 | 10.100.1.3/32 |
+| FABRIC | pod1-leaf-4 | 10.100.1.3/32 |
 | FABRIC | pod2-leaf-1 | 10.100.1.71/32 |
 | FABRIC | pod2-leaf-2 | 10.100.1.71/32 |
 | FABRIC | pod2-leaf-3 | 10.100.1.73/32 |

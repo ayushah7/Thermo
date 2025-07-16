@@ -95,7 +95,7 @@ loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
   shutdown: false
-  ip_address: 100.100.0.7/32
+  ip_address: 100.104.0.7/32
 management_api_http:
   enable_https: true
   enable_vrfs:
@@ -115,7 +115,7 @@ prefix_lists:
 - name: PL-LOOPBACKS-EVPN-OVERLAY
   sequence_numbers:
   - sequence: 10
-    action: permit 100.100.0.0/26 eq 32
+    action: permit 100.104.0.0/26 eq 32
 route_maps:
 - name: RM-CONN-2-BGP
   sequence_numbers:
@@ -125,7 +125,7 @@ route_maps:
     - ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY
 router_bgp:
   as: '65153'
-  router_id: 100.100.0.7
+  router_id: 100.104.0.7
   maximum_paths:
     paths: 4
     ecmp: 4

@@ -6,7 +6,7 @@ spine:
     platform: vEOS-lab
     uplink_switches: ['super-spine-1', 'super-spine-2']
     uplink_ipv4_pool: 10.255.250.0/24
-    loopback_ipv4_pool: 100.100.0.0/26
+    loopback_ipv4_pool: 100.104.0.0/26
 
   node_groups:
     - group: POD1-SPINES

@@ -5,7 +5,7 @@ l3leaf:
   defaults:
     platform: vEOS-lab
     loopback_ipv4_pool: 100.100.0.0/26
-    loopback_ipv4_offset: 8
+    loopback_ipv4_offset: 0
     vtep_loopback_ipv4_pool: 10.100.1.0/26
     uplink_switches: ['pod1-spine-1', 'pod1-spine-2']
     uplink_ipv4_pool: 10.255.255.0/24

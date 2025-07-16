@@ -243,22 +243,22 @@ router_bgp:
     remote_as: '65200'
     peer: services-leaf-2
     description: services-leaf-2_Ethernet1
-  - ip_address: 100.100.0.9
+  - ip_address: 100.100.0.1
     peer_group: EVPN-OVERLAY-PEERS
     remote_as: '65101'
     peer: pod1-leaf-1
     description: pod1-leaf-1_Loopback0
-  - ip_address: 100.100.0.10
+  - ip_address: 100.100.0.2
     peer_group: EVPN-OVERLAY-PEERS
     remote_as: '65101'
     peer: pod1-leaf-2
     description: pod1-leaf-2_Loopback0
-  - ip_address: 100.100.0.11
+  - ip_address: 100.100.0.3
     peer_group: EVPN-OVERLAY-PEERS
     remote_as: '65102'
     peer: pod1-leaf-3
     description: pod1-leaf-3_Loopback0
-  - ip_address: 100.100.0.12
+  - ip_address: 100.100.0.4
     peer_group: EVPN-OVERLAY-PEERS
     remote_as: '65102'
     peer: pod1-leaf-4

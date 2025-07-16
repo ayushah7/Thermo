@@ -257,7 +257,7 @@ interface Ethernet10
 
 | Interface | Description | VRF | IP Address |
 | --------- | ----------- | --- | ---------- |
-| Loopback0 | ROUTER_ID | default | 100.100.0.4/32 |
+| Loopback0 | ROUTER_ID | default | 100.104.0.4/32 |
 
 ##### IPv6
 
@@ -272,7 +272,7 @@ interface Ethernet10
 interface Loopback0
    description ROUTER_ID
    no shutdown
-   ip address 100.100.0.4/32
+   ip address 100.104.0.4/32
 ```
 
 ## Routing
@@ -320,7 +320,7 @@ ASN Notation: asplain
 
 | BGP AS | Router ID |
 | ------ | --------- |
-| 65151 | 100.100.0.4 |
+| 65151 | 100.104.0.4 |
 
 | BGP Tuning |
 | ---------- |
@@ -353,7 +353,7 @@ ASN Notation: asplain
 ```eos
 !
 router bgp 65151
-   router-id 100.100.0.4
+   router-id 100.104.0.4
    no bgp default ipv4-unicast
    maximum-paths 4 ecmp 4
    neighbor IPv4-UNDERLAY-PEERS peer group
@@ -394,14 +394,14 @@ router bgp 65151
 
 | Sequence | Action |
 | -------- | ------ |
-| 10 | permit 100.100.0.0/26 eq 32 |
+| 10 | permit 100.104.0.0/26 eq 32 |
 
 #### Prefix-lists Device Configuration
 
 ```eos
 !
 ip prefix-list PL-LOOPBACKS-EVPN-OVERLAY
-   seq 10 permit 100.100.0.0/26 eq 32
+   seq 10 permit 100.104.0.0/26 eq 32
 ```
 
 ### Route-maps
