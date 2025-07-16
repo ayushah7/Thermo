@@ -94,7 +94,7 @@ management_interfaces:
   ip_address: 192.168.0.26/24
   type: oob
 metadata:
-  platform: vEOS-LAB
+  platform: vEOS-lab
   fabric_name: FABRIC
 mlag_configuration:
   domain_id: POD4_MLAG02
@@ -145,8 +145,6 @@ router_bgp:
   maximum_paths:
     paths: 4
     ecmp: 4
-  updates:
-    wait_install: true
   bgp:
     default:
       ipv4_unicast: false

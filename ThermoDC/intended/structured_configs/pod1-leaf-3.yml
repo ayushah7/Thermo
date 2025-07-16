@@ -76,11 +76,11 @@ loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
   shutdown: false
-  ip_address: 100.100.0.5/32
+  ip_address: 100.100.0.11/32
 - name: Loopback1
   description: VXLAN_TUNNEL_SOURCE
   shutdown: false
-  ip_address: 10.100.1.5/32
+  ip_address: 10.100.1.11/32
 management_api_http:
   enable_https: true
   enable_vrfs:
@@ -94,7 +94,7 @@ management_interfaces:
   ip_address: 192.168.0.13/24
   type: oob
 metadata:
-  platform: vEOS-LAB
+  platform: vEOS-lab
   fabric_name: FABRIC
 mlag_configuration:
   domain_id: POD1_MLAG02
@@ -141,12 +141,10 @@ router_bfd:
     multiplier: 3
 router_bgp:
   as: '65102'
-  router_id: 100.100.0.5
+  router_id: 100.100.0.11
   maximum_paths:
     paths: 4
     ecmp: 4
-  updates:
-    wait_install: true
   bgp:
     default:
       ipv4_unicast: false

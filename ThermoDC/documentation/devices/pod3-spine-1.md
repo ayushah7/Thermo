@@ -324,7 +324,6 @@ ASN Notation: asplain
 
 | BGP Tuning |
 | ---------- |
-| update wait-install |
 | no bgp default ipv4-unicast |
 | maximum-paths 4 ecmp 4 |
 
@@ -355,7 +354,6 @@ ASN Notation: asplain
 !
 router bgp 65152
    router-id 100.100.0.5
-   update wait-install
    no bgp default ipv4-unicast
    maximum-paths 4 ecmp 4
    neighbor IPv4-UNDERLAY-PEERS peer group

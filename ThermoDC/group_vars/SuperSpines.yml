@@ -3,7 +3,7 @@ type: super-spine
 
 super_spine: # dynamic_key: node_type
   defaults:
-    platform: vEOS-LAB
+    platform: vEOS-lab
     bgp_as: 65000
     loopback_ipv4_pool: 100.103.0.0/26
     loopback_ipv4_offset: 0

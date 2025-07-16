@@ -3,7 +3,7 @@ type: l3leaf
 
 l3leaf:
   defaults:
-    platform: vEOS-LAB
+    platform: vEOS-lab
     loopback_ipv4_pool: 100.100.0.64/26
     loopback_ipv4_offset: 2
     vtep_loopback_ipv4_pool: 10.100.1.64/26

@@ -358,7 +358,6 @@ ASN Notation: asplain
 
 | BGP Tuning |
 | ---------- |
-| update wait-install |
 | no bgp default ipv4-unicast |
 | maximum-paths 4 ecmp 4 |
 
@@ -398,10 +397,10 @@ ASN Notation: asplain
 | 10.255.250.29 | 65153 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 | 10.255.251.65 | 65200 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 | 10.255.251.69 | 65200 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 100.100.0.3 | 65101 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
-| 100.100.0.4 | 65101 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
-| 100.100.0.5 | 65102 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
-| 100.100.0.6 | 65102 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.9 | 65101 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.10 | 65101 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.11 | 65102 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 100.100.0.12 | 65102 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 100.100.0.71 | 65103 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 100.100.0.72 | 65103 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 100.100.0.73 | 65104 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
@@ -431,7 +430,6 @@ ASN Notation: asplain
 !
 router bgp 65000
    router-id 100.103.0.1
-   update wait-install
    no bgp default ipv4-unicast
    maximum-paths 4 ecmp 4
    neighbor EVPN-OVERLAY-PEERS peer group
@@ -476,18 +474,18 @@ router bgp 65000
    neighbor 10.255.251.69 peer group IPv4-UNDERLAY-PEERS
    neighbor 10.255.251.69 remote-as 65200
    neighbor 10.255.251.69 description services-leaf-2_Ethernet1
-   neighbor 100.100.0.3 peer group EVPN-OVERLAY-PEERS
-   neighbor 100.100.0.3 remote-as 65101
-   neighbor 100.100.0.3 description pod1-leaf-1_Loopback0
-   neighbor 100.100.0.4 peer group EVPN-OVERLAY-PEERS
-   neighbor 100.100.0.4 remote-as 65101
-   neighbor 100.100.0.4 description pod1-leaf-2_Loopback0
-   neighbor 100.100.0.5 peer group EVPN-OVERLAY-PEERS
-   neighbor 100.100.0.5 remote-as 65102
-   neighbor 100.100.0.5 description pod1-leaf-3_Loopback0
-   neighbor 100.100.0.6 peer group EVPN-OVERLAY-PEERS
-   neighbor 100.100.0.6 remote-as 65102
-   neighbor 100.100.0.6 description pod1-leaf-4_Loopback0
+   neighbor 100.100.0.9 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.9 remote-as 65101
+   neighbor 100.100.0.9 description pod1-leaf-1_Loopback0
+   neighbor 100.100.0.10 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.10 remote-as 65101
+   neighbor 100.100.0.10 description pod1-leaf-2_Loopback0
+   neighbor 100.100.0.11 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.11 remote-as 65102
+   neighbor 100.100.0.11 description pod1-leaf-3_Loopback0
+   neighbor 100.100.0.12 peer group EVPN-OVERLAY-PEERS
+   neighbor 100.100.0.12 remote-as 65102
+   neighbor 100.100.0.12 description pod1-leaf-4_Loopback0
    neighbor 100.100.0.71 peer group EVPN-OVERLAY-PEERS
    neighbor 100.100.0.71 remote-as 65103
    neighbor 100.100.0.71 description pod2-leaf-1_Loopback0

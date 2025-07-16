@@ -17,34 +17,34 @@
 
 | POD | Type | Node | Management IP | Platform | Provisioned in CloudVision | Serial Number |
 | --- | ---- | ---- | ------------- | -------- | -------------------------- | ------------- |
-| FABRIC | l3leaf | pod1-leaf-1 | 192.168.0.11/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-2 | 192.168.0.12/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-3 | 192.168.0.13/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-4 | 192.168.0.14/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | spine | pod1-spine-1 | 192.168.0.101/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | spine | pod1-spine-2 | 192.168.0.102/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-1 | 192.168.0.15/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-2 | 192.168.0.16/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-3 | 192.168.0.17/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-4 | 192.168.0.18/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | spine | pod2-spine-1 | 192.168.0.103/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | spine | pod2-spine-2 | 192.168.0.104/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod3-leaf-1 | 192.168.0.19/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod3-leaf-2 | 192.168.0.20/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod3-leaf-3 | 192.168.0.21/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod3-leaf-4 | 192.168.0.22/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | spine | pod3-spine-1 | 192.168.0.105/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | spine | pod3-spine-2 | 192.168.0.106/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-1 | 192.168.0.23/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-2 | 192.168.0.24/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-3 | 192.168.0.25/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-4 | 192.168.0.26/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | spine | pod4-spine-1 | 192.168.0.107/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | spine | pod4-spine-2 | 192.168.0.108/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | services-leaf-1 | 192.168.0.61/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | l3leaf | services-leaf-2 | 192.168.0.62/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | super-spine | super-spine-1 | 192.168.0.1/24 | vEOS-LAB | Provisioned | - |
-| FABRIC | super-spine | super-spine-2 | 192.168.0.2/24 | vEOS-LAB | Provisioned | - |
+| FABRIC | l3leaf | pod1-leaf-1 | 192.168.0.11/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod1-leaf-2 | 192.168.0.12/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod1-leaf-3 | 192.168.0.13/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod1-leaf-4 | 192.168.0.14/24 | vEOS-lab | Provisioned | - |
+| FABRIC | spine | pod1-spine-1 | 192.168.0.101/24 | vEOS-lab | Provisioned | - |
+| FABRIC | spine | pod1-spine-2 | 192.168.0.102/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod2-leaf-1 | 192.168.0.15/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod2-leaf-2 | 192.168.0.16/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod2-leaf-3 | 192.168.0.17/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod2-leaf-4 | 192.168.0.18/24 | vEOS-lab | Provisioned | - |
+| FABRIC | spine | pod2-spine-1 | 192.168.0.103/24 | vEOS-lab | Provisioned | - |
+| FABRIC | spine | pod2-spine-2 | 192.168.0.104/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod3-leaf-1 | 192.168.0.19/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod3-leaf-2 | 192.168.0.20/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod3-leaf-3 | 192.168.0.21/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod3-leaf-4 | 192.168.0.22/24 | vEOS-lab | Provisioned | - |
+| FABRIC | spine | pod3-spine-1 | 192.168.0.105/24 | vEOS-lab | Provisioned | - |
+| FABRIC | spine | pod3-spine-2 | 192.168.0.106/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod4-leaf-1 | 192.168.0.23/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod4-leaf-2 | 192.168.0.24/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod4-leaf-3 | 192.168.0.25/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | pod4-leaf-4 | 192.168.0.26/24 | vEOS-lab | Provisioned | - |
+| FABRIC | spine | pod4-spine-1 | 192.168.0.107/24 | vEOS-lab | Provisioned | - |
+| FABRIC | spine | pod4-spine-2 | 192.168.0.108/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | services-leaf-1 | 192.168.0.61/24 | vEOS-lab | Provisioned | - |
+| FABRIC | l3leaf | services-leaf-2 | 192.168.0.62/24 | vEOS-lab | Provisioned | - |
+| FABRIC | super-spine | super-spine-1 | 192.168.0.1/24 | vEOS-lab | Provisioned | - |
+| FABRIC | super-spine | super-spine-2 | 192.168.0.2/24 | vEOS-lab | Provisioned | - |
 
 > Provision status is based on Ansible inventory declaration and do not represent real status from CloudVision.
 
@@ -213,10 +213,10 @@
 
 | POD | Node | Loopback0 |
 | --- | ---- | --------- |
-| FABRIC | pod1-leaf-1 | 100.100.0.3/32 |
-| FABRIC | pod1-leaf-2 | 100.100.0.4/32 |
-| FABRIC | pod1-leaf-3 | 100.100.0.5/32 |
-| FABRIC | pod1-leaf-4 | 100.100.0.6/32 |
+| FABRIC | pod1-leaf-1 | 100.100.0.9/32 |
+| FABRIC | pod1-leaf-2 | 100.100.0.10/32 |
+| FABRIC | pod1-leaf-3 | 100.100.0.11/32 |
+| FABRIC | pod1-leaf-4 | 100.100.0.12/32 |
 | FABRIC | pod1-spine-1 | 100.100.0.1/32 |
 | FABRIC | pod1-spine-2 | 100.100.0.2/32 |
 | FABRIC | pod2-leaf-1 | 100.100.0.71/32 |
@@ -255,10 +255,10 @@
 
 | POD | Node | Loopback1 |
 | --- | ---- | --------- |
-| FABRIC | pod1-leaf-1 | 10.100.1.3/32 |
-| FABRIC | pod1-leaf-2 | 10.100.1.3/32 |
-| FABRIC | pod1-leaf-3 | 10.100.1.5/32 |
-| FABRIC | pod1-leaf-4 | 10.100.1.5/32 |
+| FABRIC | pod1-leaf-1 | 10.100.1.9/32 |
+| FABRIC | pod1-leaf-2 | 10.100.1.9/32 |
+| FABRIC | pod1-leaf-3 | 10.100.1.11/32 |
+| FABRIC | pod1-leaf-4 | 10.100.1.11/32 |
 | FABRIC | pod2-leaf-1 | 10.100.1.71/32 |
 | FABRIC | pod2-leaf-2 | 10.100.1.71/32 |
 | FABRIC | pod2-leaf-3 | 10.100.1.73/32 |

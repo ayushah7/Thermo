@@ -330,8 +330,8 @@ interface Port-Channel49
 
 | Interface | Description | VRF | IP Address |
 | --------- | ----------- | --- | ---------- |
-| Loopback0 | ROUTER_ID | default | 100.100.0.4/32 |
-| Loopback1 | VXLAN_TUNNEL_SOURCE | default | 10.100.1.3/32 |
+| Loopback0 | ROUTER_ID | default | 100.100.0.10/32 |
+| Loopback1 | VXLAN_TUNNEL_SOURCE | default | 10.100.1.9/32 |
 
 ##### IPv6
 
@@ -347,12 +347,12 @@ interface Port-Channel49
 interface Loopback0
    description ROUTER_ID
    no shutdown
-   ip address 100.100.0.4/32
+   ip address 100.100.0.10/32
 !
 interface Loopback1
    description VXLAN_TUNNEL_SOURCE
    no shutdown
-   ip address 10.100.1.3/32
+   ip address 10.100.1.9/32
 ```
 
 ### VLAN Interfaces
@@ -468,11 +468,10 @@ ASN Notation: asplain
 
 | BGP AS | Router ID |
 | ------ | --------- |
-| 65101 | 100.100.0.4 |
+| 65101 | 100.100.0.10 |
 
 | BGP Tuning |
 | ---------- |
-| update wait-install |
 | no bgp default ipv4-unicast |
 | maximum-paths 4 ecmp 4 |
 
@@ -530,8 +529,7 @@ ASN Notation: asplain
 ```eos
 !
 router bgp 65101
-   router-id 100.100.0.4
-   update wait-install
+   router-id 100.100.0.10
    no bgp default ipv4-unicast
    maximum-paths 4 ecmp 4
    neighbor EVPN-OVERLAY-PEERS peer group

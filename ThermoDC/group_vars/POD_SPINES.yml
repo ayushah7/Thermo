@@ -3,7 +3,7 @@ type: spine
 
 spine:
   defaults:
-    platform: vEOS-LAB
+    platform: vEOS-lab
     uplink_switches: ['super-spine-1', 'super-spine-2']
     uplink_ipv4_pool: 10.255.250.0/24
     loopback_ipv4_pool: 100.100.0.0/26
