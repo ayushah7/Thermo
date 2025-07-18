@@ -4,13 +4,15 @@ type: l3leaf
 l3leaf:
   defaults:
     platform: vEOS-lab
-    loopback_ipv4_pool: 100.100.0.192/26
-    loopback_ipv4_offset: 2
-    vtep_loopback_ipv4_pool: 10.100.1.192/26
+    loopback_ipv4_pool: 100.100.4.0/24
+    loopback_ipv4_offset: 0
+    vtep_loopback_ipv4_pool: 10.100.4.0/24
     uplink_switches: ['pod4-spine-1', 'pod4-spine-2']
     uplink_ipv4_pool: 10.255.252.0/24
-    mlag_peer_ipv4_pool: 10.255.1.192/27
-    mlag_peer_l3_ipv4_pool: 10.255.1.224/27
+    # mlag_peer_ipv4_pool: 10.255.1.0/31
+    # mlag_peer_l3_ipv4_pool: 10.255.1.2/31
+    mlag_peer_ipv4_pool: 10.255.7.0/24
+    mlag_peer_l3_ipv4_pool: 10.255.8.0/24
     virtual_router_mac_address: 00:1c:73:00:00:99
     spanning_tree_priority: 4096
     spanning_tree_mode: mstp
@@ -18,21 +20,135 @@ l3leaf:
 
   node_groups:
     - group: POD4_MLAG01
-      bgp_as: 65107
+      bgp_as: 65109
       nodes:
         - name: pod4-leaf-1
-          id: 13
-          mgmt_ip: 192.168.0.23/24
+          id: 1
+          mgmt_ip: 192.168.0.79/24
         - name: pod4-leaf-2
-          id: 14
-          mgmt_ip: 192.168.0.24/24
+          id: 2
+          mgmt_ip: 192.168.0.80/24
 
     - group: POD4_MLAG02
-      bgp_as: 65108
+      bgp_as: 65110
       nodes:
         - name: pod4-leaf-3
-          id: 15
-          mgmt_ip: 192.168.0.25/24
+          id: 3
+          mgmt_ip: 192.168.0.81/24
         - name: pod4-leaf-4
+          id: 4
+          mgmt_ip: 192.168.0.82/24
+
+    - group: POD4_MLAG03
+      bgp_as: 65111
+      nodes:
+        - name: pod4-leaf-5
+          id: 5
+          mgmt_ip: 192.168.0.83/24
+        - name: pod4-leaf-6
+          id: 6
+          mgmt_ip: 192.168.0.84/24
+
+    - group: POD4_MLAG04
+      bgp_as: 65112
+      nodes:
+        - name: pod4-leaf-7
+          id: 7
+          mgmt_ip: 192.168.0.85/24
+        - name: pod4-leaf-8
+          id: 8
+          mgmt_ip: 192.168.0.86/24
+
+    - group: POD4_MLAG05
+      bgp_as: 65113
+      nodes:
+        - name: pod4-leaf-9
+          id: 9
+          mgmt_ip: 192.168.0.87/24
+        - name: pod4-leaf-10
+          id: 10
+          mgmt_ip: 192.168.0.88/24
+
+    - group: POD4_MLAG06
+      bgp_as: 65114
+      nodes:
+        - name: pod4-leaf-11
+          id: 11
+          mgmt_ip: 192.168.0.89/24
+        - name: pod4-leaf-12
+          id: 12
+          mgmt_ip: 192.168.0.90/24
+
+    - group: POD4_MLAG07
+      bgp_as: 65115
+      nodes:
+        - name: pod4-leaf-13
+          id: 13
+          mgmt_ip: 192.168.0.91/24
+        - name: pod4-leaf-14
+          id: 14
+          mgmt_ip: 192.168.0.92/24
+
+    - group: POD4_MLAG08
+      bgp_as: 65116
+      nodes:
+        - name: pod4-leaf-15
+          id: 15
+          mgmt_ip: 192.168.0.93/24
+        - name: pod4-leaf-16
           id: 16
-          mgmt_ip: 192.168.0.26/24
+          mgmt_ip: 192.168.0.94/24
+
+    - group: POD4_MLAG09
+      bgp_as: 65117
+      nodes:
+        - name: pod4-leaf-17
+          id: 17
+          mgmt_ip: 192.168.0.95/24
+        - name: pod4-leaf-18
+          id: 18
+          mgmt_ip: 192.168.0.96/24
+
+    - group: POD4_MLAG10
+      bgp_as: 65118
+      nodes:
+        - name: pod4-leaf-19
+          id: 19
+          mgmt_ip: 192.168.0.97/24
+        - name: pod4-leaf-20
+          id: 20
+          mgmt_ip: 192.168.0.98/24
+
+    - group: POD4_MLAG11
+      bgp_as: 65119
+      nodes:
+        - name: pod4-leaf-21
+          id: 21
+          mgmt_ip: 192.168.0.99/24
+        - name: pod4-leaf-22
+          id: 22
+          mgmt_ip: 192.168.0.100/24
+
+    - group: POD4_MLAG12
+      bgp_as: 65120
+      nodes:
+        - name: pod4-leaf-23
+          id: 23
+          mgmt_ip: 192.168.0.101/24
+        - name: pod4-leaf-24
+          id: 24
+          mgmt_ip: 192.168.0.102/24
+
+    - group: POD4_MLAG13
+      bgp_as: 65121
+      nodes:
+        - name: pod4-leaf-25
+          id: 25
+          mgmt_ip: 192.168.0.103/24
+        - name: pod4-leaf-26
+          id: 26
+          mgmt_ip: 192.168.0.104/24
+
+
+
+

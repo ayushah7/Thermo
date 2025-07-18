@@ -48,23 +48,83 @@
             "neighbor_port": "Ethernet3"
           },
           {
-            "port": "Ethernet7",
+            "port": "Ethernet3",
             "neighbor_device": "pod2-leaf-1",
             "neighbor_port": "Ethernet1"
           },
           {
-            "port": "Ethernet8",
+            "port": "Ethernet4",
             "neighbor_device": "pod2-leaf-2",
             "neighbor_port": "Ethernet1"
           },
           {
-            "port": "Ethernet9",
+            "port": "Ethernet5",
             "neighbor_device": "pod2-leaf-3",
             "neighbor_port": "Ethernet1"
           },
           {
-            "port": "Ethernet10",
+            "port": "Ethernet6",
             "neighbor_device": "pod2-leaf-4",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet7",
+            "neighbor_device": "pod2-leaf-5",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet8",
+            "neighbor_device": "pod2-leaf-6",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet9",
+            "neighbor_device": "pod2-leaf-7",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet10",
+            "neighbor_device": "pod2-leaf-8",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet11",
+            "neighbor_device": "pod2-leaf-9",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet12",
+            "neighbor_device": "pod2-leaf-10",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet13",
+            "neighbor_device": "pod2-leaf-11",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet14",
+            "neighbor_device": "pod2-leaf-12",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet15",
+            "neighbor_device": "pod2-leaf-13",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet16",
+            "neighbor_device": "pod2-leaf-14",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet17",
+            "neighbor_device": "pod2-leaf-15",
+            "neighbor_port": "Ethernet1"
+          },
+          {
+            "port": "Ethernet18",
+            "neighbor_device": "pod2-leaf-16",
             "neighbor_port": "Ethernet1"
           }
         ]
@@ -95,6 +155,30 @@
             "repeat": 1
           },
           {
+            "destination": "10.255.254.1",
+            "source": "10.255.254.0",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
+            "destination": "10.255.254.5",
+            "source": "10.255.254.4",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
+            "destination": "10.255.254.9",
+            "source": "10.255.254.8",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
+            "destination": "10.255.254.13",
+            "source": "10.255.254.12",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
             "destination": "10.255.254.17",
             "source": "10.255.254.16",
             "vrf": "default",
@@ -115,6 +199,54 @@
           {
             "destination": "10.255.254.29",
             "source": "10.255.254.28",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
+            "destination": "10.255.254.33",
+            "source": "10.255.254.32",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
+            "destination": "10.255.254.37",
+            "source": "10.255.254.36",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
+            "destination": "10.255.254.41",
+            "source": "10.255.254.40",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
+            "destination": "10.255.254.45",
+            "source": "10.255.254.44",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
+            "destination": "10.255.254.49",
+            "source": "10.255.254.48",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
+            "destination": "10.255.254.53",
+            "source": "10.255.254.52",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
+            "destination": "10.255.254.57",
+            "source": "10.255.254.56",
+            "vrf": "default",
+            "repeat": 1
+          },
+          {
+            "destination": "10.255.254.61",
+            "source": "10.255.254.60",
             "vrf": "default",
             "repeat": 1
           }
@@ -259,6 +391,22 @@
             "status": "up"
           },
           {
+            "name": "Ethernet3",
+            "status": "up"
+          },
+          {
+            "name": "Ethernet4",
+            "status": "up"
+          },
+          {
+            "name": "Ethernet5",
+            "status": "up"
+          },
+          {
+            "name": "Ethernet6",
+            "status": "up"
+          },
+          {
             "name": "Ethernet7",
             "status": "up"
           },
@@ -272,6 +420,38 @@
           },
           {
             "name": "Ethernet10",
+            "status": "up"
+          },
+          {
+            "name": "Ethernet11",
+            "status": "up"
+          },
+          {
+            "name": "Ethernet12",
+            "status": "up"
+          },
+          {
+            "name": "Ethernet13",
+            "status": "up"
+          },
+          {
+            "name": "Ethernet14",
+            "status": "up"
+          },
+          {
+            "name": "Ethernet15",
+            "status": "up"
+          },
+          {
+            "name": "Ethernet16",
+            "status": "up"
+          },
+          {
+            "name": "Ethernet17",
+            "status": "up"
+          },
+          {
+            "name": "Ethernet18",
             "status": "up"
           },
           {
@@ -329,6 +509,22 @@
             "vrf": "default"
           },
           {
+            "peer_address": "10.255.254.1",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.255.254.5",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.255.254.9",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.255.254.13",
+            "vrf": "default"
+          },
+          {
             "peer_address": "10.255.254.17",
             "vrf": "default"
           },
@@ -342,6 +538,38 @@
           },
           {
             "peer_address": "10.255.254.29",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.255.254.33",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.255.254.37",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.255.254.41",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.255.254.45",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.255.254.49",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.255.254.53",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.255.254.57",
+            "vrf": "default"
+          },
+          {
+            "peer_address": "10.255.254.61",
             "vrf": "default"
           }
         ]

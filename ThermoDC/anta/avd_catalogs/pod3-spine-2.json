@@ -48,22 +48,22 @@
             "neighbor_port": "Ethernet6"
           },
           {
-            "port": "Ethernet11",
+            "port": "Ethernet3",
             "neighbor_device": "pod3-leaf-1",
             "neighbor_port": "Ethernet2"
           },
           {
-            "port": "Ethernet12",
+            "port": "Ethernet4",
             "neighbor_device": "pod3-leaf-2",
             "neighbor_port": "Ethernet2"
           },
           {
-            "port": "Ethernet13",
+            "port": "Ethernet5",
             "neighbor_device": "pod3-leaf-3",
             "neighbor_port": "Ethernet2"
           },
           {
-            "port": "Ethernet14",
+            "port": "Ethernet6",
             "neighbor_device": "pod3-leaf-4",
             "neighbor_port": "Ethernet2"
           }
@@ -95,26 +95,26 @@
             "repeat": 1
           },
           {
-            "destination": "10.255.253.35",
-            "source": "10.255.253.34",
+            "destination": "10.255.253.3",
+            "source": "10.255.253.2",
             "vrf": "default",
             "repeat": 1
           },
           {
-            "destination": "10.255.253.39",
-            "source": "10.255.253.38",
+            "destination": "10.255.253.7",
+            "source": "10.255.253.6",
             "vrf": "default",
             "repeat": 1
           },
           {
-            "destination": "10.255.253.43",
-            "source": "10.255.253.42",
+            "destination": "10.255.253.11",
+            "source": "10.255.253.10",
             "vrf": "default",
             "repeat": 1
           },
           {
-            "destination": "10.255.253.47",
-            "source": "10.255.253.46",
+            "destination": "10.255.253.15",
+            "source": "10.255.253.14",
             "vrf": "default",
             "repeat": 1
           }
@@ -259,19 +259,19 @@
             "status": "up"
           },
           {
-            "name": "Ethernet11",
+            "name": "Ethernet3",
             "status": "up"
           },
           {
-            "name": "Ethernet12",
+            "name": "Ethernet4",
             "status": "up"
           },
           {
-            "name": "Ethernet13",
+            "name": "Ethernet5",
             "status": "up"
           },
           {
-            "name": "Ethernet14",
+            "name": "Ethernet6",
             "status": "up"
           },
           {
@@ -329,19 +329,19 @@
             "vrf": "default"
           },
           {
-            "peer_address": "10.255.253.35",
+            "peer_address": "10.255.253.3",
             "vrf": "default"
           },
           {
-            "peer_address": "10.255.253.39",
+            "peer_address": "10.255.253.7",
             "vrf": "default"
           },
           {
-            "peer_address": "10.255.253.43",
+            "peer_address": "10.255.253.11",
             "vrf": "default"
           },
           {
-            "peer_address": "10.255.253.47",
+            "peer_address": "10.255.253.15",
             "vrf": "default"
           }
         ]

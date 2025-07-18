@@ -40,12 +40,12 @@
           {
             "port": "Ethernet1",
             "neighbor_device": "pod3-spine-1",
-            "neighbor_port": "Ethernet13"
+            "neighbor_port": "Ethernet5"
           },
           {
             "port": "Ethernet2",
             "neighbor_device": "pod3-spine-2",
-            "neighbor_port": "Ethernet13"
+            "neighbor_port": "Ethernet5"
           },
           {
             "port": "Ethernet49",
@@ -73,14 +73,14 @@
         },
         "hosts": [
           {
-            "destination": "10.255.253.40",
-            "source": "10.255.253.41",
+            "destination": "10.255.253.8",
+            "source": "10.255.253.9",
             "vrf": "default",
             "repeat": 1
           },
           {
-            "destination": "10.255.253.42",
-            "source": "10.255.253.43",
+            "destination": "10.255.253.10",
+            "source": "10.255.253.11",
             "vrf": "default",
             "repeat": 1
           }
@@ -100,13 +100,13 @@
         },
         "hosts": [
           {
-            "destination": "100.103.0.1",
+            "destination": "100.100.6.1",
             "source": "Loopback0",
             "vrf": "default",
             "repeat": 1
           },
           {
-            "destination": "100.103.0.2",
+            "destination": "100.100.6.2",
             "source": "Loopback0",
             "vrf": "default",
             "repeat": 1
@@ -434,23 +434,23 @@
         },
         "bgp_peers": [
           {
-            "peer_address": "10.255.1.181",
+            "peer_address": "10.255.6.5",
             "vrf": "default"
           },
           {
-            "peer_address": "10.255.253.40",
+            "peer_address": "10.255.253.8",
             "vrf": "default"
           },
           {
-            "peer_address": "10.255.253.42",
+            "peer_address": "10.255.253.10",
             "vrf": "default"
           },
           {
-            "peer_address": "100.103.0.1",
+            "peer_address": "100.100.6.1",
             "vrf": "default"
           },
           {
-            "peer_address": "100.103.0.2",
+            "peer_address": "100.100.6.2",
             "vrf": "default"
           }
         ]

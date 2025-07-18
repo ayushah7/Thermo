@@ -1,0 +1,9 @@
+cattrs==23.1.2
+lsprotocol
+pygls
+pyavd
+python-benedict
+ruamel.yaml==0.17.35
+pyaml
+pre-commit
+pytest

@@ -3,12 +3,11 @@ aaa_root:
 config_end: true
 daemon_terminattr:
   cvaddrs:
-  - 192.168.0.1:9910
-  - apiserver.arista.io:443
+  - 192.168.0.5:9910
   cvauth:
-    method: token-secure
-    token_file: /tmp/cv-onboarding-token
-  cvvrf: default
+    method: token
+    token_file: /tmp/token
+  cvvrf: MGMT
   disable_aaa: true
   ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
   smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
@@ -58,9 +57,9 @@ ip_igmp_snooping:
   globally_enabled: true
 ip_name_servers:
 - ip_address: 8.8.8.8
-  vrf: default
+  vrf: MGMT
 - ip_address: 8.8.4.4
-  vrf: default
+  vrf: MGMT
 ip_routing: true
 ip_virtual_router_mac_address: 00:1c:73:00:00:99
 is_deployed: true
@@ -77,11 +76,21 @@ loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
   shutdown: false
-  ip_address: 100.100.0.4/32
+  ip_address: 100.100.1.2/32
 - name: Loopback1
   description: VXLAN_TUNNEL_SOURCE
   shutdown: false
-  ip_address: 10.100.1.3/32
+  ip_address: 10.100.1.1/32
+- name: Loopback10
+  description: DIAG_VRF_VRF10
+  shutdown: false
+  vrf: VRF10
+  ip_address: 10.255.10.2/32
+- name: Loopback11
+  description: DIAG_VRF_VRF11
+  shutdown: false
+  vrf: VRF11
+  ip_address: 10.255.11.2/32
 management_api_http:
   enable_https: true
   enable_vrfs:
@@ -101,7 +110,7 @@ metadata:
     environment: act
     node_type: veos
     ip_addr: 192.168.0.12/24
-    version: 4.33.1.1F
+    version: 4.32.3M
     username: admin
     password: admin
 mlag_configuration:
@@ -111,6 +120,11 @@ mlag_configuration:
   peer_link: Port-Channel49
   reload_delay_mlag: '300'
   reload_delay_non_mlag: '330'
+ntp:
+  servers:
+  - name: 1.north-america.pool.ntp.org
+    preferred: true
+    vrf: MGMT
 port_channel_interfaces:
 - name: Port-Channel49
   description: MLAG_pod1-leaf-1_Port-Channel49
@@ -125,9 +139,13 @@ prefix_lists:
 - name: PL-LOOPBACKS-EVPN-OVERLAY
   sequence_numbers:
   - sequence: 10
-    action: permit 100.100.0.0/26 eq 32
+    action: permit 100.100.1.0/24 eq 32
   - sequence: 20
-    action: permit 10.100.1.0/26 eq 32
+    action: permit 10.100.1.0/24 eq 32
+- name: PL-MLAG-PEER-VRFS
+  sequence_numbers:
+  - sequence: 10
+    action: permit 10.255.2.0/31
 route_maps:
 - name: RM-MLAG-PEER-IN
   sequence_numbers:
@@ -142,6 +160,14 @@ route_maps:
     type: permit
     match:
     - ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY
+- name: RM-CONN-2-BGP-VRFS
+  sequence_numbers:
+  - sequence: 10
+    type: deny
+    match:
+    - ip address prefix-list PL-MLAG-PEER-VRFS
+  - sequence: 20
+    type: permit
 router_bfd:
   multihop:
     interval: 300
@@ -149,7 +175,7 @@ router_bfd:
     multiplier: 3
 router_bgp:
   as: '65101'
-  router_id: 100.100.0.4
+  router_id: 100.100.1.2
   maximum_paths:
     paths: 4
     ecmp: 4
@@ -180,7 +206,7 @@ router_bgp:
     send_community: all
     maximum_routes: 0
   neighbors:
-  - ip_address: 10.255.1.32
+  - ip_address: 10.255.2.0
     peer_group: MLAG-IPv4-UNDERLAY-PEER
     peer: pod1-leaf-1
     description: pod1-leaf-1_Vlan4093
@@ -194,10 +220,69 @@ router_bgp:
     remote_as: '65150'
     peer: pod1-spine-2
     description: pod1-spine-2_Ethernet4
+  - ip_address: 100.103.0.1
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65000'
+    peer: super-spine-1
+    description: super-spine-1_Loopback0
+  - ip_address: 100.103.0.2
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65000'
+    peer: super-spine-2
+    description: super-spine-2_Loopback0
   redistribute:
     connected:
       enabled: true
       route_map: RM-CONN-2-BGP
+  vlans:
+  - id: 11
+    tenant: TENANT1
+    rd: 100.100.1.2:10011
+    route_targets:
+      both:
+      - 10011:10011
+    redistribute_routes:
+    - learned
+  - id: 12
+    tenant: TENANT1
+    rd: 100.100.1.2:10012
+    route_targets:
+      both:
+      - 10012:10012
+    redistribute_routes:
+    - learned
+  - id: 21
+    tenant: TENANT1
+    rd: 100.100.1.2:10021
+    route_targets:
+      both:
+      - 10021:10021
+    redistribute_routes:
+    - learned
+  - id: 22
+    tenant: TENANT1
+    rd: 100.100.1.2:10022
+    route_targets:
+      both:
+      - 10022:10022
+    redistribute_routes:
+    - learned
+  - id: 3401
+    tenant: TENANT1
+    rd: 100.100.1.2:13401
+    route_targets:
+      both:
+      - 13401:13401
+    redistribute_routes:
+    - learned
+  - id: 3402
+    tenant: TENANT1
+    rd: 100.100.1.2:13402
+    route_targets:
+      both:
+      - 13402:13402
+    redistribute_routes:
+    - learned
   address_family_evpn:
     peer_groups:
     - name: EVPN-OVERLAY-PEERS
@@ -210,6 +295,47 @@ router_bgp:
       activate: true
     - name: EVPN-OVERLAY-PEERS
       activate: false
+  vrfs:
+  - name: VRF10
+    rd: 100.100.1.2:10
+    route_targets:
+      import:
+      - address_family: evpn
+        route_targets:
+        - '10:10'
+      export:
+      - address_family: evpn
+        route_targets:
+        - '10:10'
+    router_id: 100.100.1.2
+    neighbors:
+    - ip_address: 10.255.2.0
+      peer_group: MLAG-IPv4-UNDERLAY-PEER
+      description: pod1-leaf-1_Vlan3009
+    redistribute:
+      connected:
+        enabled: true
+        route_map: RM-CONN-2-BGP-VRFS
+  - name: VRF11
+    rd: 100.100.1.2:11
+    route_targets:
+      import:
+      - address_family: evpn
+        route_targets:
+        - '11:11'
+      export:
+      - address_family: evpn
+        route_targets:
+        - '11:11'
+    router_id: 100.100.1.2
+    neighbors:
+    - ip_address: 10.255.2.0
+      peer_group: MLAG-IPv4-UNDERLAY-PEER
+      description: pod1-leaf-1_Vlan3010
+    redistribute:
+      connected:
+        enabled: true
+        route_map: RM-CONN-2-BGP-VRFS
 service_routing_protocols_model: multi-agent
 spanning_tree:
   mode: mstp
@@ -218,11 +344,16 @@ spanning_tree:
     priority: 4096
   no_spanning_tree_vlan: 4093-4094
 transceiver_qsfp_default_mode_4x10: true
+virtual_source_nat_vrfs:
+- name: VRF10
+  ip_address: 10.255.10.2
+- name: VRF11
+  ip_address: 10.255.11.2
 vlan_interfaces:
 - name: Vlan4093
   description: MLAG_L3
   shutdown: false
-  ip_address: 10.255.1.33/31
+  ip_address: 10.255.2.1/31
   mtu: 1500
 - name: Vlan4094
   description: MLAG
@@ -230,6 +361,46 @@ vlan_interfaces:
   ip_address: 10.255.1.1/31
   mtu: 1500
   no_autostate: true
+- name: Vlan11
+  description: VRF10_VLAN11
+  shutdown: false
+  vrf: VRF10
+  ip_address_virtual: 10.10.11.1/24
+  tenant: TENANT1
+- name: Vlan12
+  description: VRF10_VLAN12
+  shutdown: false
+  vrf: VRF10
+  ip_address_virtual: 10.10.12.1/24
+  tenant: TENANT1
+- name: Vlan3009
+  description: MLAG_L3_VRF_VRF10
+  shutdown: false
+  vrf: VRF10
+  ip_address: 10.255.2.1/31
+  mtu: 1500
+  tenant: TENANT1
+  type: underlay_peering
+- name: Vlan21
+  description: VRF11_VLAN21
+  shutdown: false
+  vrf: VRF11
+  ip_address_virtual: 10.10.21.1/24
+  tenant: TENANT1
+- name: Vlan22
+  description: VRF11_VLAN22
+  shutdown: false
+  vrf: VRF11
+  ip_address_virtual: 10.10.22.1/24
+  tenant: TENANT1
+- name: Vlan3010
+  description: MLAG_L3_VRF_VRF11
+  shutdown: false
+  vrf: VRF11
+  ip_address: 10.255.2.1/31
+  mtu: 1500
+  tenant: TENANT1
+  type: underlay_peering
 vlan_internal_order:
   allocation: ascending
   range:
@@ -246,9 +417,43 @@ vlans:
   trunk_groups:
   - MLAG
   tenant: system
+- id: 11
+  name: VRF10_VLAN11
+  tenant: TENANT1
+- id: 12
+  name: VRF10_VLAN12
+  tenant: TENANT1
+- id: 3009
+  name: MLAG_L3_VRF_VRF10
+  trunk_groups:
+  - MLAG
+  tenant: TENANT1
+- id: 21
+  name: VRF11_VLAN21
+  tenant: TENANT1
+- id: 22
+  name: VRF11_VLAN22
+  tenant: TENANT1
+- id: 3010
+  name: MLAG_L3_VRF_VRF11
+  trunk_groups:
+  - MLAG
+  tenant: TENANT1
+- id: 3401
+  name: L2_VLAN3401
+  tenant: TENANT1
+- id: 3402
+  name: L2_VLAN3402
+  tenant: TENANT1
 vrfs:
 - name: MGMT
-  ip_routing: false
+  ip_routing: true
+- name: VRF10
+  ip_routing: true
+  tenant: TENANT1
+- name: VRF11
+  ip_routing: true
+  tenant: TENANT1
 vxlan_interface:
   vxlan1:
     description: pod1-leaf-2_VTEP
@@ -256,3 +461,21 @@ vxlan_interface:
       source_interface: Loopback1
       udp_port: 4789
       virtual_router_encapsulation_mac_address: mlag-system-id
+      vlans:
+      - id: 11
+        vni: 10011
+      - id: 12
+        vni: 10012
+      - id: 21
+        vni: 10021
+      - id: 22
+        vni: 10022
+      - id: 3401
+        vni: 13401
+      - id: 3402
+        vni: 13402
+      vrfs:
+      - name: VRF10
+        vni: 10
+      - name: VRF11
+        vni: 11

@@ -44,7 +44,7 @@
 
 | Management Interface | Description | Type | VRF | IP Address | Gateway |
 | -------------------- | ----------- | ---- | --- | ---------- | ------- |
-| Management1 | OOB_MANAGEMENT | oob | MGMT | 192.168.0.102/24 | - |
+| Management1 | OOB_MANAGEMENT | oob | MGMT | 192.168.0.202/24 | - |
 
 ##### IPv6
 
@@ -60,7 +60,7 @@ interface Management1
    description OOB_MANAGEMENT
    no shutdown
    vrf MGMT
-   ip address 192.168.0.102/24
+   ip address 192.168.0.202/24
 ```
 
 ### IP Name Servers
@@ -219,6 +219,18 @@ vlan internal order ascending range 1006 1199
 | Ethernet4 | P2P_pod1-leaf-2_Ethernet2 | - | 10.255.255.6/31 | default | 1500 | False | - | - |
 | Ethernet5 | P2P_pod1-leaf-3_Ethernet2 | - | 10.255.255.10/31 | default | 1500 | False | - | - |
 | Ethernet6 | P2P_pod1-leaf-4_Ethernet2 | - | 10.255.255.14/31 | default | 1500 | False | - | - |
+| Ethernet7 | P2P_pod1-leaf-5_Ethernet2 | - | 10.255.255.18/31 | default | 1500 | False | - | - |
+| Ethernet8 | P2P_pod1-leaf-6_Ethernet2 | - | 10.255.255.22/31 | default | 1500 | False | - | - |
+| Ethernet9 | P2P_pod1-leaf-7_Ethernet2 | - | 10.255.255.26/31 | default | 1500 | False | - | - |
+| Ethernet10 | P2P_pod1-leaf-8_Ethernet2 | - | 10.255.255.30/31 | default | 1500 | False | - | - |
+| Ethernet11 | P2P_pod1-leaf-9_Ethernet2 | - | 10.255.255.34/31 | default | 1500 | False | - | - |
+| Ethernet12 | P2P_pod1-leaf-10_Ethernet2 | - | 10.255.255.38/31 | default | 1500 | False | - | - |
+| Ethernet13 | P2P_pod1-leaf-11_Ethernet2 | - | 10.255.255.42/31 | default | 1500 | False | - | - |
+| Ethernet14 | P2P_pod1-leaf-12_Ethernet2 | - | 10.255.255.46/31 | default | 1500 | False | - | - |
+| Ethernet15 | P2P_pod1-leaf-13_Ethernet2 | - | 10.255.255.50/31 | default | 1500 | False | - | - |
+| Ethernet16 | P2P_pod1-leaf-14_Ethernet2 | - | 10.255.255.54/31 | default | 1500 | False | - | - |
+| Ethernet17 | P2P_pod1-leaf-15_Ethernet2 | - | 10.255.255.58/31 | default | 1500 | False | - | - |
+| Ethernet18 | P2P_pod1-leaf-16_Ethernet2 | - | 10.255.255.62/31 | default | 1500 | False | - | - |
 
 #### Ethernet Interfaces Device Configuration
 
@@ -265,6 +277,90 @@ interface Ethernet6
    mtu 1500
    no switchport
    ip address 10.255.255.14/31
+!
+interface Ethernet7
+   description P2P_pod1-leaf-5_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.18/31
+!
+interface Ethernet8
+   description P2P_pod1-leaf-6_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.22/31
+!
+interface Ethernet9
+   description P2P_pod1-leaf-7_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.26/31
+!
+interface Ethernet10
+   description P2P_pod1-leaf-8_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.30/31
+!
+interface Ethernet11
+   description P2P_pod1-leaf-9_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.34/31
+!
+interface Ethernet12
+   description P2P_pod1-leaf-10_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.38/31
+!
+interface Ethernet13
+   description P2P_pod1-leaf-11_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.42/31
+!
+interface Ethernet14
+   description P2P_pod1-leaf-12_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.46/31
+!
+interface Ethernet15
+   description P2P_pod1-leaf-13_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.50/31
+!
+interface Ethernet16
+   description P2P_pod1-leaf-14_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.54/31
+!
+interface Ethernet17
+   description P2P_pod1-leaf-15_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.58/31
+!
+interface Ethernet18
+   description P2P_pod1-leaf-16_Ethernet2
+   no shutdown
+   mtu 1500
+   no switchport
+   ip address 10.255.255.62/31
 ```
 
 ### Loopback Interfaces
@@ -275,7 +371,7 @@ interface Ethernet6
 
 | Interface | Description | VRF | IP Address |
 | --------- | ----------- | --- | ---------- |
-| Loopback0 | ROUTER_ID | default | 100.104.0.2/32 |
+| Loopback0 | ROUTER_ID | default | 100.100.7.2/32 |
 
 ##### IPv6
 
@@ -290,7 +386,7 @@ interface Ethernet6
 interface Loopback0
    description ROUTER_ID
    no shutdown
-   ip address 100.104.0.2/32
+   ip address 100.100.7.2/32
 ```
 
 ## Routing
@@ -338,7 +434,7 @@ ASN Notation: asplain
 
 | BGP AS | Router ID |
 | ------ | --------- |
-| 65150 | 100.104.0.2 |
+| 65150 | 100.100.7.2 |
 
 | BGP Tuning |
 | ---------- |
@@ -365,13 +461,25 @@ ASN Notation: asplain
 | 10.255.255.7 | 65101 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 | 10.255.255.11 | 65102 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 | 10.255.255.15 | 65102 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.19 | 65103 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.23 | 65103 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.27 | 65104 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.31 | 65104 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.35 | 65105 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.39 | 65105 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.43 | 65106 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.47 | 65106 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.51 | 65107 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.55 | 65107 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.59 | 65108 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.63 | 65108 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 
 #### Router BGP Device Configuration
 
 ```eos
 !
 router bgp 65150
-   router-id 100.104.0.2
+   router-id 100.100.7.2
    no bgp default ipv4-unicast
    maximum-paths 4 ecmp 4
    neighbor IPv4-UNDERLAY-PEERS peer group
@@ -396,6 +504,42 @@ router bgp 65150
    neighbor 10.255.255.15 peer group IPv4-UNDERLAY-PEERS
    neighbor 10.255.255.15 remote-as 65102
    neighbor 10.255.255.15 description pod1-leaf-4_Ethernet2
+   neighbor 10.255.255.19 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.19 remote-as 65103
+   neighbor 10.255.255.19 description pod1-leaf-5_Ethernet2
+   neighbor 10.255.255.23 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.23 remote-as 65103
+   neighbor 10.255.255.23 description pod1-leaf-6_Ethernet2
+   neighbor 10.255.255.27 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.27 remote-as 65104
+   neighbor 10.255.255.27 description pod1-leaf-7_Ethernet2
+   neighbor 10.255.255.31 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.31 remote-as 65104
+   neighbor 10.255.255.31 description pod1-leaf-8_Ethernet2
+   neighbor 10.255.255.35 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.35 remote-as 65105
+   neighbor 10.255.255.35 description pod1-leaf-9_Ethernet2
+   neighbor 10.255.255.39 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.39 remote-as 65105
+   neighbor 10.255.255.39 description pod1-leaf-10_Ethernet2
+   neighbor 10.255.255.43 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.43 remote-as 65106
+   neighbor 10.255.255.43 description pod1-leaf-11_Ethernet2
+   neighbor 10.255.255.47 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.47 remote-as 65106
+   neighbor 10.255.255.47 description pod1-leaf-12_Ethernet2
+   neighbor 10.255.255.51 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.51 remote-as 65107
+   neighbor 10.255.255.51 description pod1-leaf-13_Ethernet2
+   neighbor 10.255.255.55 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.55 remote-as 65107
+   neighbor 10.255.255.55 description pod1-leaf-14_Ethernet2
+   neighbor 10.255.255.59 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.59 remote-as 65108
+   neighbor 10.255.255.59 description pod1-leaf-15_Ethernet2
+   neighbor 10.255.255.63 peer group IPv4-UNDERLAY-PEERS
+   neighbor 10.255.255.63 remote-as 65108
+   neighbor 10.255.255.63 description pod1-leaf-16_Ethernet2
    redistribute connected route-map RM-CONN-2-BGP
    !
    address-family ipv4
@@ -412,14 +556,14 @@ router bgp 65150
 
 | Sequence | Action |
 | -------- | ------ |
-| 10 | permit 100.104.0.0/26 eq 32 |
+| 10 | permit 100.100.7.0/26 eq 32 |
 
 #### Prefix-lists Device Configuration
 
 ```eos
 !
 ip prefix-list PL-LOOPBACKS-EVPN-OVERLAY
-   seq 10 permit 100.104.0.0/26 eq 32
+   seq 10 permit 100.100.7.0/26 eq 32
 ```
 
 ### Route-maps

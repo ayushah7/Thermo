@@ -34,42 +34,162 @@ ethernet_interfaces:
   peer_type: super-spine
   switchport:
     enabled: false
-- name: Ethernet7
+- name: Ethernet3
   description: P2P_pod2-leaf-1_Ethernet2
   shutdown: false
   mtu: 1500
-  ip_address: 10.255.254.18/31
+  ip_address: 10.255.254.2/31
   peer: pod2-leaf-1
   peer_interface: Ethernet2
   peer_type: l3leaf
   switchport:
     enabled: false
-- name: Ethernet8
+- name: Ethernet4
   description: P2P_pod2-leaf-2_Ethernet2
   shutdown: false
   mtu: 1500
-  ip_address: 10.255.254.22/31
+  ip_address: 10.255.254.6/31
   peer: pod2-leaf-2
   peer_interface: Ethernet2
   peer_type: l3leaf
   switchport:
     enabled: false
-- name: Ethernet9
+- name: Ethernet5
   description: P2P_pod2-leaf-3_Ethernet2
   shutdown: false
   mtu: 1500
-  ip_address: 10.255.254.26/31
+  ip_address: 10.255.254.10/31
   peer: pod2-leaf-3
   peer_interface: Ethernet2
   peer_type: l3leaf
   switchport:
     enabled: false
-- name: Ethernet10
+- name: Ethernet6
   description: P2P_pod2-leaf-4_Ethernet2
   shutdown: false
   mtu: 1500
-  ip_address: 10.255.254.30/31
+  ip_address: 10.255.254.14/31
   peer: pod2-leaf-4
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet7
+  description: P2P_pod2-leaf-5_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.18/31
+  peer: pod2-leaf-5
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet8
+  description: P2P_pod2-leaf-6_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.22/31
+  peer: pod2-leaf-6
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet9
+  description: P2P_pod2-leaf-7_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.26/31
+  peer: pod2-leaf-7
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet10
+  description: P2P_pod2-leaf-8_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.30/31
+  peer: pod2-leaf-8
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet11
+  description: P2P_pod2-leaf-9_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.34/31
+  peer: pod2-leaf-9
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet12
+  description: P2P_pod2-leaf-10_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.38/31
+  peer: pod2-leaf-10
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet13
+  description: P2P_pod2-leaf-11_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.42/31
+  peer: pod2-leaf-11
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet14
+  description: P2P_pod2-leaf-12_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.46/31
+  peer: pod2-leaf-12
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet15
+  description: P2P_pod2-leaf-13_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.50/31
+  peer: pod2-leaf-13
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet16
+  description: P2P_pod2-leaf-14_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.54/31
+  peer: pod2-leaf-14
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet17
+  description: P2P_pod2-leaf-15_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.58/31
+  peer: pod2-leaf-15
+  peer_interface: Ethernet2
+  peer_type: l3leaf
+  switchport:
+    enabled: false
+- name: Ethernet18
+  description: P2P_pod2-leaf-16_Ethernet2
+  shutdown: false
+  mtu: 1500
+  ip_address: 10.255.254.62/31
+  peer: pod2-leaf-16
   peer_interface: Ethernet2
   peer_type: l3leaf
   switchport:
@@ -95,7 +215,7 @@ loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
   shutdown: false
-  ip_address: 100.104.0.4/32
+  ip_address: 100.100.7.4/32
 management_api_http:
   enable_https: true
   enable_vrfs:
@@ -106,7 +226,7 @@ management_interfaces:
   description: OOB_MANAGEMENT
   shutdown: false
   vrf: MGMT
-  ip_address: 192.168.0.104/24
+  ip_address: 192.168.0.204/24
   type: oob
 metadata:
   platform: vEOS-lab
@@ -120,7 +240,7 @@ prefix_lists:
 - name: PL-LOOPBACKS-EVPN-OVERLAY
   sequence_numbers:
   - sequence: 10
-    action: permit 100.104.0.0/26 eq 32
+    action: permit 100.100.7.0/26 eq 32
 route_maps:
 - name: RM-CONN-2-BGP
   sequence_numbers:
@@ -130,7 +250,7 @@ route_maps:
     - ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY
 router_bgp:
   as: '65151'
-  router_id: 100.104.0.4
+  router_id: 100.100.7.4
   maximum_paths:
     paths: 4
     ecmp: 4
@@ -154,26 +274,86 @@ router_bgp:
     remote_as: '65000'
     peer: super-spine-2
     description: super-spine-2_Ethernet4
-  - ip_address: 10.255.254.19
+  - ip_address: 10.255.254.3
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65103'
+    remote_as: '65133'
     peer: pod2-leaf-1
     description: pod2-leaf-1_Ethernet2
-  - ip_address: 10.255.254.23
+  - ip_address: 10.255.254.7
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65103'
+    remote_as: '65133'
     peer: pod2-leaf-2
     description: pod2-leaf-2_Ethernet2
-  - ip_address: 10.255.254.27
+  - ip_address: 10.255.254.11
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65104'
+    remote_as: '65134'
     peer: pod2-leaf-3
     description: pod2-leaf-3_Ethernet2
-  - ip_address: 10.255.254.31
+  - ip_address: 10.255.254.15
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65104'
+    remote_as: '65134'
     peer: pod2-leaf-4
     description: pod2-leaf-4_Ethernet2
+  - ip_address: 10.255.254.19
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65135'
+    peer: pod2-leaf-5
+    description: pod2-leaf-5_Ethernet2
+  - ip_address: 10.255.254.23
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65135'
+    peer: pod2-leaf-6
+    description: pod2-leaf-6_Ethernet2
+  - ip_address: 10.255.254.27
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65136'
+    peer: pod2-leaf-7
+    description: pod2-leaf-7_Ethernet2
+  - ip_address: 10.255.254.31
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65136'
+    peer: pod2-leaf-8
+    description: pod2-leaf-8_Ethernet2
+  - ip_address: 10.255.254.35
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65137'
+    peer: pod2-leaf-9
+    description: pod2-leaf-9_Ethernet2
+  - ip_address: 10.255.254.39
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65137'
+    peer: pod2-leaf-10
+    description: pod2-leaf-10_Ethernet2
+  - ip_address: 10.255.254.43
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65138'
+    peer: pod2-leaf-11
+    description: pod2-leaf-11_Ethernet2
+  - ip_address: 10.255.254.47
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65138'
+    peer: pod2-leaf-12
+    description: pod2-leaf-12_Ethernet2
+  - ip_address: 10.255.254.51
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65139'
+    peer: pod2-leaf-13
+    description: pod2-leaf-13_Ethernet2
+  - ip_address: 10.255.254.55
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65139'
+    peer: pod2-leaf-14
+    description: pod2-leaf-14_Ethernet2
+  - ip_address: 10.255.254.59
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65140'
+    peer: pod2-leaf-15
+    description: pod2-leaf-15_Ethernet2
+  - ip_address: 10.255.254.63
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65140'
+    peer: pod2-leaf-16
+    description: pod2-leaf-16_Ethernet2
   redistribute:
     connected:
       enabled: true

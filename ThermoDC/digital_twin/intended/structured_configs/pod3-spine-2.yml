@@ -3,12 +3,11 @@ aaa_root:
 config_end: true
 daemon_terminattr:
   cvaddrs:
-  - 192.168.0.1:9910
-  - apiserver.arista.io:443
+  - 192.168.0.5:9910
   cvauth:
-    method: token-secure
-    token_file: /tmp/cv-onboarding-token
-  cvvrf: default
+    method: token
+    token_file: /tmp/token
+  cvvrf: MGMT
   disable_aaa: true
   ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
   smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
@@ -35,41 +34,41 @@ ethernet_interfaces:
   peer_type: super-spine
   switchport:
     enabled: false
-- name: Ethernet11
+- name: Ethernet3
   description: P2P_pod3-leaf-1_Ethernet2
   shutdown: false
   mtu: 1500
-  ip_address: 10.255.253.34/31
+  ip_address: 10.255.253.2/31
   peer: pod3-leaf-1
   peer_interface: Ethernet2
   peer_type: l3leaf
   switchport:
     enabled: false
-- name: Ethernet12
+- name: Ethernet4
   description: P2P_pod3-leaf-2_Ethernet2
   shutdown: false
   mtu: 1500
-  ip_address: 10.255.253.38/31
+  ip_address: 10.255.253.6/31
   peer: pod3-leaf-2
   peer_interface: Ethernet2
   peer_type: l3leaf
   switchport:
     enabled: false
-- name: Ethernet13
+- name: Ethernet5
   description: P2P_pod3-leaf-3_Ethernet2
   shutdown: false
   mtu: 1500
-  ip_address: 10.255.253.42/31
+  ip_address: 10.255.253.10/31
   peer: pod3-leaf-3
   peer_interface: Ethernet2
   peer_type: l3leaf
   switchport:
     enabled: false
-- name: Ethernet14
+- name: Ethernet6
   description: P2P_pod3-leaf-4_Ethernet2
   shutdown: false
   mtu: 1500
-  ip_address: 10.255.253.46/31
+  ip_address: 10.255.253.14/31
   peer: pod3-leaf-4
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -78,9 +77,9 @@ ethernet_interfaces:
 hostname: pod3-spine-2
 ip_name_servers:
 - ip_address: 8.8.8.8
-  vrf: default
+  vrf: MGMT
 - ip_address: 8.8.4.4
-  vrf: default
+  vrf: MGMT
 ip_routing: true
 is_deployed: true
 local_users:
@@ -96,7 +95,7 @@ loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
   shutdown: false
-  ip_address: 100.100.0.6/32
+  ip_address: 100.104.0.6/32
 management_api_http:
   enable_https: true
   enable_vrfs:
@@ -107,7 +106,7 @@ management_interfaces:
   description: OOB_MANAGEMENT
   shutdown: false
   vrf: MGMT
-  ip_address: 192.168.0.106/24
+  ip_address: 192.168.0.206/24
   type: oob
 metadata:
   platform: vEOS-lab
@@ -115,15 +114,20 @@ metadata:
   digital_twin:
     environment: act
     node_type: veos
-    ip_addr: 192.168.0.106/24
-    version: 4.33.1.1F
+    ip_addr: 192.168.0.206/24
+    version: 4.32.3M
     username: admin
     password: admin
+ntp:
+  servers:
+  - name: 1.north-america.pool.ntp.org
+    preferred: true
+    vrf: MGMT
 prefix_lists:
 - name: PL-LOOPBACKS-EVPN-OVERLAY
   sequence_numbers:
   - sequence: 10
-    action: permit 100.100.0.0/26 eq 32
+    action: permit 100.104.0.0/26 eq 32
 route_maps:
 - name: RM-CONN-2-BGP
   sequence_numbers:
@@ -133,7 +137,7 @@ route_maps:
     - ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY
 router_bgp:
   as: '65152'
-  router_id: 100.100.0.6
+  router_id: 100.104.0.6
   maximum_paths:
     paths: 4
     ecmp: 4
@@ -157,22 +161,22 @@ router_bgp:
     remote_as: '65000'
     peer: super-spine-2
     description: super-spine-2_Ethernet6
-  - ip_address: 10.255.253.35
+  - ip_address: 10.255.253.3
     peer_group: IPv4-UNDERLAY-PEERS
     remote_as: '65105'
     peer: pod3-leaf-1
     description: pod3-leaf-1_Ethernet2
-  - ip_address: 10.255.253.39
+  - ip_address: 10.255.253.7
     peer_group: IPv4-UNDERLAY-PEERS
     remote_as: '65105'
     peer: pod3-leaf-2
     description: pod3-leaf-2_Ethernet2
-  - ip_address: 10.255.253.43
+  - ip_address: 10.255.253.11
     peer_group: IPv4-UNDERLAY-PEERS
     remote_as: '65106'
     peer: pod3-leaf-3
     description: pod3-leaf-3_Ethernet2
-  - ip_address: 10.255.253.47
+  - ip_address: 10.255.253.15
     peer_group: IPv4-UNDERLAY-PEERS
     remote_as: '65106'
     peer: pod3-leaf-4
@@ -196,4 +200,4 @@ vlan_internal_order:
     ending: 1199
 vrfs:
 - name: MGMT
-  ip_routing: false
+  ip_routing: true

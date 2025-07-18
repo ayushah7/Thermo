@@ -3,12 +3,11 @@ aaa_root:
 config_end: true
 daemon_terminattr:
   cvaddrs:
-  - 192.168.0.1:9910
-  - apiserver.arista.io:443
+  - 192.168.0.5:9910
   cvauth:
-    method: token-secure
-    token_file: /tmp/cv-onboarding-token
-  cvvrf: default
+    method: token
+    token_file: /tmp/token
+  cvvrf: MGMT
   disable_aaa: true
   ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
   smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
@@ -118,9 +117,9 @@ ethernet_interfaces:
 hostname: super-spine-1
 ip_name_servers:
 - ip_address: 8.8.8.8
-  vrf: default
+  vrf: MGMT
 - ip_address: 8.8.4.4
-  vrf: default
+  vrf: MGMT
 ip_routing: true
 is_deployed: true
 local_users:
@@ -156,9 +155,14 @@ metadata:
     environment: act
     node_type: veos
     ip_addr: 192.168.0.1/24
-    version: 4.33.1.1F
+    version: 4.32.3M
     username: admin
     password: admin
+ntp:
+  servers:
+  - name: 1.north-america.pool.ntp.org
+    preferred: true
+    vrf: MGMT
 prefix_lists:
 - name: PL-LOOPBACKS-EVPN-OVERLAY
   sequence_numbers:
@@ -251,12 +255,322 @@ router_bgp:
     remote_as: '65200'
     peer: services-leaf-2
     description: services-leaf-2_Ethernet1
-  - ip_address: 100.101.0.17
+  - ip_address: 100.100.1.1
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65101'
+    peer: pod1-leaf-1
+    description: pod1-leaf-1_Loopback0
+  - ip_address: 100.100.1.2
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65101'
+    peer: pod1-leaf-2
+    description: pod1-leaf-2_Loopback0
+  - ip_address: 100.100.1.3
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65102'
+    peer: pod1-leaf-3
+    description: pod1-leaf-3_Loopback0
+  - ip_address: 100.100.1.4
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65102'
+    peer: pod1-leaf-4
+    description: pod1-leaf-4_Loopback0
+  - ip_address: 100.100.1.5
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65103'
+    peer: pod1-leaf-5
+    description: pod1-leaf-5_Loopback0
+  - ip_address: 100.100.1.6
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65103'
+    peer: pod1-leaf-6
+    description: pod1-leaf-6_Loopback0
+  - ip_address: 100.100.1.7
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65104'
+    peer: pod1-leaf-7
+    description: pod1-leaf-7_Loopback0
+  - ip_address: 100.100.1.8
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65104'
+    peer: pod1-leaf-8
+    description: pod1-leaf-8_Loopback0
+  - ip_address: 100.100.1.9
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65105'
+    peer: pod1-leaf-9
+    description: pod1-leaf-9_Loopback0
+  - ip_address: 100.100.1.10
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65105'
+    peer: pod1-leaf-10
+    description: pod1-leaf-10_Loopback0
+  - ip_address: 100.100.1.11
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65106'
+    peer: pod1-leaf-11
+    description: pod1-leaf-11_Loopback0
+  - ip_address: 100.100.1.12
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65106'
+    peer: pod1-leaf-12
+    description: pod1-leaf-12_Loopback0
+  - ip_address: 100.100.1.13
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65107'
+    peer: pod1-leaf-13
+    description: pod1-leaf-13_Loopback0
+  - ip_address: 100.100.1.14
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65107'
+    peer: pod1-leaf-14
+    description: pod1-leaf-14_Loopback0
+  - ip_address: 100.100.1.15
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65108'
+    peer: pod1-leaf-15
+    description: pod1-leaf-15_Loopback0
+  - ip_address: 100.100.1.16
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65108'
+    peer: pod1-leaf-16
+    description: pod1-leaf-16_Loopback0
+  - ip_address: 100.100.2.1
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65133'
+    peer: pod2-leaf-1
+    description: pod2-leaf-1_Loopback0
+  - ip_address: 100.100.2.2
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65133'
+    peer: pod2-leaf-2
+    description: pod2-leaf-2_Loopback0
+  - ip_address: 100.100.2.3
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65134'
+    peer: pod2-leaf-3
+    description: pod2-leaf-3_Loopback0
+  - ip_address: 100.100.2.4
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65134'
+    peer: pod2-leaf-4
+    description: pod2-leaf-4_Loopback0
+  - ip_address: 100.100.2.5
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65135'
+    peer: pod2-leaf-5
+    description: pod2-leaf-5_Loopback0
+  - ip_address: 100.100.2.6
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65135'
+    peer: pod2-leaf-6
+    description: pod2-leaf-6_Loopback0
+  - ip_address: 100.100.2.7
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65136'
+    peer: pod2-leaf-7
+    description: pod2-leaf-7_Loopback0
+  - ip_address: 100.100.2.8
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65136'
+    peer: pod2-leaf-8
+    description: pod2-leaf-8_Loopback0
+  - ip_address: 100.100.2.9
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65137'
+    peer: pod2-leaf-9
+    description: pod2-leaf-9_Loopback0
+  - ip_address: 100.100.2.10
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65137'
+    peer: pod2-leaf-10
+    description: pod2-leaf-10_Loopback0
+  - ip_address: 100.100.2.11
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65138'
+    peer: pod2-leaf-11
+    description: pod2-leaf-11_Loopback0
+  - ip_address: 100.100.2.12
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65138'
+    peer: pod2-leaf-12
+    description: pod2-leaf-12_Loopback0
+  - ip_address: 100.100.2.13
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65139'
+    peer: pod2-leaf-13
+    description: pod2-leaf-13_Loopback0
+  - ip_address: 100.100.2.14
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65139'
+    peer: pod2-leaf-14
+    description: pod2-leaf-14_Loopback0
+  - ip_address: 100.100.2.15
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65140'
+    peer: pod2-leaf-15
+    description: pod2-leaf-15_Loopback0
+  - ip_address: 100.100.2.16
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65140'
+    peer: pod2-leaf-16
+    description: pod2-leaf-16_Loopback0
+  - ip_address: 100.100.3.1
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65105'
+    peer: pod3-leaf-1
+    description: pod3-leaf-1_Loopback0
+  - ip_address: 100.100.3.2
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65105'
+    peer: pod3-leaf-2
+    description: pod3-leaf-2_Loopback0
+  - ip_address: 100.100.3.3
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65106'
+    peer: pod3-leaf-3
+    description: pod3-leaf-3_Loopback0
+  - ip_address: 100.100.3.4
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65106'
+    peer: pod3-leaf-4
+    description: pod3-leaf-4_Loopback0
+  - ip_address: 100.100.4.1
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65109'
+    peer: pod4-leaf-1
+    description: pod4-leaf-1_Loopback0
+  - ip_address: 100.100.4.2
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65109'
+    peer: pod4-leaf-2
+    description: pod4-leaf-2_Loopback0
+  - ip_address: 100.100.4.3
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65110'
+    peer: pod4-leaf-3
+    description: pod4-leaf-3_Loopback0
+  - ip_address: 100.100.4.4
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65110'
+    peer: pod4-leaf-4
+    description: pod4-leaf-4_Loopback0
+  - ip_address: 100.100.4.5
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65111'
+    peer: pod4-leaf-5
+    description: pod4-leaf-5_Loopback0
+  - ip_address: 100.100.4.6
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65111'
+    peer: pod4-leaf-6
+    description: pod4-leaf-6_Loopback0
+  - ip_address: 100.100.4.7
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65112'
+    peer: pod4-leaf-7
+    description: pod4-leaf-7_Loopback0
+  - ip_address: 100.100.4.8
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65112'
+    peer: pod4-leaf-8
+    description: pod4-leaf-8_Loopback0
+  - ip_address: 100.100.4.9
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65113'
+    peer: pod4-leaf-9
+    description: pod4-leaf-9_Loopback0
+  - ip_address: 100.100.4.10
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65113'
+    peer: pod4-leaf-10
+    description: pod4-leaf-10_Loopback0
+  - ip_address: 100.100.4.11
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65114'
+    peer: pod4-leaf-11
+    description: pod4-leaf-11_Loopback0
+  - ip_address: 100.100.4.12
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65114'
+    peer: pod4-leaf-12
+    description: pod4-leaf-12_Loopback0
+  - ip_address: 100.100.4.13
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65115'
+    peer: pod4-leaf-13
+    description: pod4-leaf-13_Loopback0
+  - ip_address: 100.100.4.14
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65115'
+    peer: pod4-leaf-14
+    description: pod4-leaf-14_Loopback0
+  - ip_address: 100.100.4.15
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65116'
+    peer: pod4-leaf-15
+    description: pod4-leaf-15_Loopback0
+  - ip_address: 100.100.4.16
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65116'
+    peer: pod4-leaf-16
+    description: pod4-leaf-16_Loopback0
+  - ip_address: 100.100.4.17
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65117'
+    peer: pod4-leaf-17
+    description: pod4-leaf-17_Loopback0
+  - ip_address: 100.100.4.18
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65117'
+    peer: pod4-leaf-18
+    description: pod4-leaf-18_Loopback0
+  - ip_address: 100.100.4.19
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65118'
+    peer: pod4-leaf-19
+    description: pod4-leaf-19_Loopback0
+  - ip_address: 100.100.4.20
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65118'
+    peer: pod4-leaf-20
+    description: pod4-leaf-20_Loopback0
+  - ip_address: 100.100.4.21
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65119'
+    peer: pod4-leaf-21
+    description: pod4-leaf-21_Loopback0
+  - ip_address: 100.100.4.22
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65119'
+    peer: pod4-leaf-22
+    description: pod4-leaf-22_Loopback0
+  - ip_address: 100.100.4.23
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65120'
+    peer: pod4-leaf-23
+    description: pod4-leaf-23_Loopback0
+  - ip_address: 100.100.4.24
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65120'
+    peer: pod4-leaf-24
+    description: pod4-leaf-24_Loopback0
+  - ip_address: 100.100.4.25
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65121'
+    peer: pod4-leaf-25
+    description: pod4-leaf-25_Loopback0
+  - ip_address: 100.100.4.26
+    peer_group: EVPN-OVERLAY-PEERS
+    remote_as: '65121'
+    peer: pod4-leaf-26
+    description: pod4-leaf-26_Loopback0
+  - ip_address: 100.100.5.17
     peer_group: EVPN-OVERLAY-PEERS
     remote_as: '65200'
     peer: services-leaf-1
     description: services-leaf-1_Loopback0
-  - ip_address: 100.101.0.18
+  - ip_address: 100.100.5.18
     peer_group: EVPN-OVERLAY-PEERS
     remote_as: '65200'
     peer: services-leaf-2
@@ -286,4 +600,4 @@ vlan_internal_order:
     ending: 1199
 vrfs:
 - name: MGMT
-  ip_routing: false
+  ip_routing: true

@@ -100,13 +100,13 @@
         },
         "hosts": [
           {
-            "destination": "100.103.0.1",
+            "destination": "100.100.6.1",
             "source": "Loopback0",
             "vrf": "default",
             "repeat": 1
           },
           {
-            "destination": "100.103.0.2",
+            "destination": "100.100.6.2",
             "source": "Loopback0",
             "vrf": "default",
             "repeat": 1
@@ -434,7 +434,7 @@
         },
         "bgp_peers": [
           {
-            "peer_address": "10.255.2.96",
+            "peer_address": "10.255.10.32",
             "vrf": "default"
           },
           {
@@ -446,11 +446,11 @@
             "vrf": "default"
           },
           {
-            "peer_address": "100.103.0.1",
+            "peer_address": "100.100.6.1",
             "vrf": "default"
           },
           {
-            "peer_address": "100.103.0.2",
+            "peer_address": "100.100.6.2",
             "vrf": "default"
           }
         ]

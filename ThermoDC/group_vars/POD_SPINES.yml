@@ -6,7 +6,7 @@ spine:
     platform: vEOS-lab
     uplink_switches: ['super-spine-1', 'super-spine-2']
     uplink_ipv4_pool: 10.255.250.0/24
-    loopback_ipv4_pool: 100.104.0.0/26
+    loopback_ipv4_pool: 100.100.7.0/26
 
   node_groups:
     - group: POD1-SPINES
@@ -14,37 +14,37 @@ spine:
       nodes:
         - name: pod1-spine-1
           id: 1
-          mgmt_ip: 192.168.0.101/24
+          mgmt_ip: 192.168.0.201/24
         - name: pod1-spine-2
           id: 2
-          mgmt_ip: 192.168.0.102/24
+          mgmt_ip: 192.168.0.202/24
 
     - group: POD2-SPINES
       bgp_as: 65151
       nodes:
         - name: pod2-spine-1
           id: 3
-          mgmt_ip: 192.168.0.103/24
+          mgmt_ip: 192.168.0.203/24
         - name: pod2-spine-2
           id: 4
-          mgmt_ip: 192.168.0.104/24
+          mgmt_ip: 192.168.0.204/24
 
     - group: POD3-SPINES
       bgp_as: 65152
       nodes:
         - name: pod3-spine-1
           id: 5
-          mgmt_ip: 192.168.0.105/24
+          mgmt_ip: 192.168.0.205/24
         - name: pod3-spine-2
           id: 6
-          mgmt_ip: 192.168.0.106/24
+          mgmt_ip: 192.168.0.206/24
 
     - group: POD4-SPINES
       bgp_as: 65153
       nodes:
         - name: pod4-spine-1
           id: 7
-          mgmt_ip: 192.168.0.107/24
+          mgmt_ip: 192.168.0.207/24
         - name: pod4-spine-2
           id: 8
-          mgmt_ip: 192.168.0.108/24
+          mgmt_ip: 192.168.0.208/24

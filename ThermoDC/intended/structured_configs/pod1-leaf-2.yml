@@ -76,7 +76,7 @@ loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
   shutdown: false
-  ip_address: 100.100.0.2/32
+  ip_address: 100.100.1.2/32
 - name: Loopback1
   description: VXLAN_TUNNEL_SOURCE
   shutdown: false
@@ -132,13 +132,13 @@ prefix_lists:
 - name: PL-LOOPBACKS-EVPN-OVERLAY
   sequence_numbers:
   - sequence: 10
-    action: permit 100.100.0.0/26 eq 32
+    action: permit 100.100.1.0/24 eq 32
   - sequence: 20
-    action: permit 10.100.1.0/26 eq 32
+    action: permit 10.100.1.0/24 eq 32
 - name: PL-MLAG-PEER-VRFS
   sequence_numbers:
   - sequence: 10
-    action: permit 10.255.1.32/31
+    action: permit 10.255.2.0/31
 route_maps:
 - name: RM-MLAG-PEER-IN
   sequence_numbers:
@@ -168,7 +168,7 @@ router_bfd:
     multiplier: 3
 router_bgp:
   as: '65101'
-  router_id: 100.100.0.2
+  router_id: 100.100.1.2
   maximum_paths:
     paths: 4
     ecmp: 4
@@ -199,7 +199,7 @@ router_bgp:
     send_community: all
     maximum_routes: 0
   neighbors:
-  - ip_address: 10.255.1.32
+  - ip_address: 10.255.2.0
     peer_group: MLAG-IPv4-UNDERLAY-PEER
     peer: pod1-leaf-1
     description: pod1-leaf-1_Vlan4093
@@ -213,12 +213,12 @@ router_bgp:
     remote_as: '65150'
     peer: pod1-spine-2
     description: pod1-spine-2_Ethernet4
-  - ip_address: 100.103.0.1
+  - ip_address: 100.100.6.1
     peer_group: EVPN-OVERLAY-PEERS
     remote_as: '65000'
     peer: super-spine-1
     description: super-spine-1_Loopback0
-  - ip_address: 100.103.0.2
+  - ip_address: 100.100.6.2
     peer_group: EVPN-OVERLAY-PEERS
     remote_as: '65000'
     peer: super-spine-2
@@ -230,7 +230,7 @@ router_bgp:
   vlans:
   - id: 11
     tenant: TENANT1
-    rd: 100.100.0.2:10011
+    rd: 100.100.1.2:10011
     route_targets:
       both:
       - 10011:10011
@@ -238,7 +238,7 @@ router_bgp:
     - learned
   - id: 12
     tenant: TENANT1
-    rd: 100.100.0.2:10012
+    rd: 100.100.1.2:10012
     route_targets:
       both:
       - 10012:10012
@@ -246,7 +246,7 @@ router_bgp:
     - learned
   - id: 21
     tenant: TENANT1
-    rd: 100.100.0.2:10021
+    rd: 100.100.1.2:10021
     route_targets:
       both:
       - 10021:10021
@@ -254,7 +254,7 @@ router_bgp:
     - learned
   - id: 22
     tenant: TENANT1
-    rd: 100.100.0.2:10022
+    rd: 100.100.1.2:10022
     route_targets:
       both:
       - 10022:10022
@@ -262,7 +262,7 @@ router_bgp:
     - learned
   - id: 3401
     tenant: TENANT1
-    rd: 100.100.0.2:13401
+    rd: 100.100.1.2:13401
     route_targets:
       both:
       - 13401:13401
@@ -270,7 +270,7 @@ router_bgp:
     - learned
   - id: 3402
     tenant: TENANT1
-    rd: 100.100.0.2:13402
+    rd: 100.100.1.2:13402
     route_targets:
       both:
       - 13402:13402
@@ -290,7 +290,7 @@ router_bgp:
       activate: false
   vrfs:
   - name: VRF10
-    rd: 100.100.0.2:10
+    rd: 100.100.1.2:10
     route_targets:
       import:
       - address_family: evpn
@@ -300,9 +300,9 @@ router_bgp:
       - address_family: evpn
         route_targets:
         - '10:10'
-    router_id: 100.100.0.2
+    router_id: 100.100.1.2
     neighbors:
-    - ip_address: 10.255.1.32
+    - ip_address: 10.255.2.0
       peer_group: MLAG-IPv4-UNDERLAY-PEER
       description: pod1-leaf-1_Vlan3009
     redistribute:
@@ -310,7 +310,7 @@ router_bgp:
         enabled: true
         route_map: RM-CONN-2-BGP-VRFS
   - name: VRF11
-    rd: 100.100.0.2:11
+    rd: 100.100.1.2:11
     route_targets:
       import:
       - address_family: evpn
@@ -320,9 +320,9 @@ router_bgp:
       - address_family: evpn
         route_targets:
         - '11:11'
-    router_id: 100.100.0.2
+    router_id: 100.100.1.2
     neighbors:
-    - ip_address: 10.255.1.32
+    - ip_address: 10.255.2.0
       peer_group: MLAG-IPv4-UNDERLAY-PEER
       description: pod1-leaf-1_Vlan3010
     redistribute:
@@ -346,7 +346,7 @@ vlan_interfaces:
 - name: Vlan4093
   description: MLAG_L3
   shutdown: false
-  ip_address: 10.255.1.33/31
+  ip_address: 10.255.2.1/31
   mtu: 1500
 - name: Vlan4094
   description: MLAG
@@ -370,7 +370,7 @@ vlan_interfaces:
   description: MLAG_L3_VRF_VRF10
   shutdown: false
   vrf: VRF10
-  ip_address: 10.255.1.33/31
+  ip_address: 10.255.2.1/31
   mtu: 1500
   tenant: TENANT1
   type: underlay_peering
@@ -390,7 +390,7 @@ vlan_interfaces:
   description: MLAG_L3_VRF_VRF11
   shutdown: false
   vrf: VRF11
-  ip_address: 10.255.1.33/31
+  ip_address: 10.255.2.1/31
   mtu: 1500
   tenant: TENANT1
   type: underlay_peering
