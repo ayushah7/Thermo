@@ -86,14 +86,14 @@ interface Management1
 
 | Name Server | VRF | Priority |
 | ----------- | --- | -------- |
-| 8.8.8.8 | MGMT | - |
-| 8.8.4.4 | MGMT | - |
+| 8.8.8.8 | default | - |
+| 8.8.4.4 | default | - |
 
 #### IP Name Servers Device Configuration
 
 ```eos
-ip name-server vrf MGMT 8.8.4.4
-ip name-server vrf MGMT 8.8.8.8
+ip name-server vrf default 8.8.4.4
+ip name-server vrf default 8.8.8.8
 ```
 
 ### NTP
@@ -104,13 +104,13 @@ ip name-server vrf MGMT 8.8.8.8
 
 | Server | VRF | Preferred | Burst | iBurst | Version | Min Poll | Max Poll | Local-interface | Key |
 | ------ | --- | --------- | ----- | ------ | ------- | -------- | -------- | --------------- | --- |
-| 1.north-america.pool.ntp.org | MGMT | True | - | - | - | - | - | - | - |
+| 1.north-america.pool.ntp.org | default | True | - | - | - | - | - | - | - |
 
 #### NTP Device Configuration
 
 ```eos
 !
-ntp server vrf MGMT 1.north-america.pool.ntp.org prefer
+ntp server 1.north-america.pool.ntp.org prefer
 ```
 
 ### Management API HTTP

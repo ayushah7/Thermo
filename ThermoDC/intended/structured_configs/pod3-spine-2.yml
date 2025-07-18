@@ -77,9 +77,9 @@ ethernet_interfaces:
 hostname: pod3-spine-2
 ip_name_servers:
 - ip_address: 8.8.8.8
-  vrf: MGMT
+  vrf: default
 - ip_address: 8.8.4.4
-  vrf: MGMT
+  vrf: default
 ip_routing: true
 is_deployed: true
 local_users:
@@ -115,7 +115,7 @@ ntp:
   servers:
   - name: 1.north-america.pool.ntp.org
     preferred: true
-    vrf: MGMT
+    vrf: default
 prefix_lists:
 - name: PL-LOOPBACKS-EVPN-OVERLAY
   sequence_numbers:

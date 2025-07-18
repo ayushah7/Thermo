@@ -93,9 +93,9 @@ custom_structured_configuration_daemon_terminattr:
 # DNS servers.
 custom_structured_configuration_ip_name_servers:
   - ip_address: 8.8.8.8
-    vrf: MGMT
+    vrf: default
   - ip_address: 8.8.4.4
-    vrf: MGMT
+    vrf: default
 
 # Configure IP routing for the OOB Management VRF.
 mgmt_vrf_routing: true
@@ -114,7 +114,7 @@ custom_structured_configuration_ntp:
     #   vrf: default
     - name: 1.north-america.pool.ntp.org
       preferred: True
-      vrf: MGMT
+      vrf: default
 
 # NTP Servers IP or DNS name, first NTP server will be preferred, and sourced from Management VRF
 # ntp_settings:
