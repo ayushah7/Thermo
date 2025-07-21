@@ -1,0 +1,16 @@
+---
+- name: Run ANTA
+  hosts: FABRIC
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: Run ANTA on EOS devices
+      import_role:
+        name: arista.avd.anta_runner
+      vars:
+        anta_runner_timeout: 360.0
+        anta_runner_batch_size: 5
+        avd_catalogs_enabled: true # This is the default
+        avd_catalogs_allow_bgp_vrfs: true
+        avd_catalogs_filters:
+          - skip_tests: [ VerifyMlagConfigSanity, VerifyLoggingErrors ]

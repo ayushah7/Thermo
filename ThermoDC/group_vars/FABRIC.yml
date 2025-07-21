@@ -109,19 +109,12 @@ mgmt_vrf_routing: true
 # NTP Servers
 custom_structured_configuration_ntp:
   servers:
-    # - name: 0.north-america.pool.ntp.org
-    #   preferred: True
-    #   vrf: default
+    - name: 0.north-america.pool.ntp.org
+      preferred: True
+      vrf: default
     - name: 1.north-america.pool.ntp.org
       preferred: True
       vrf: default
-
-# NTP Servers IP or DNS name, first NTP server will be preferred, and sourced from Management VRF
-# ntp_settings:
-#   server_vrf: use_mgmt_interface_vrf
-#   servers:
-#     - name: 0.pool.ntp.org
-
 
 # Set default uplink, downlink, and MLAG interfaces based on node type
 default_interfaces:
