@@ -106,6 +106,16 @@ management_interfaces:
 metadata:
   platform: vEOS-lab
   fabric_name: FABRIC
+  cv_tags:
+    device_tags:
+    - name: topology_hint_fabric
+      value: FABRIC
+    - name: topology_hint_type
+      value: leaf
+    - name: topology_hint_rack
+      value: POD1_MLAG03
+    - name: POD
+      value: '1'
 mlag_configuration:
   domain_id: POD1_MLAG03
   local_interface: Vlan4094

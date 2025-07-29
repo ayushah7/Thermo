@@ -140,19 +140,22 @@ default_interfaces:
 
   #mgmt_gateway: 192.168.0.1
 
-# generate_cv_tags:
-#   topology_hints: true
-#   device_tags:
-  #   - name: Role
-  #     data_path: type
-    # - name: Fabric
-    #   value: ThermoLab
+generate_cv_tags:
+  topology_hints: true
+  device_tags:
+    - name: Fabric
+      value: ThermoF
   # device_tags:
   #   - name: Role
   #     data_path: myvalue
   # interface_tags:
   #   - name: myinterfacetag
   #     value: myinterfacevalue
+
+# Generate CSVs with fabric link info.
+eos_designs_documentation:
+  topology_csv: true
+  p2p_links_csv: true
 
 custom_node_type_keys:
   - key: spine

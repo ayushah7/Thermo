@@ -151,6 +151,14 @@ management_interfaces:
 metadata:
   platform: vEOS-lab
   fabric_name: FABRIC
+  cv_tags:
+    device_tags:
+    - name: topology_hint_fabric
+      value: FABRIC
+    - name: topology_hint_type
+      value: core
+    - name: Fabric
+      value: ThermoF
 ntp:
   servers:
   - name: 0.north-america.pool.ntp.org
