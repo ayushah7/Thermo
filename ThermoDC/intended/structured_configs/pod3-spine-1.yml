@@ -113,6 +113,9 @@ metadata:
   fabric_name: FABRIC
 ntp:
   servers:
+  - name: 0.north-america.pool.ntp.org
+    preferred: false
+    vrf: default
   - name: 1.north-america.pool.ntp.org
     preferred: true
     vrf: default
@@ -129,7 +132,7 @@ route_maps:
     match:
     - ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY
 router_bgp:
-  as: '65152'
+  as: '65000.152'
   router_id: 100.100.7.5
   maximum_paths:
     paths: 4
@@ -156,22 +159,22 @@ router_bgp:
     description: super-spine-2_Ethernet5
   - ip_address: 10.255.253.1
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65105'
+    remote_as: '65000.105'
     peer: pod3-leaf-1
     description: pod3-leaf-1_Ethernet1
   - ip_address: 10.255.253.5
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65105'
+    remote_as: '65000.105'
     peer: pod3-leaf-2
     description: pod3-leaf-2_Ethernet1
   - ip_address: 10.255.253.9
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65106'
+    remote_as: '65000.106'
     peer: pod3-leaf-3
     description: pod3-leaf-3_Ethernet1
   - ip_address: 10.255.253.13
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65106'
+    remote_as: '65000.106'
     peer: pod3-leaf-4
     description: pod3-leaf-4_Ethernet1
   redistribute:

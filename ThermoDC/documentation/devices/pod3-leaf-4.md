@@ -104,12 +104,14 @@ ip name-server vrf default 8.8.8.8
 
 | Server | VRF | Preferred | Burst | iBurst | Version | Min Poll | Max Poll | Local-interface | Key |
 | ------ | --- | --------- | ----- | ------ | ------- | -------- | -------- | --------------- | --- |
+| 0.north-america.pool.ntp.org | default | False | - | - | - | - | - | - | - |
 | 1.north-america.pool.ntp.org | default | True | - | - | - | - | - | - | - |
 
 #### NTP Device Configuration
 
 ```eos
 !
+ntp server 0.north-america.pool.ntp.org
 ntp server 1.north-america.pool.ntp.org prefer
 ```
 
@@ -621,7 +623,7 @@ ASN Notation: asplain
 
 | BGP AS | Router ID |
 | ------ | --------- |
-| 65106 | 100.100.3.4 |
+| 65000.106 | 100.100.3.4 |
 
 | BGP Tuning |
 | ---------- |
@@ -654,7 +656,7 @@ ASN Notation: asplain
 | Settings | Value |
 | -------- | ----- |
 | Address Family | ipv4 |
-| Remote AS | 65106 |
+| Remote AS | 65000.106 |
 | Next-hop self | True |
 | Send community | all |
 | Maximum routes | 12000 |
@@ -664,8 +666,8 @@ ASN Notation: asplain
 | Neighbor | Remote AS | VRF | Shutdown | Send-community | Maximum-routes | Allowas-in | BFD | RIB Pre-Policy Retain | Route-Reflector Client | Passive | TTL Max Hops |
 | -------- | --------- | --- | -------- | -------------- | -------------- | ---------- | --- | --------------------- | ---------------------- | ------- | ------------ |
 | 10.255.6.4 | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | default | - | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | - | - | - | - | - | - |
-| 10.255.253.12 | 65152 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.253.14 | 65152 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.253.12 | 65000.152 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.253.14 | 65000.152 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 | 100.100.6.1 | 65000 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 100.100.6.2 | 65000 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 10.255.6.4 | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | VRF10 | - | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | - | - | - | - | - | - |
@@ -701,7 +703,7 @@ ASN Notation: asplain
 
 ```eos
 !
-router bgp 65106
+router bgp 65000.106
    router-id 100.100.3.4
    no bgp default ipv4-unicast
    maximum-paths 4 ecmp 4
@@ -717,7 +719,7 @@ router bgp 65106
    neighbor IPv4-UNDERLAY-PEERS send-community
    neighbor IPv4-UNDERLAY-PEERS maximum-routes 12000
    neighbor MLAG-IPv4-UNDERLAY-PEER peer group
-   neighbor MLAG-IPv4-UNDERLAY-PEER remote-as 65106
+   neighbor MLAG-IPv4-UNDERLAY-PEER remote-as 65000.106
    neighbor MLAG-IPv4-UNDERLAY-PEER next-hop-self
    neighbor MLAG-IPv4-UNDERLAY-PEER description pod3-leaf-3
    neighbor MLAG-IPv4-UNDERLAY-PEER route-map RM-MLAG-PEER-IN in
@@ -727,10 +729,10 @@ router bgp 65106
    neighbor 10.255.6.4 peer group MLAG-IPv4-UNDERLAY-PEER
    neighbor 10.255.6.4 description pod3-leaf-3_Vlan4093
    neighbor 10.255.253.12 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.253.12 remote-as 65152
+   neighbor 10.255.253.12 remote-as 65000.152
    neighbor 10.255.253.12 description pod3-spine-1_Ethernet6
    neighbor 10.255.253.14 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.253.14 remote-as 65152
+   neighbor 10.255.253.14 remote-as 65000.152
    neighbor 10.255.253.14 description pod3-spine-2_Ethernet6
    neighbor 100.100.6.1 peer group EVPN-OVERLAY-PEERS
    neighbor 100.100.6.1 remote-as 65000

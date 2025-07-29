@@ -104,12 +104,14 @@ ip name-server vrf default 8.8.8.8
 
 | Server | VRF | Preferred | Burst | iBurst | Version | Min Poll | Max Poll | Local-interface | Key |
 | ------ | --- | --------- | ----- | ------ | ------- | -------- | -------- | --------------- | --- |
+| 0.north-america.pool.ntp.org | default | False | - | - | - | - | - | - | - |
 | 1.north-america.pool.ntp.org | default | True | - | - | - | - | - | - | - |
 
 #### NTP Device Configuration
 
 ```eos
 !
+ntp server 0.north-america.pool.ntp.org
 ntp server 1.north-america.pool.ntp.org prefer
 ```
 

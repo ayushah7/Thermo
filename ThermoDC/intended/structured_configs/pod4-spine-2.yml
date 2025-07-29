@@ -333,6 +333,9 @@ metadata:
   fabric_name: FABRIC
 ntp:
   servers:
+  - name: 0.north-america.pool.ntp.org
+    preferred: false
+    vrf: default
   - name: 1.north-america.pool.ntp.org
     preferred: true
     vrf: default
@@ -349,7 +352,7 @@ route_maps:
     match:
     - ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY
 router_bgp:
-  as: '65153'
+  as: '65000.153'
   router_id: 100.100.7.8
   maximum_paths:
     paths: 4
@@ -376,132 +379,132 @@ router_bgp:
     description: super-spine-2_Ethernet8
   - ip_address: 10.255.252.3
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65109'
+    remote_as: '65000.109'
     peer: pod4-leaf-1
     description: pod4-leaf-1_Ethernet2
   - ip_address: 10.255.252.7
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65109'
+    remote_as: '65000.109'
     peer: pod4-leaf-2
     description: pod4-leaf-2_Ethernet2
   - ip_address: 10.255.252.11
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65110'
+    remote_as: '65000.11'
     peer: pod4-leaf-3
     description: pod4-leaf-3_Ethernet2
   - ip_address: 10.255.252.15
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65110'
+    remote_as: '65000.11'
     peer: pod4-leaf-4
     description: pod4-leaf-4_Ethernet2
   - ip_address: 10.255.252.19
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65111'
+    remote_as: '65000.111'
     peer: pod4-leaf-5
     description: pod4-leaf-5_Ethernet2
   - ip_address: 10.255.252.23
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65111'
+    remote_as: '65000.111'
     peer: pod4-leaf-6
     description: pod4-leaf-6_Ethernet2
   - ip_address: 10.255.252.27
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65112'
+    remote_as: '65000.112'
     peer: pod4-leaf-7
     description: pod4-leaf-7_Ethernet2
   - ip_address: 10.255.252.31
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65112'
+    remote_as: '65000.112'
     peer: pod4-leaf-8
     description: pod4-leaf-8_Ethernet2
   - ip_address: 10.255.252.35
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65113'
+    remote_as: '65000.113'
     peer: pod4-leaf-9
     description: pod4-leaf-9_Ethernet2
   - ip_address: 10.255.252.39
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65113'
+    remote_as: '65000.113'
     peer: pod4-leaf-10
     description: pod4-leaf-10_Ethernet2
   - ip_address: 10.255.252.43
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65114'
+    remote_as: '65000.114'
     peer: pod4-leaf-11
     description: pod4-leaf-11_Ethernet2
   - ip_address: 10.255.252.47
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65114'
+    remote_as: '65000.114'
     peer: pod4-leaf-12
     description: pod4-leaf-12_Ethernet2
   - ip_address: 10.255.252.51
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65115'
+    remote_as: '65000.115'
     peer: pod4-leaf-13
     description: pod4-leaf-13_Ethernet2
   - ip_address: 10.255.252.55
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65115'
+    remote_as: '65000.115'
     peer: pod4-leaf-14
     description: pod4-leaf-14_Ethernet2
   - ip_address: 10.255.252.59
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65116'
+    remote_as: '65000.116'
     peer: pod4-leaf-15
     description: pod4-leaf-15_Ethernet2
   - ip_address: 10.255.252.63
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65116'
+    remote_as: '65000.116'
     peer: pod4-leaf-16
     description: pod4-leaf-16_Ethernet2
   - ip_address: 10.255.252.67
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65117'
+    remote_as: '65000.117'
     peer: pod4-leaf-17
     description: pod4-leaf-17_Ethernet2
   - ip_address: 10.255.252.71
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65117'
+    remote_as: '65000.117'
     peer: pod4-leaf-18
     description: pod4-leaf-18_Ethernet2
   - ip_address: 10.255.252.75
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65118'
+    remote_as: '65000.118'
     peer: pod4-leaf-19
     description: pod4-leaf-19_Ethernet2
   - ip_address: 10.255.252.79
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65118'
+    remote_as: '65000.118'
     peer: pod4-leaf-20
     description: pod4-leaf-20_Ethernet2
   - ip_address: 10.255.252.83
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65119'
+    remote_as: '65000.119'
     peer: pod4-leaf-21
     description: pod4-leaf-21_Ethernet2
   - ip_address: 10.255.252.87
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65119'
+    remote_as: '65000.119'
     peer: pod4-leaf-22
     description: pod4-leaf-22_Ethernet2
   - ip_address: 10.255.252.91
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65120'
+    remote_as: '65000.12'
     peer: pod4-leaf-23
     description: pod4-leaf-23_Ethernet2
   - ip_address: 10.255.252.95
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65120'
+    remote_as: '65000.12'
     peer: pod4-leaf-24
     description: pod4-leaf-24_Ethernet2
   - ip_address: 10.255.252.99
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65121'
+    remote_as: '65000.121'
     peer: pod4-leaf-25
     description: pod4-leaf-25_Ethernet2
   - ip_address: 10.255.252.103
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65121'
+    remote_as: '65000.121'
     peer: pod4-leaf-26
     description: pod4-leaf-26_Ethernet2
   redistribute:

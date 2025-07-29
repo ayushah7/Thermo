@@ -87,12 +87,14 @@ ip name-server vrf default 8.8.8.8
 
 | Server | VRF | Preferred | Burst | iBurst | Version | Min Poll | Max Poll | Local-interface | Key |
 | ------ | --- | --------- | ----- | ------ | ------- | -------- | -------- | --------------- | --- |
+| 0.north-america.pool.ntp.org | default | False | - | - | - | - | - | - | - |
 | 1.north-america.pool.ntp.org | default | True | - | - | - | - | - | - | - |
 
 #### NTP Device Configuration
 
 ```eos
 !
+ntp server 0.north-america.pool.ntp.org
 ntp server 1.north-america.pool.ntp.org prefer
 ```
 
@@ -338,7 +340,7 @@ ASN Notation: asplain
 
 | BGP AS | Router ID |
 | ------ | --------- |
-| 65152 | 100.100.7.5 |
+| 65000.152 | 100.100.7.5 |
 
 | BGP Tuning |
 | ---------- |
@@ -361,16 +363,16 @@ ASN Notation: asplain
 | -------- | --------- | --- | -------- | -------------- | -------------- | ---------- | --- | --------------------- | ---------------------- | ------- | ------------ |
 | 10.255.250.16 | 65000 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 | 10.255.250.18 | 65000 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.253.1 | 65105 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.253.5 | 65105 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.253.9 | 65106 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.253.13 | 65106 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.253.1 | 65000.105 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.253.5 | 65000.105 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.253.9 | 65000.106 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.253.13 | 65000.106 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 
 #### Router BGP Device Configuration
 
 ```eos
 !
-router bgp 65152
+router bgp 65000.152
    router-id 100.100.7.5
    no bgp default ipv4-unicast
    maximum-paths 4 ecmp 4
@@ -385,16 +387,16 @@ router bgp 65152
    neighbor 10.255.250.18 remote-as 65000
    neighbor 10.255.250.18 description super-spine-2_Ethernet5
    neighbor 10.255.253.1 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.253.1 remote-as 65105
+   neighbor 10.255.253.1 remote-as 65000.105
    neighbor 10.255.253.1 description pod3-leaf-1_Ethernet1
    neighbor 10.255.253.5 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.253.5 remote-as 65105
+   neighbor 10.255.253.5 remote-as 65000.105
    neighbor 10.255.253.5 description pod3-leaf-2_Ethernet1
    neighbor 10.255.253.9 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.253.9 remote-as 65106
+   neighbor 10.255.253.9 remote-as 65000.106
    neighbor 10.255.253.9 description pod3-leaf-3_Ethernet1
    neighbor 10.255.253.13 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.253.13 remote-as 65106
+   neighbor 10.255.253.13 remote-as 65000.106
    neighbor 10.255.253.13 description pod3-leaf-4_Ethernet1
    redistribute connected route-map RM-CONN-2-BGP
    !

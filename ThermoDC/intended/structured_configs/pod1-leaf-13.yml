@@ -115,6 +115,9 @@ mlag_configuration:
   reload_delay_non_mlag: '330'
 ntp:
   servers:
+  - name: 0.north-america.pool.ntp.org
+    preferred: false
+    vrf: default
   - name: 1.north-america.pool.ntp.org
     preferred: true
     vrf: default
@@ -167,7 +170,7 @@ router_bfd:
     min_rx: 300
     multiplier: 3
 router_bgp:
-  as: '65107'
+  as: '65000.107'
   router_id: 100.100.1.13
   maximum_paths:
     paths: 4
@@ -178,7 +181,7 @@ router_bgp:
   peer_groups:
   - name: MLAG-IPv4-UNDERLAY-PEER
     type: ipv4
-    remote_as: '65107'
+    remote_as: '65000.107'
     description: pod1-leaf-14
     next_hop_self: true
     password: 4b21pAdCvWeAqpcKDFMdWw==
@@ -205,12 +208,12 @@ router_bgp:
     description: pod1-leaf-14_Vlan4093
   - ip_address: 10.255.255.48
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65150'
+    remote_as: '65000.15'
     peer: pod1-spine-1
     description: pod1-spine-1_Ethernet15
   - ip_address: 10.255.255.50
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65150'
+    remote_as: '65000.15'
     peer: pod1-spine-2
     description: pod1-spine-2_Ethernet15
   - ip_address: 100.100.6.1

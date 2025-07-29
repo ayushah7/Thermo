@@ -20,7 +20,7 @@ l3leaf:
 
   node_groups:
     - group: POD1_MLAG01
-      bgp_as: 65101
+      bgp_as: 65000.101
       nodes:
         - name: pod1-leaf-1
           id: 1
@@ -30,7 +30,7 @@ l3leaf:
           mgmt_ip: 192.168.0.12/24
 
     - group: POD1_MLAG02
-      bgp_as: 65102
+      bgp_as: 65000.102
       nodes:
         - name: pod1-leaf-3
           id: 3
@@ -39,7 +39,7 @@ l3leaf:
           id: 4
           mgmt_ip: 192.168.0.14/24
     - group: POD1_MLAG03
-      bgp_as: 65103
+      bgp_as: 65000.103
       nodes:
         - name: pod1-leaf-5
           id: 5
@@ -48,7 +48,7 @@ l3leaf:
           id: 6
           mgmt_ip: 192.168.0.16/24
     - group: POD1_MLAG04
-      bgp_as: 65104
+      bgp_as: 65000.104
       nodes:
         - name: pod1-leaf-7
           id: 7
@@ -57,7 +57,7 @@ l3leaf:
           id: 8
           mgmt_ip: 192.168.0.18/24
     - group: POD1_MLAG05
-      bgp_as: 65105
+      bgp_as: 65000.105
       nodes:
         - name: pod1-leaf-9
           id: 9
@@ -66,7 +66,7 @@ l3leaf:
           id: 10
           mgmt_ip: 192.168.0.20/24
     - group: POD1_MLAG06
-      bgp_as: 65106
+      bgp_as: 65000.106
       nodes:
         - name: pod1-leaf-11
           id: 11
@@ -75,7 +75,7 @@ l3leaf:
           id: 12
           mgmt_ip: 192.168.0.22/24
     - group: POD1_MLAG07
-      bgp_as: 65107
+      bgp_as: 65000.107
       nodes:
         - name: pod1-leaf-13
           id: 13
@@ -84,7 +84,7 @@ l3leaf:
           id: 14
           mgmt_ip: 192.168.0.24/24
     - group: POD1_MLAG08
-      bgp_as: 65108
+      bgp_as: 65000.108
       nodes:
         - name: pod1-leaf-15
           id: 15

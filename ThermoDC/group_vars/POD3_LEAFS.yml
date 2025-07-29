@@ -20,7 +20,7 @@ l3leaf:
 
   node_groups:
     - group: POD3_MLAG01
-      bgp_as: 65105
+      bgp_as: 65000.105
       nodes:
         - name: pod3-leaf-1
           id: 1
@@ -30,7 +30,7 @@ l3leaf:
           mgmt_ip: 192.168.0.76/24
 
     - group: POD3_MLAG02
-      bgp_as: 65106
+      bgp_as: 65000.106
       nodes:
         - name: pod3-leaf-3
           id: 3

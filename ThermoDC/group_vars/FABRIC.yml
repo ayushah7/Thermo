@@ -28,6 +28,12 @@ fabric_name: FABRIC
 underlay_routing_protocol: ebgp
 overlay_routing_protocol: ebgp
 
+# For multicast
+
+#underlay_multicast: True
+#evpn_multicast: True
+#igmp_snooping_enabled : True
+
 local_users: 
   - name: ansible
     privilege: 15
@@ -71,6 +77,8 @@ bgp_peer_groups:
     password: 4b21pAdCvWeAqpcKDFMdWw==
 
 p2p_uplinks_mtu: 1500 
+
+# Cloudvision Settings
 cvp_instance_ips: ['192.168.0.5']
 #cvp_instance_ips: ['apiserver.arista.io']
 terminattr_disable_aaa: true
@@ -86,9 +94,19 @@ custom_structured_configuration_daemon_terminattr:
 #   ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
 #   smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
 
-# DNS Server
-# name_servers:
-#   - 169.254.169.254
+# cv_settings:
+#   onprem_clusters:
+#     - name: cvp-onprem
+#       servers:
+#         - name: 192.168.0.5
+#           port: 9910
+#       vrf: MGMT
+#       token_file: /tmp/token
+#   terminattr:
+#     disable_aaa: true
+#     ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
+#     smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
+#   set_source_interfaces: true
 
 # DNS servers.
 custom_structured_configuration_ip_name_servers:
@@ -110,7 +128,7 @@ mgmt_vrf_routing: true
 custom_structured_configuration_ntp:
   servers:
     - name: 0.north-america.pool.ntp.org
-      preferred: True
+      preferred: False
       vrf: default
     - name: 1.north-america.pool.ntp.org
       preferred: True
@@ -161,21 +179,23 @@ custom_node_type_keys:
     cv_tags_topology_type: core
     default_evpn_role: server
 
+as_notation: asdot
+
 # PREVIEW: This option is marked as "preview", meaning the data models or generated configuration can change at any time.
 # Global settings to configure the Digital Twin of the Fabric.
-#digital_twin:
+digital_twin:
 
   # Targeted Digital Twin environment.
-  #environment: <str; "act"; default="act">
+  environment: act
 
   # Settings for Digital Twin fabric devices.
-  #fabric: 
+  fabric: 
 
     # OS version for ACT Digital Twin fabric devices.
-    #act_os_version: <str>
+    act_os_version: 4.32.3M
 
     # Username for ACT Digital Twin fabric devices.
-    #act_username: <str; default="admin">
+    act_username: cvpadmin
 
     # Cleartext password for ACT Digital Twin fabric devices.
-    #act_password: <str; default="admin">
+    act_password: cvp123!

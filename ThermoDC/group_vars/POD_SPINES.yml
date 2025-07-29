@@ -10,7 +10,7 @@ spine:
 
   node_groups:
     - group: POD1-SPINES
-      bgp_as: 65150
+      bgp_as: 65000.150     # 65000*65536 + 150 = 4259840150
       nodes:
         - name: pod1-spine-1
           id: 1
@@ -20,7 +20,7 @@ spine:
           mgmt_ip: 192.168.0.202/24
 
     - group: POD2-SPINES
-      bgp_as: 65151
+      bgp_as: 65000.151
       nodes:
         - name: pod2-spine-1
           id: 3
@@ -30,7 +30,7 @@ spine:
           mgmt_ip: 192.168.0.204/24
 
     - group: POD3-SPINES
-      bgp_as: 65152
+      bgp_as: 65000.152
       nodes:
         - name: pod3-spine-1
           id: 5
@@ -40,7 +40,7 @@ spine:
           mgmt_ip: 192.168.0.206/24
 
     - group: POD4-SPINES
-      bgp_as: 65153
+      bgp_as: 65000.153
       nodes:
         - name: pod4-spine-1
           id: 7

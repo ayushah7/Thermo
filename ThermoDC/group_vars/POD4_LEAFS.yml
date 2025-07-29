@@ -20,7 +20,7 @@ l3leaf:
 
   node_groups:
     - group: POD4_MLAG01
-      bgp_as: 65109
+      bgp_as: 65000.109
       nodes:
         - name: pod4-leaf-1
           id: 1
@@ -30,7 +30,7 @@ l3leaf:
           mgmt_ip: 192.168.0.80/24
 
     - group: POD4_MLAG02
-      bgp_as: 65110
+      bgp_as: 65000.110
       nodes:
         - name: pod4-leaf-3
           id: 3
@@ -40,7 +40,7 @@ l3leaf:
           mgmt_ip: 192.168.0.82/24
 
     - group: POD4_MLAG03
-      bgp_as: 65111
+      bgp_as: 65000.111
       nodes:
         - name: pod4-leaf-5
           id: 5
@@ -50,7 +50,7 @@ l3leaf:
           mgmt_ip: 192.168.0.84/24
 
     - group: POD4_MLAG04
-      bgp_as: 65112
+      bgp_as: 65000.112
       nodes:
         - name: pod4-leaf-7
           id: 7
@@ -60,7 +60,7 @@ l3leaf:
           mgmt_ip: 192.168.0.86/24
 
     - group: POD4_MLAG05
-      bgp_as: 65113
+      bgp_as: 65000.113
       nodes:
         - name: pod4-leaf-9
           id: 9
@@ -70,7 +70,7 @@ l3leaf:
           mgmt_ip: 192.168.0.88/24
 
     - group: POD4_MLAG06
-      bgp_as: 65114
+      bgp_as: 65000.114
       nodes:
         - name: pod4-leaf-11
           id: 11
@@ -80,7 +80,7 @@ l3leaf:
           mgmt_ip: 192.168.0.90/24
 
     - group: POD4_MLAG07
-      bgp_as: 65115
+      bgp_as: 65000.115
       nodes:
         - name: pod4-leaf-13
           id: 13
@@ -90,7 +90,7 @@ l3leaf:
           mgmt_ip: 192.168.0.92/24
 
     - group: POD4_MLAG08
-      bgp_as: 65116
+      bgp_as: 65000.116
       nodes:
         - name: pod4-leaf-15
           id: 15
@@ -100,7 +100,7 @@ l3leaf:
           mgmt_ip: 192.168.0.94/24
 
     - group: POD4_MLAG09
-      bgp_as: 65117
+      bgp_as: 65000.117
       nodes:
         - name: pod4-leaf-17
           id: 17
@@ -110,7 +110,7 @@ l3leaf:
           mgmt_ip: 192.168.0.96/24
 
     - group: POD4_MLAG10
-      bgp_as: 65118
+      bgp_as: 65000.118
       nodes:
         - name: pod4-leaf-19
           id: 19
@@ -120,7 +120,7 @@ l3leaf:
           mgmt_ip: 192.168.0.98/24
 
     - group: POD4_MLAG11
-      bgp_as: 65119
+      bgp_as: 65000.119
       nodes:
         - name: pod4-leaf-21
           id: 21
@@ -130,7 +130,7 @@ l3leaf:
           mgmt_ip: 192.168.0.100/24
 
     - group: POD4_MLAG12
-      bgp_as: 65120
+      bgp_as: 65000.120
       nodes:
         - name: pod4-leaf-23
           id: 23
@@ -140,7 +140,7 @@ l3leaf:
           mgmt_ip: 192.168.0.102/24
 
     - group: POD4_MLAG13
-      bgp_as: 65121
+      bgp_as: 65000.121
       nodes:
         - name: pod4-leaf-25
           id: 25
@@ -148,7 +148,5 @@ l3leaf:
         - name: pod4-leaf-26
           id: 26
           mgmt_ip: 192.168.0.104/24
-
-
 
 

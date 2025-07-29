@@ -87,12 +87,14 @@ ip name-server vrf default 8.8.8.8
 
 | Server | VRF | Preferred | Burst | iBurst | Version | Min Poll | Max Poll | Local-interface | Key |
 | ------ | --- | --------- | ----- | ------ | ------- | -------- | -------- | --------------- | --- |
+| 0.north-america.pool.ntp.org | default | False | - | - | - | - | - | - | - |
 | 1.north-america.pool.ntp.org | default | True | - | - | - | - | - | - | - |
 
 #### NTP Device Configuration
 
 ```eos
 !
+ntp server 0.north-america.pool.ntp.org
 ntp server 1.north-america.pool.ntp.org prefer
 ```
 
@@ -434,7 +436,7 @@ ASN Notation: asplain
 
 | BGP AS | Router ID |
 | ------ | --------- |
-| 65150 | 100.100.7.2 |
+| 65000.15 | 100.100.7.2 |
 
 | BGP Tuning |
 | ---------- |
@@ -457,28 +459,28 @@ ASN Notation: asplain
 | -------- | --------- | --- | -------- | -------------- | -------------- | ---------- | --- | --------------------- | ---------------------- | ------- | ------------ |
 | 10.255.250.4 | 65000 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 | 10.255.250.6 | 65000 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.3 | 65101 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.7 | 65101 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.11 | 65102 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.15 | 65102 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.19 | 65103 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.23 | 65103 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.27 | 65104 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.31 | 65104 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.35 | 65105 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.39 | 65105 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.43 | 65106 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.47 | 65106 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.51 | 65107 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.55 | 65107 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.59 | 65108 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
-| 10.255.255.63 | 65108 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.3 | 65000.101 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.7 | 65000.101 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.11 | 65000.102 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.15 | 65000.102 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.19 | 65000.103 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.23 | 65000.103 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.27 | 65000.104 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.31 | 65000.104 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.35 | 65000.105 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.39 | 65000.105 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.43 | 65000.106 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.47 | 65000.106 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.51 | 65000.107 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.55 | 65000.107 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.59 | 65000.108 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
+| 10.255.255.63 | 65000.108 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 
 #### Router BGP Device Configuration
 
 ```eos
 !
-router bgp 65150
+router bgp 65000.15
    router-id 100.100.7.2
    no bgp default ipv4-unicast
    maximum-paths 4 ecmp 4
@@ -493,52 +495,52 @@ router bgp 65150
    neighbor 10.255.250.6 remote-as 65000
    neighbor 10.255.250.6 description super-spine-2_Ethernet2
    neighbor 10.255.255.3 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.3 remote-as 65101
+   neighbor 10.255.255.3 remote-as 65000.101
    neighbor 10.255.255.3 description pod1-leaf-1_Ethernet2
    neighbor 10.255.255.7 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.7 remote-as 65101
+   neighbor 10.255.255.7 remote-as 65000.101
    neighbor 10.255.255.7 description pod1-leaf-2_Ethernet2
    neighbor 10.255.255.11 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.11 remote-as 65102
+   neighbor 10.255.255.11 remote-as 65000.102
    neighbor 10.255.255.11 description pod1-leaf-3_Ethernet2
    neighbor 10.255.255.15 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.15 remote-as 65102
+   neighbor 10.255.255.15 remote-as 65000.102
    neighbor 10.255.255.15 description pod1-leaf-4_Ethernet2
    neighbor 10.255.255.19 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.19 remote-as 65103
+   neighbor 10.255.255.19 remote-as 65000.103
    neighbor 10.255.255.19 description pod1-leaf-5_Ethernet2
    neighbor 10.255.255.23 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.23 remote-as 65103
+   neighbor 10.255.255.23 remote-as 65000.103
    neighbor 10.255.255.23 description pod1-leaf-6_Ethernet2
    neighbor 10.255.255.27 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.27 remote-as 65104
+   neighbor 10.255.255.27 remote-as 65000.104
    neighbor 10.255.255.27 description pod1-leaf-7_Ethernet2
    neighbor 10.255.255.31 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.31 remote-as 65104
+   neighbor 10.255.255.31 remote-as 65000.104
    neighbor 10.255.255.31 description pod1-leaf-8_Ethernet2
    neighbor 10.255.255.35 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.35 remote-as 65105
+   neighbor 10.255.255.35 remote-as 65000.105
    neighbor 10.255.255.35 description pod1-leaf-9_Ethernet2
    neighbor 10.255.255.39 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.39 remote-as 65105
+   neighbor 10.255.255.39 remote-as 65000.105
    neighbor 10.255.255.39 description pod1-leaf-10_Ethernet2
    neighbor 10.255.255.43 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.43 remote-as 65106
+   neighbor 10.255.255.43 remote-as 65000.106
    neighbor 10.255.255.43 description pod1-leaf-11_Ethernet2
    neighbor 10.255.255.47 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.47 remote-as 65106
+   neighbor 10.255.255.47 remote-as 65000.106
    neighbor 10.255.255.47 description pod1-leaf-12_Ethernet2
    neighbor 10.255.255.51 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.51 remote-as 65107
+   neighbor 10.255.255.51 remote-as 65000.107
    neighbor 10.255.255.51 description pod1-leaf-13_Ethernet2
    neighbor 10.255.255.55 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.55 remote-as 65107
+   neighbor 10.255.255.55 remote-as 65000.107
    neighbor 10.255.255.55 description pod1-leaf-14_Ethernet2
    neighbor 10.255.255.59 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.59 remote-as 65108
+   neighbor 10.255.255.59 remote-as 65000.108
    neighbor 10.255.255.59 description pod1-leaf-15_Ethernet2
    neighbor 10.255.255.63 peer group IPv4-UNDERLAY-PEERS
-   neighbor 10.255.255.63 remote-as 65108
+   neighbor 10.255.255.63 remote-as 65000.108
    neighbor 10.255.255.63 description pod1-leaf-16_Ethernet2
    redistribute connected route-map RM-CONN-2-BGP
    !
