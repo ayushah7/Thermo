@@ -79,34 +79,20 @@ bgp_peer_groups:
 p2p_uplinks_mtu: 1500 
 
 # Cloudvision Settings
-cvp_instance_ips: ['192.168.0.5']
-#cvp_instance_ips: ['apiserver.arista.io']
-terminattr_disable_aaa: true
 
-custom_structured_configuration_daemon_terminattr:
-#   cvaddrs:
-#   - apiserver.arista.io:443
-#   cvauth:
-#     method: token-secure
-#     token_file: /tmp/cv-onboarding-token
-    cvvrf: MGMT
-#   disable_aaa: true
-#   ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
-#   smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
-
-# cv_settings:
-#   onprem_clusters:
-#     - name: cvp-onprem
-#       servers:
-#         - name: 192.168.0.5
-#           port: 9910
-#       vrf: MGMT
-#       token_file: /tmp/token
-#   terminattr:
-#     disable_aaa: true
-#     ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
-#     smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
-#   set_source_interfaces: true
+cv_settings:
+  onprem_clusters:
+    - name: cvp-onprem
+      servers:
+        - name: 192.168.0.5
+          port: 9910
+      vrf: MGMT
+      token_file: /tmp/token
+  terminattr:
+    disable_aaa: true
+    ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
+    smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
+  set_source_interfaces: true
 
 # DNS servers.
 custom_structured_configuration_ip_name_servers:
