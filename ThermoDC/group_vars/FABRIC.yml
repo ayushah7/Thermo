@@ -104,12 +104,6 @@ custom_structured_configuration_ip_name_servers:
 # Configure IP routing for the OOB Management VRF.
 mgmt_vrf_routing: true
 
-# NTP Servers IP or DNS name, first NTP server will be prefered
-# ntp_settings: 
-#   server_vrf: use_mgmt_interface_vrf
-#   servers:
-#     - name: 192.168.200.5
-
 # NTP Servers
 custom_structured_configuration_ntp:
   servers:
@@ -137,8 +131,6 @@ default_interfaces:
   # - types: [ l2leaf ]
   #   platforms: [ default ]
   #   uplink_interfaces: [ Ethernet1-2 ]
-
-  #mgmt_gateway: 192.168.0.1
 
 generate_cv_tags:
   topology_hints: true
