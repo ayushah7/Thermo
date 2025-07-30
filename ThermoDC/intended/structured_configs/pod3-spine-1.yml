@@ -123,11 +123,10 @@ metadata:
       value: ThermoF
 ntp:
   servers:
-  - name: 0.north-america.pool.ntp.org
-    preferred: false
-    vrf: default
   - name: 1.north-america.pool.ntp.org
     preferred: true
+    vrf: default
+  - name: 0.north-america.pool.ntp.org
     vrf: default
 prefix_lists:
 - name: PL-LOOPBACKS-EVPN-OVERLAY

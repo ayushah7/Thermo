@@ -1,5 +1,6 @@
 ---
 type: l3leaf
+pod_name: POD1_LEAFS
 
 l3leaf: # dynamic_key: node_type
   defaults:
@@ -23,74 +24,58 @@ l3leaf: # dynamic_key: node_type
       bgp_as: 65000.101
       nodes:
         - name: pod1-leaf-1
-          id: 1
           mgmt_ip: 192.168.0.11/24
         - name: pod1-leaf-2
-          id: 2
           mgmt_ip: 192.168.0.12/24
 
     - group: POD1_MLAG02
       bgp_as: 65000.102
       nodes:
         - name: pod1-leaf-3
-          id: 3
           mgmt_ip: 192.168.0.13/24
         - name: pod1-leaf-4
-          id: 4
           mgmt_ip: 192.168.0.14/24
     - group: POD1_MLAG03
       bgp_as: 65000.103
       nodes:
         - name: pod1-leaf-5
-          id: 5
           mgmt_ip: 192.168.0.15/24
         - name: pod1-leaf-6
-          id: 6
           mgmt_ip: 192.168.0.16/24
     - group: POD1_MLAG04
       bgp_as: 65000.104
       nodes:
         - name: pod1-leaf-7
-          id: 7
           mgmt_ip: 192.168.0.17/24
         - name: pod1-leaf-8
-          id: 8
           mgmt_ip: 192.168.0.18/24
     - group: POD1_MLAG05
       bgp_as: 65000.105
       nodes:
         - name: pod1-leaf-9
-          id: 9
           mgmt_ip: 192.168.0.19/24
         - name: pod1-leaf-10
-          id: 10
           mgmt_ip: 192.168.0.20/24
     - group: POD1_MLAG06
       bgp_as: 65000.106
       nodes:
         - name: pod1-leaf-11
-          id: 11
           mgmt_ip: 192.168.0.21/24
         - name: pod1-leaf-12
-          id: 12
           mgmt_ip: 192.168.0.22/24
     - group: POD1_MLAG07
       bgp_as: 65000.107
       nodes:
         - name: pod1-leaf-13
-          id: 13
           mgmt_ip: 192.168.0.23/24
         - name: pod1-leaf-14
-          id: 14
           mgmt_ip: 192.168.0.24/24
     - group: POD1_MLAG08
       bgp_as: 65000.108
       nodes:
         - name: pod1-leaf-15
-          id: 15
           mgmt_ip: 192.168.0.25/24
         - name: pod1-leaf-16
-          id: 16
           mgmt_ip: 192.168.0.26/24
 
 generate_cv_tags:

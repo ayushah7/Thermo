@@ -17,74 +17,74 @@
 
 | POD | Type | Node | Management IP | Platform | Provisioned in CloudVision | Serial Number |
 | --- | ---- | ---- | ------------- | -------- | -------------------------- | ------------- |
-| FABRIC | l3leaf | pod1-leaf-1 | 192.168.0.11/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-2 | 192.168.0.12/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-3 | 192.168.0.13/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-4 | 192.168.0.14/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-5 | 192.168.0.15/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-6 | 192.168.0.16/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-7 | 192.168.0.17/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-8 | 192.168.0.18/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-9 | 192.168.0.19/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-10 | 192.168.0.20/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-11 | 192.168.0.21/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-12 | 192.168.0.22/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-13 | 192.168.0.23/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-14 | 192.168.0.24/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-15 | 192.168.0.25/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod1-leaf-16 | 192.168.0.26/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-1 | 192.168.0.11/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-2 | 192.168.0.12/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-3 | 192.168.0.13/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-4 | 192.168.0.14/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-5 | 192.168.0.15/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-6 | 192.168.0.16/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-7 | 192.168.0.17/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-8 | 192.168.0.18/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-9 | 192.168.0.19/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-10 | 192.168.0.20/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-11 | 192.168.0.21/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-12 | 192.168.0.22/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-13 | 192.168.0.23/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-14 | 192.168.0.24/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-15 | 192.168.0.25/24 | vEOS-lab | Provisioned | - |
+| POD1_LEAFS | l3leaf | pod1-leaf-16 | 192.168.0.26/24 | vEOS-lab | Provisioned | - |
 | FABRIC | spine | pod1-spine-1 | 192.168.0.201/24 | vEOS-lab | Provisioned | - |
 | FABRIC | spine | pod1-spine-2 | 192.168.0.202/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-1 | 192.168.0.43/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-2 | 192.168.0.44/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-3 | 192.168.0.45/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-4 | 192.168.0.46/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-5 | 192.168.0.47/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-6 | 192.168.0.48/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-7 | 192.168.0.49/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-8 | 192.168.0.50/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-9 | 192.168.0.51/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-10 | 192.168.0.52/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-11 | 192.168.0.53/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-12 | 192.168.0.54/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-13 | 192.168.0.55/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-14 | 192.168.0.56/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-15 | 192.168.0.57/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod2-leaf-16 | 192.168.0.58/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-1 | 192.168.0.43/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-2 | 192.168.0.44/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-3 | 192.168.0.45/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-4 | 192.168.0.46/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-5 | 192.168.0.47/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-6 | 192.168.0.48/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-7 | 192.168.0.49/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-8 | 192.168.0.50/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-9 | 192.168.0.51/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-10 | 192.168.0.52/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-11 | 192.168.0.53/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-12 | 192.168.0.54/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-13 | 192.168.0.55/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-14 | 192.168.0.56/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-15 | 192.168.0.57/24 | vEOS-lab | Provisioned | - |
+| POD2_LEAFS | l3leaf | pod2-leaf-16 | 192.168.0.58/24 | vEOS-lab | Provisioned | - |
 | FABRIC | spine | pod2-spine-1 | 192.168.0.203/24 | vEOS-lab | Provisioned | - |
 | FABRIC | spine | pod2-spine-2 | 192.168.0.204/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod3-leaf-1 | 192.168.0.75/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod3-leaf-2 | 192.168.0.76/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod3-leaf-3 | 192.168.0.77/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod3-leaf-4 | 192.168.0.78/24 | vEOS-lab | Provisioned | - |
+| POD3_LEAFS | l3leaf | pod3-leaf-1 | 192.168.0.75/24 | vEOS-lab | Provisioned | - |
+| POD3_LEAFS | l3leaf | pod3-leaf-2 | 192.168.0.76/24 | vEOS-lab | Provisioned | - |
+| POD3_LEAFS | l3leaf | pod3-leaf-3 | 192.168.0.77/24 | vEOS-lab | Provisioned | - |
+| POD3_LEAFS | l3leaf | pod3-leaf-4 | 192.168.0.78/24 | vEOS-lab | Provisioned | - |
 | FABRIC | spine | pod3-spine-1 | 192.168.0.205/24 | vEOS-lab | Provisioned | - |
 | FABRIC | spine | pod3-spine-2 | 192.168.0.206/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-1 | 192.168.0.79/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-2 | 192.168.0.80/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-3 | 192.168.0.81/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-4 | 192.168.0.82/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-5 | 192.168.0.83/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-6 | 192.168.0.84/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-7 | 192.168.0.85/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-8 | 192.168.0.86/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-9 | 192.168.0.87/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-10 | 192.168.0.88/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-11 | 192.168.0.89/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-12 | 192.168.0.90/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-13 | 192.168.0.91/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-14 | 192.168.0.92/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-15 | 192.168.0.93/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-16 | 192.168.0.94/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-17 | 192.168.0.95/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-18 | 192.168.0.96/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-19 | 192.168.0.97/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-20 | 192.168.0.98/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-21 | 192.168.0.99/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-22 | 192.168.0.100/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-23 | 192.168.0.101/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-24 | 192.168.0.102/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-25 | 192.168.0.103/24 | vEOS-lab | Provisioned | - |
-| FABRIC | l3leaf | pod4-leaf-26 | 192.168.0.104/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-1 | 192.168.0.79/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-2 | 192.168.0.80/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-3 | 192.168.0.81/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-4 | 192.168.0.82/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-5 | 192.168.0.83/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-6 | 192.168.0.84/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-7 | 192.168.0.85/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-8 | 192.168.0.86/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-9 | 192.168.0.87/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-10 | 192.168.0.88/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-11 | 192.168.0.89/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-12 | 192.168.0.90/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-13 | 192.168.0.91/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-14 | 192.168.0.92/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-15 | 192.168.0.93/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-16 | 192.168.0.94/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-17 | 192.168.0.95/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-18 | 192.168.0.96/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-19 | 192.168.0.97/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-20 | 192.168.0.98/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-21 | 192.168.0.99/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-22 | 192.168.0.100/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-23 | 192.168.0.101/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-24 | 192.168.0.102/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-25 | 192.168.0.103/24 | vEOS-lab | Provisioned | - |
+| POD4_LEAFS | l3leaf | pod4-leaf-26 | 192.168.0.104/24 | vEOS-lab | Provisioned | - |
 | FABRIC | spine | pod4-spine-1 | 192.168.0.207/24 | vEOS-lab | Provisioned | - |
 | FABRIC | spine | pod4-spine-2 | 192.168.0.208/24 | vEOS-lab | Provisioned | - |
 | FABRIC | l3leaf | services-leaf-1 | 192.168.0.61/24 | vEOS-lab | Provisioned | - |
@@ -490,74 +490,74 @@
 
 | POD | Node | Loopback0 |
 | --- | ---- | --------- |
-| FABRIC | pod1-leaf-1 | 100.100.1.1/32 |
-| FABRIC | pod1-leaf-2 | 100.100.1.2/32 |
-| FABRIC | pod1-leaf-3 | 100.100.1.3/32 |
-| FABRIC | pod1-leaf-4 | 100.100.1.4/32 |
-| FABRIC | pod1-leaf-5 | 100.100.1.5/32 |
-| FABRIC | pod1-leaf-6 | 100.100.1.6/32 |
-| FABRIC | pod1-leaf-7 | 100.100.1.7/32 |
-| FABRIC | pod1-leaf-8 | 100.100.1.8/32 |
-| FABRIC | pod1-leaf-9 | 100.100.1.9/32 |
-| FABRIC | pod1-leaf-10 | 100.100.1.10/32 |
-| FABRIC | pod1-leaf-11 | 100.100.1.11/32 |
-| FABRIC | pod1-leaf-12 | 100.100.1.12/32 |
-| FABRIC | pod1-leaf-13 | 100.100.1.13/32 |
-| FABRIC | pod1-leaf-14 | 100.100.1.14/32 |
-| FABRIC | pod1-leaf-15 | 100.100.1.15/32 |
-| FABRIC | pod1-leaf-16 | 100.100.1.16/32 |
+| POD1_LEAFS | pod1-leaf-1 | 100.100.1.1/32 |
+| POD1_LEAFS | pod1-leaf-2 | 100.100.1.2/32 |
+| POD1_LEAFS | pod1-leaf-3 | 100.100.1.3/32 |
+| POD1_LEAFS | pod1-leaf-4 | 100.100.1.4/32 |
+| POD1_LEAFS | pod1-leaf-5 | 100.100.1.5/32 |
+| POD1_LEAFS | pod1-leaf-6 | 100.100.1.6/32 |
+| POD1_LEAFS | pod1-leaf-7 | 100.100.1.7/32 |
+| POD1_LEAFS | pod1-leaf-8 | 100.100.1.8/32 |
+| POD1_LEAFS | pod1-leaf-9 | 100.100.1.9/32 |
+| POD1_LEAFS | pod1-leaf-10 | 100.100.1.10/32 |
+| POD1_LEAFS | pod1-leaf-11 | 100.100.1.11/32 |
+| POD1_LEAFS | pod1-leaf-12 | 100.100.1.12/32 |
+| POD1_LEAFS | pod1-leaf-13 | 100.100.1.13/32 |
+| POD1_LEAFS | pod1-leaf-14 | 100.100.1.14/32 |
+| POD1_LEAFS | pod1-leaf-15 | 100.100.1.15/32 |
+| POD1_LEAFS | pod1-leaf-16 | 100.100.1.16/32 |
 | FABRIC | pod1-spine-1 | 100.100.7.1/32 |
 | FABRIC | pod1-spine-2 | 100.100.7.2/32 |
-| FABRIC | pod2-leaf-1 | 100.100.2.1/32 |
-| FABRIC | pod2-leaf-2 | 100.100.2.2/32 |
-| FABRIC | pod2-leaf-3 | 100.100.2.3/32 |
-| FABRIC | pod2-leaf-4 | 100.100.2.4/32 |
-| FABRIC | pod2-leaf-5 | 100.100.2.5/32 |
-| FABRIC | pod2-leaf-6 | 100.100.2.6/32 |
-| FABRIC | pod2-leaf-7 | 100.100.2.7/32 |
-| FABRIC | pod2-leaf-8 | 100.100.2.8/32 |
-| FABRIC | pod2-leaf-9 | 100.100.2.9/32 |
-| FABRIC | pod2-leaf-10 | 100.100.2.10/32 |
-| FABRIC | pod2-leaf-11 | 100.100.2.11/32 |
-| FABRIC | pod2-leaf-12 | 100.100.2.12/32 |
-| FABRIC | pod2-leaf-13 | 100.100.2.13/32 |
-| FABRIC | pod2-leaf-14 | 100.100.2.14/32 |
-| FABRIC | pod2-leaf-15 | 100.100.2.15/32 |
-| FABRIC | pod2-leaf-16 | 100.100.2.16/32 |
+| POD2_LEAFS | pod2-leaf-1 | 100.100.2.1/32 |
+| POD2_LEAFS | pod2-leaf-2 | 100.100.2.2/32 |
+| POD2_LEAFS | pod2-leaf-3 | 100.100.2.3/32 |
+| POD2_LEAFS | pod2-leaf-4 | 100.100.2.4/32 |
+| POD2_LEAFS | pod2-leaf-5 | 100.100.2.5/32 |
+| POD2_LEAFS | pod2-leaf-6 | 100.100.2.6/32 |
+| POD2_LEAFS | pod2-leaf-7 | 100.100.2.7/32 |
+| POD2_LEAFS | pod2-leaf-8 | 100.100.2.8/32 |
+| POD2_LEAFS | pod2-leaf-9 | 100.100.2.9/32 |
+| POD2_LEAFS | pod2-leaf-10 | 100.100.2.10/32 |
+| POD2_LEAFS | pod2-leaf-11 | 100.100.2.11/32 |
+| POD2_LEAFS | pod2-leaf-12 | 100.100.2.12/32 |
+| POD2_LEAFS | pod2-leaf-13 | 100.100.2.13/32 |
+| POD2_LEAFS | pod2-leaf-14 | 100.100.2.14/32 |
+| POD2_LEAFS | pod2-leaf-15 | 100.100.2.15/32 |
+| POD2_LEAFS | pod2-leaf-16 | 100.100.2.16/32 |
 | FABRIC | pod2-spine-1 | 100.100.7.3/32 |
 | FABRIC | pod2-spine-2 | 100.100.7.4/32 |
-| FABRIC | pod3-leaf-1 | 100.100.3.1/32 |
-| FABRIC | pod3-leaf-2 | 100.100.3.2/32 |
-| FABRIC | pod3-leaf-3 | 100.100.3.3/32 |
-| FABRIC | pod3-leaf-4 | 100.100.3.4/32 |
+| POD3_LEAFS | pod3-leaf-1 | 100.100.3.1/32 |
+| POD3_LEAFS | pod3-leaf-2 | 100.100.3.2/32 |
+| POD3_LEAFS | pod3-leaf-3 | 100.100.3.3/32 |
+| POD3_LEAFS | pod3-leaf-4 | 100.100.3.4/32 |
 | FABRIC | pod3-spine-1 | 100.100.7.5/32 |
 | FABRIC | pod3-spine-2 | 100.100.7.6/32 |
-| FABRIC | pod4-leaf-1 | 100.100.4.1/32 |
-| FABRIC | pod4-leaf-2 | 100.100.4.2/32 |
-| FABRIC | pod4-leaf-3 | 100.100.4.3/32 |
-| FABRIC | pod4-leaf-4 | 100.100.4.4/32 |
-| FABRIC | pod4-leaf-5 | 100.100.4.5/32 |
-| FABRIC | pod4-leaf-6 | 100.100.4.6/32 |
-| FABRIC | pod4-leaf-7 | 100.100.4.7/32 |
-| FABRIC | pod4-leaf-8 | 100.100.4.8/32 |
-| FABRIC | pod4-leaf-9 | 100.100.4.9/32 |
-| FABRIC | pod4-leaf-10 | 100.100.4.10/32 |
-| FABRIC | pod4-leaf-11 | 100.100.4.11/32 |
-| FABRIC | pod4-leaf-12 | 100.100.4.12/32 |
-| FABRIC | pod4-leaf-13 | 100.100.4.13/32 |
-| FABRIC | pod4-leaf-14 | 100.100.4.14/32 |
-| FABRIC | pod4-leaf-15 | 100.100.4.15/32 |
-| FABRIC | pod4-leaf-16 | 100.100.4.16/32 |
-| FABRIC | pod4-leaf-17 | 100.100.4.17/32 |
-| FABRIC | pod4-leaf-18 | 100.100.4.18/32 |
-| FABRIC | pod4-leaf-19 | 100.100.4.19/32 |
-| FABRIC | pod4-leaf-20 | 100.100.4.20/32 |
-| FABRIC | pod4-leaf-21 | 100.100.4.21/32 |
-| FABRIC | pod4-leaf-22 | 100.100.4.22/32 |
-| FABRIC | pod4-leaf-23 | 100.100.4.23/32 |
-| FABRIC | pod4-leaf-24 | 100.100.4.24/32 |
-| FABRIC | pod4-leaf-25 | 100.100.4.25/32 |
-| FABRIC | pod4-leaf-26 | 100.100.4.26/32 |
+| POD4_LEAFS | pod4-leaf-1 | 100.100.4.1/32 |
+| POD4_LEAFS | pod4-leaf-2 | 100.100.4.2/32 |
+| POD4_LEAFS | pod4-leaf-3 | 100.100.4.3/32 |
+| POD4_LEAFS | pod4-leaf-4 | 100.100.4.4/32 |
+| POD4_LEAFS | pod4-leaf-5 | 100.100.4.5/32 |
+| POD4_LEAFS | pod4-leaf-6 | 100.100.4.6/32 |
+| POD4_LEAFS | pod4-leaf-7 | 100.100.4.7/32 |
+| POD4_LEAFS | pod4-leaf-8 | 100.100.4.8/32 |
+| POD4_LEAFS | pod4-leaf-9 | 100.100.4.9/32 |
+| POD4_LEAFS | pod4-leaf-10 | 100.100.4.10/32 |
+| POD4_LEAFS | pod4-leaf-11 | 100.100.4.11/32 |
+| POD4_LEAFS | pod4-leaf-12 | 100.100.4.12/32 |
+| POD4_LEAFS | pod4-leaf-13 | 100.100.4.13/32 |
+| POD4_LEAFS | pod4-leaf-14 | 100.100.4.14/32 |
+| POD4_LEAFS | pod4-leaf-15 | 100.100.4.15/32 |
+| POD4_LEAFS | pod4-leaf-16 | 100.100.4.16/32 |
+| POD4_LEAFS | pod4-leaf-17 | 100.100.4.17/32 |
+| POD4_LEAFS | pod4-leaf-18 | 100.100.4.18/32 |
+| POD4_LEAFS | pod4-leaf-19 | 100.100.4.19/32 |
+| POD4_LEAFS | pod4-leaf-20 | 100.100.4.20/32 |
+| POD4_LEAFS | pod4-leaf-21 | 100.100.4.21/32 |
+| POD4_LEAFS | pod4-leaf-22 | 100.100.4.22/32 |
+| POD4_LEAFS | pod4-leaf-23 | 100.100.4.23/32 |
+| POD4_LEAFS | pod4-leaf-24 | 100.100.4.24/32 |
+| POD4_LEAFS | pod4-leaf-25 | 100.100.4.25/32 |
+| POD4_LEAFS | pod4-leaf-26 | 100.100.4.26/32 |
 | FABRIC | pod4-spine-1 | 100.100.7.7/32 |
 | FABRIC | pod4-spine-2 | 100.100.7.8/32 |
 | FABRIC | services-leaf-1 | 100.100.5.17/32 |
@@ -579,67 +579,67 @@
 
 | POD | Node | Loopback1 |
 | --- | ---- | --------- |
-| FABRIC | pod1-leaf-1 | 10.100.1.1/32 |
-| FABRIC | pod1-leaf-2 | 10.100.1.1/32 |
-| FABRIC | pod1-leaf-3 | 10.100.1.3/32 |
-| FABRIC | pod1-leaf-4 | 10.100.1.3/32 |
-| FABRIC | pod1-leaf-5 | 10.100.1.5/32 |
-| FABRIC | pod1-leaf-6 | 10.100.1.5/32 |
-| FABRIC | pod1-leaf-7 | 10.100.1.7/32 |
-| FABRIC | pod1-leaf-8 | 10.100.1.7/32 |
-| FABRIC | pod1-leaf-9 | 10.100.1.9/32 |
-| FABRIC | pod1-leaf-10 | 10.100.1.9/32 |
-| FABRIC | pod1-leaf-11 | 10.100.1.11/32 |
-| FABRIC | pod1-leaf-12 | 10.100.1.11/32 |
-| FABRIC | pod1-leaf-13 | 10.100.1.13/32 |
-| FABRIC | pod1-leaf-14 | 10.100.1.13/32 |
-| FABRIC | pod1-leaf-15 | 10.100.1.15/32 |
-| FABRIC | pod1-leaf-16 | 10.100.1.15/32 |
-| FABRIC | pod2-leaf-1 | 10.100.2.1/32 |
-| FABRIC | pod2-leaf-2 | 10.100.2.1/32 |
-| FABRIC | pod2-leaf-3 | 10.100.2.3/32 |
-| FABRIC | pod2-leaf-4 | 10.100.2.3/32 |
-| FABRIC | pod2-leaf-5 | 10.100.2.5/32 |
-| FABRIC | pod2-leaf-6 | 10.100.2.5/32 |
-| FABRIC | pod2-leaf-7 | 10.100.2.7/32 |
-| FABRIC | pod2-leaf-8 | 10.100.2.7/32 |
-| FABRIC | pod2-leaf-9 | 10.100.2.9/32 |
-| FABRIC | pod2-leaf-10 | 10.100.2.9/32 |
-| FABRIC | pod2-leaf-11 | 10.100.2.11/32 |
-| FABRIC | pod2-leaf-12 | 10.100.2.11/32 |
-| FABRIC | pod2-leaf-13 | 10.100.2.13/32 |
-| FABRIC | pod2-leaf-14 | 10.100.2.13/32 |
-| FABRIC | pod2-leaf-15 | 10.100.2.15/32 |
-| FABRIC | pod2-leaf-16 | 10.100.2.15/32 |
-| FABRIC | pod3-leaf-1 | 10.100.3.1/32 |
-| FABRIC | pod3-leaf-2 | 10.100.3.1/32 |
-| FABRIC | pod3-leaf-3 | 10.100.3.3/32 |
-| FABRIC | pod3-leaf-4 | 10.100.3.3/32 |
-| FABRIC | pod4-leaf-1 | 10.100.4.1/32 |
-| FABRIC | pod4-leaf-2 | 10.100.4.1/32 |
-| FABRIC | pod4-leaf-3 | 10.100.4.3/32 |
-| FABRIC | pod4-leaf-4 | 10.100.4.3/32 |
-| FABRIC | pod4-leaf-5 | 10.100.4.5/32 |
-| FABRIC | pod4-leaf-6 | 10.100.4.5/32 |
-| FABRIC | pod4-leaf-7 | 10.100.4.7/32 |
-| FABRIC | pod4-leaf-8 | 10.100.4.7/32 |
-| FABRIC | pod4-leaf-9 | 10.100.4.9/32 |
-| FABRIC | pod4-leaf-10 | 10.100.4.9/32 |
-| FABRIC | pod4-leaf-11 | 10.100.4.11/32 |
-| FABRIC | pod4-leaf-12 | 10.100.4.11/32 |
-| FABRIC | pod4-leaf-13 | 10.100.4.13/32 |
-| FABRIC | pod4-leaf-14 | 10.100.4.13/32 |
-| FABRIC | pod4-leaf-15 | 10.100.4.15/32 |
-| FABRIC | pod4-leaf-16 | 10.100.4.15/32 |
-| FABRIC | pod4-leaf-17 | 10.100.4.17/32 |
-| FABRIC | pod4-leaf-18 | 10.100.4.17/32 |
-| FABRIC | pod4-leaf-19 | 10.100.4.19/32 |
-| FABRIC | pod4-leaf-20 | 10.100.4.19/32 |
-| FABRIC | pod4-leaf-21 | 10.100.4.21/32 |
-| FABRIC | pod4-leaf-22 | 10.100.4.21/32 |
-| FABRIC | pod4-leaf-23 | 10.100.4.23/32 |
-| FABRIC | pod4-leaf-24 | 10.100.4.23/32 |
-| FABRIC | pod4-leaf-25 | 10.100.4.25/32 |
-| FABRIC | pod4-leaf-26 | 10.100.4.25/32 |
+| POD1_LEAFS | pod1-leaf-1 | 10.100.1.1/32 |
+| POD1_LEAFS | pod1-leaf-2 | 10.100.1.1/32 |
+| POD1_LEAFS | pod1-leaf-3 | 10.100.1.3/32 |
+| POD1_LEAFS | pod1-leaf-4 | 10.100.1.3/32 |
+| POD1_LEAFS | pod1-leaf-5 | 10.100.1.5/32 |
+| POD1_LEAFS | pod1-leaf-6 | 10.100.1.5/32 |
+| POD1_LEAFS | pod1-leaf-7 | 10.100.1.7/32 |
+| POD1_LEAFS | pod1-leaf-8 | 10.100.1.7/32 |
+| POD1_LEAFS | pod1-leaf-9 | 10.100.1.9/32 |
+| POD1_LEAFS | pod1-leaf-10 | 10.100.1.9/32 |
+| POD1_LEAFS | pod1-leaf-11 | 10.100.1.11/32 |
+| POD1_LEAFS | pod1-leaf-12 | 10.100.1.11/32 |
+| POD1_LEAFS | pod1-leaf-13 | 10.100.1.13/32 |
+| POD1_LEAFS | pod1-leaf-14 | 10.100.1.13/32 |
+| POD1_LEAFS | pod1-leaf-15 | 10.100.1.15/32 |
+| POD1_LEAFS | pod1-leaf-16 | 10.100.1.15/32 |
+| POD2_LEAFS | pod2-leaf-1 | 10.100.2.1/32 |
+| POD2_LEAFS | pod2-leaf-2 | 10.100.2.1/32 |
+| POD2_LEAFS | pod2-leaf-3 | 10.100.2.3/32 |
+| POD2_LEAFS | pod2-leaf-4 | 10.100.2.3/32 |
+| POD2_LEAFS | pod2-leaf-5 | 10.100.2.5/32 |
+| POD2_LEAFS | pod2-leaf-6 | 10.100.2.5/32 |
+| POD2_LEAFS | pod2-leaf-7 | 10.100.2.7/32 |
+| POD2_LEAFS | pod2-leaf-8 | 10.100.2.7/32 |
+| POD2_LEAFS | pod2-leaf-9 | 10.100.2.9/32 |
+| POD2_LEAFS | pod2-leaf-10 | 10.100.2.9/32 |
+| POD2_LEAFS | pod2-leaf-11 | 10.100.2.11/32 |
+| POD2_LEAFS | pod2-leaf-12 | 10.100.2.11/32 |
+| POD2_LEAFS | pod2-leaf-13 | 10.100.2.13/32 |
+| POD2_LEAFS | pod2-leaf-14 | 10.100.2.13/32 |
+| POD2_LEAFS | pod2-leaf-15 | 10.100.2.15/32 |
+| POD2_LEAFS | pod2-leaf-16 | 10.100.2.15/32 |
+| POD3_LEAFS | pod3-leaf-1 | 10.100.3.1/32 |
+| POD3_LEAFS | pod3-leaf-2 | 10.100.3.1/32 |
+| POD3_LEAFS | pod3-leaf-3 | 10.100.3.3/32 |
+| POD3_LEAFS | pod3-leaf-4 | 10.100.3.3/32 |
+| POD4_LEAFS | pod4-leaf-1 | 10.100.4.1/32 |
+| POD4_LEAFS | pod4-leaf-2 | 10.100.4.1/32 |
+| POD4_LEAFS | pod4-leaf-3 | 10.100.4.3/32 |
+| POD4_LEAFS | pod4-leaf-4 | 10.100.4.3/32 |
+| POD4_LEAFS | pod4-leaf-5 | 10.100.4.5/32 |
+| POD4_LEAFS | pod4-leaf-6 | 10.100.4.5/32 |
+| POD4_LEAFS | pod4-leaf-7 | 10.100.4.7/32 |
+| POD4_LEAFS | pod4-leaf-8 | 10.100.4.7/32 |
+| POD4_LEAFS | pod4-leaf-9 | 10.100.4.9/32 |
+| POD4_LEAFS | pod4-leaf-10 | 10.100.4.9/32 |
+| POD4_LEAFS | pod4-leaf-11 | 10.100.4.11/32 |
+| POD4_LEAFS | pod4-leaf-12 | 10.100.4.11/32 |
+| POD4_LEAFS | pod4-leaf-13 | 10.100.4.13/32 |
+| POD4_LEAFS | pod4-leaf-14 | 10.100.4.13/32 |
+| POD4_LEAFS | pod4-leaf-15 | 10.100.4.15/32 |
+| POD4_LEAFS | pod4-leaf-16 | 10.100.4.15/32 |
+| POD4_LEAFS | pod4-leaf-17 | 10.100.4.17/32 |
+| POD4_LEAFS | pod4-leaf-18 | 10.100.4.17/32 |
+| POD4_LEAFS | pod4-leaf-19 | 10.100.4.19/32 |
+| POD4_LEAFS | pod4-leaf-20 | 10.100.4.19/32 |
+| POD4_LEAFS | pod4-leaf-21 | 10.100.4.21/32 |
+| POD4_LEAFS | pod4-leaf-22 | 10.100.4.21/32 |
+| POD4_LEAFS | pod4-leaf-23 | 10.100.4.23/32 |
+| POD4_LEAFS | pod4-leaf-24 | 10.100.4.23/32 |
+| POD4_LEAFS | pod4-leaf-25 | 10.100.4.25/32 |
+| POD4_LEAFS | pod4-leaf-26 | 10.100.4.25/32 |
 | FABRIC | services-leaf-1 | 10.100.5.17/32 |
 | FABRIC | services-leaf-2 | 10.100.5.17/32 |

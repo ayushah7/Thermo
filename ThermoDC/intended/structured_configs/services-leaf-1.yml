@@ -120,11 +120,10 @@ mlag_configuration:
   reload_delay_non_mlag: '330'
 ntp:
   servers:
-  - name: 0.north-america.pool.ntp.org
-    preferred: false
-    vrf: default
   - name: 1.north-america.pool.ntp.org
     preferred: true
+    vrf: default
+  - name: 0.north-america.pool.ntp.org
     vrf: default
 port_channel_interfaces:
 - name: Port-Channel49

@@ -22,10 +22,8 @@ l3leaf: # dynamic_key: node_type
       bgp_as: 65200
       nodes:
         - name: services-leaf-1
-          id: 17
           mgmt_ip: 192.168.0.61/24
           #uplink_switch_interfaces: [ 'ethernet17','ethernet18' ]
         - name: services-leaf-2
-          id: 18
           mgmt_ip: 192.168.0.62/24
           #uplink_switch_interfaces: [ 'ethernet17','ethernet18' ]

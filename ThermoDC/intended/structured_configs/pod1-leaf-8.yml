@@ -100,11 +100,14 @@ management_interfaces:
   type: oob
 metadata:
   platform: vEOS-lab
+  pod_name: POD1_LEAFS
   fabric_name: FABRIC
   cv_tags:
     device_tags:
     - name: topology_hint_fabric
       value: FABRIC
+    - name: topology_hint_pod
+      value: POD1_LEAFS
     - name: topology_hint_type
       value: leaf
     - name: topology_hint_rack
@@ -120,11 +123,10 @@ mlag_configuration:
   reload_delay_non_mlag: '330'
 ntp:
   servers:
-  - name: 0.north-america.pool.ntp.org
-    preferred: false
-    vrf: default
   - name: 1.north-america.pool.ntp.org
     preferred: true
+    vrf: default
+  - name: 0.north-america.pool.ntp.org
     vrf: default
 port_channel_interfaces:
 - name: Port-Channel49

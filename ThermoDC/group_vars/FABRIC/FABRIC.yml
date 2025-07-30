@@ -1,0 +1,148 @@
+---
+# Ansible connectivity definitions
+# eAPI connectivity via HTTPS is specified (as opposed to CLI via SSH)
+ansible_connection: ansible.netcommon.httpapi
+# Specifies that we are indeed using Arista EOS
+ansible_network_os: arista.eos.eos
+# This user/password must exist on the switches to enable Ansible access
+ansible_user: ansible
+ansible_password: ansible
+# User escalation (to enter enable mode)
+ansible_become: true
+ansible_become_method: enable
+# Use SSL (HTTPS)
+ansible_httpapi_use_ssl: true
+# Do not try to validate certs
+ansible_httpapi_validate_certs: false
+
+# api on default vrf 
+custom_structured_configuration_management_api_http:
+  enable_vrfs:
+    - name: default
+    - name: MGMT
+
+# Common AVD group variables
+fabric_name: FABRIC
+
+fabric_numbering: 
+  node_id:
+    algorithm: pool_manager
+
+# Define underlay and overlay routing protocol
+underlay_routing_protocol: ebgp
+overlay_routing_protocol: ebgp
+
+# For multicast
+
+# underlay_multicast: True
+# evpn_multicast: True
+# igmp_snooping_enabled : True
+
+local_users: 
+  - name: ansible
+    privilege: 15
+    role: network-admin
+    sha512_password: "{{ansible_pass}}"
+  # - name: admin
+  #   privilege: 15
+  #   role: network-admin
+  #   no_password: true
+  - name: cvpadmin
+    privilege: 15
+    role: network-admin
+    sha512_password: "{{cvpadmin_pass}}"
+
+bgp_peer_groups: 
+  evpn_overlay_peers:
+    password: Q4fqtbqcZ7oQuKfuWtNGRQ==
+  ipv4_underlay_peers:
+    password: 7x4B4rnJhZB438m9+BrBfQ==
+  mlag_ipv4_underlay_peer:
+    password: 4b21pAdCvWeAqpcKDFMdWw==
+
+p2p_uplinks_mtu: 1500 
+
+# Cloudvision Settings
+
+cv_settings:
+  onprem_clusters:
+    - name: cvp-onprem
+      servers:
+        - name: 192.168.0.5
+          port: 9910
+      vrf: MGMT
+      token_file: /tmp/token
+  terminattr:
+    disable_aaa: true
+    ingestexclude: /Sysdb/cell/1/agent,/Sysdb/cell/2/agent
+    smashexcludes: ale,flexCounter,hardware,kni,pulse,strata
+  set_source_interfaces: true
+
+# DNS servers
+dns_settings:
+  servers:
+    - ip_address: 8.8.8.8
+      vrf: default
+    - ip_address: 8.8.4.4
+      vrf: default
+
+# Configure IP routing for the OOB Management VRF.
+mgmt_vrf_routing: true
+
+
+# NTP Servers
+ntp_settings:
+  server_vrf: default
+  servers:
+    - name: 1.north-america.pool.ntp.org
+    - name: 0.north-america.pool.ntp.org
+
+# Set default uplink, downlink, and MLAG interfaces based on node type
+default_interfaces:
+  - types: [ super-spine ]
+    platforms: [ default ]
+    downlink_interfaces: [ Ethernet1-20 ]
+  - types: [ spine ]
+    platforms: [ default ]
+    uplink_interfaces: [ Ethernet1-2 ]
+    downlink_interfaces: [ Ethernet3-100 ]
+  - types: [ l3leaf ]
+    platforms: [ default ]
+    uplink_interfaces: [ Ethernet1-4 ]
+    mlag_interfaces: [ Ethernet49-50 ]
+    downlink_interfaces: [ Ethernet7-20]
+  # - types: [ l2leaf ]
+  #   platforms: [ default ]
+  #   uplink_interfaces: [ Ethernet1-2 ]
+
+generate_cv_tags:
+  topology_hints: true
+  device_tags:
+    - name: Fabric
+      value: ThermoF
+
+# Generate CSVs with fabric link info.
+eos_designs_documentation:
+  topology_csv: true
+  p2p_links_csv: true
+
+custom_node_type_keys:
+  - key: spine
+    type: spine
+    default_evpn_role: none
+    default_ptp_priority1: 20
+    cv_tags_topology_type: spine
+  - key: super_spine
+    type: super-spine
+    cv_tags_topology_type: core
+    default_evpn_role: server
+
+as_notation: asdot
+
+# Global settings to configure the Digital Twin of the Fabric.
+digital_twin:
+  environment: act
+  fabric: 
+    act_os_version: 4.32.3M
+    act_username: cvpadmin
+    act_password: cvp123!

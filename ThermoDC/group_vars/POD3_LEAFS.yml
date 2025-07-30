@@ -1,5 +1,6 @@
 ---
 type: l3leaf
+pod_name: POD3_LEAFS
 
 l3leaf: # dynamic_key: node_type
   defaults:
@@ -23,18 +24,14 @@ l3leaf: # dynamic_key: node_type
       bgp_as: 65000.105
       nodes:
         - name: pod3-leaf-1
-          id: 1
           mgmt_ip: 192.168.0.75/24
         - name: pod3-leaf-2
-          id: 2
           mgmt_ip: 192.168.0.76/24
 
     - group: POD3_MLAG02
       bgp_as: 65000.106
       nodes:
         - name: pod3-leaf-3
-          id: 3
           mgmt_ip: 192.168.0.77/24
         - name: pod3-leaf-4
-          id: 4
           mgmt_ip: 192.168.0.78/24

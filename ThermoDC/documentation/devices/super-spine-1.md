@@ -89,7 +89,7 @@ ip name-server vrf default 8.8.8.8
 
 | Server | VRF | Preferred | Burst | iBurst | Version | Min Poll | Max Poll | Local-interface | Key |
 | ------ | --- | --------- | ----- | ------ | ------- | -------- | -------- | --------------- | --- |
-| 0.north-america.pool.ntp.org | default | False | - | - | - | - | - | - | - |
+| 0.north-america.pool.ntp.org | default | - | - | - | - | - | - | - | - |
 | 1.north-america.pool.ntp.org | default | True | - | - | - | - | - | - | - |
 
 #### NTP Device Configuration
@@ -834,5 +834,4 @@ agent KernelFib environment KERNELFIB_PROGRAM_ALL_ECMP='true'
 system l1
   unsupported speed action error
   unsupported error-correction action error
-
 ```

@@ -272,10 +272,6 @@
             "status": "up"
           },
           {
-            "name": "Loopback11",
-            "status": "up"
-          },
-          {
             "name": "Port-Channel49",
             "status": "up"
           },
@@ -288,19 +284,7 @@
             "status": "up"
           },
           {
-            "name": "Vlan21",
-            "status": "up"
-          },
-          {
-            "name": "Vlan22",
-            "status": "up"
-          },
-          {
             "name": "Vlan3009",
-            "status": "up"
-          },
-          {
-            "name": "Vlan3010",
             "status": "up"
           },
           {
@@ -402,10 +386,6 @@
           {
             "peer_address": "10.255.2.20",
             "vrf": "VRF10"
-          },
-          {
-            "peer_address": "10.255.2.20",
-            "vrf": "VRF11"
           },
           {
             "peer_address": "10.255.255.44",
