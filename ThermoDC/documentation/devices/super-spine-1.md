@@ -28,6 +28,9 @@
   - [Router BGP](#router-bgp)
 - [BFD](#bfd)
   - [Router BFD](#router-bfd)
+- [Multicast](#multicast)
+  - [Router Multicast](#router-multicast)
+  - [PIM Sparse Mode](#pim-sparse-mode)
 - [Filters](#filters)
   - [Prefix-lists](#prefix-lists)
   - [Route-maps](#route-maps)
@@ -238,6 +241,7 @@ interface Ethernet1
    mtu 1500
    no switchport
    ip address 10.255.250.0/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet2
    description P2P_pod1-spine-2_Ethernet1
@@ -245,6 +249,7 @@ interface Ethernet2
    mtu 1500
    no switchport
    ip address 10.255.250.4/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet3
    description P2P_pod2-spine-1_Ethernet1
@@ -252,6 +257,7 @@ interface Ethernet3
    mtu 1500
    no switchport
    ip address 10.255.250.8/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet4
    description P2P_pod2-spine-2_Ethernet1
@@ -259,6 +265,7 @@ interface Ethernet4
    mtu 1500
    no switchport
    ip address 10.255.250.12/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet5
    description P2P_pod3-spine-1_Ethernet1
@@ -266,6 +273,7 @@ interface Ethernet5
    mtu 1500
    no switchport
    ip address 10.255.250.16/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet6
    description P2P_pod3-spine-2_Ethernet1
@@ -273,6 +281,7 @@ interface Ethernet6
    mtu 1500
    no switchport
    ip address 10.255.250.20/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet7
    description P2P_pod4-spine-1_Ethernet1
@@ -280,6 +289,7 @@ interface Ethernet7
    mtu 1500
    no switchport
    ip address 10.255.250.24/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet8
    description P2P_pod4-spine-2_Ethernet1
@@ -287,6 +297,7 @@ interface Ethernet8
    mtu 1500
    no switchport
    ip address 10.255.250.28/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet17
    description P2P_services-leaf-1_Ethernet1
@@ -294,6 +305,7 @@ interface Ethernet17
    mtu 1500
    no switchport
    ip address 10.255.251.64/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet18
    description P2P_services-leaf-2_Ethernet1
@@ -301,6 +313,7 @@ interface Ethernet18
    mtu 1500
    no switchport
    ip address 10.255.251.68/31
+   pim ipv4 sparse-mode
 ```
 
 ### Loopback Interfaces
@@ -759,6 +772,40 @@ router bgp 65000
 router bfd
    multihop interval 300 min-rx 300 multiplier 3
 ```
+
+## Multicast
+
+### Router Multicast
+
+#### IP Router Multicast Summary
+
+- Routing for IPv4 multicast is enabled.
+
+#### Router Multicast Device Configuration
+
+```eos
+!
+router multicast
+   ipv4
+      routing
+```
+
+### PIM Sparse Mode
+
+#### PIM Sparse Mode Enabled Interfaces
+
+| Interface Name | VRF Name | IP Version | Border Router | DR Priority | Local Interface | Neighbor Filter |
+| -------------- | -------- | ---------- | ------------- | ----------- | --------------- | --------------- |
+| Ethernet1 | - | IPv4 | - | - | - | - |
+| Ethernet2 | - | IPv4 | - | - | - | - |
+| Ethernet3 | - | IPv4 | - | - | - | - |
+| Ethernet4 | - | IPv4 | - | - | - | - |
+| Ethernet5 | - | IPv4 | - | - | - | - |
+| Ethernet6 | - | IPv4 | - | - | - | - |
+| Ethernet7 | - | IPv4 | - | - | - | - |
+| Ethernet8 | - | IPv4 | - | - | - | - |
+| Ethernet17 | - | IPv4 | - | - | - | - |
+| Ethernet18 | - | IPv4 | - | - | - | - |
 
 ## Filters
 

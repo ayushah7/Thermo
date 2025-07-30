@@ -11,7 +11,6 @@ pod1-leaf-1,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod1-leaf-1,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-1,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-1,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-1,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -44,7 +43,6 @@ pod1-leaf-10,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod1-leaf-10,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-10,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-10,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-10,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-10,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-10,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-10,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -77,7 +75,6 @@ pod1-leaf-11,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod1-leaf-11,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-11,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-11,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-11,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-11,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-11,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-11,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -110,7 +107,6 @@ pod1-leaf-12,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod1-leaf-12,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-12,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-12,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-12,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-12,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-12,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-12,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -143,7 +139,6 @@ pod1-leaf-13,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod1-leaf-13,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-13,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-13,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-13,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-13,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-13,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-13,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -176,7 +171,6 @@ pod1-leaf-14,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod1-leaf-14,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-14,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-14,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-14,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-14,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-14,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-14,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -209,7 +203,6 @@ pod1-leaf-15,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod1-leaf-15,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-15,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-15,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-15,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-15,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-15,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-15,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -242,7 +235,6 @@ pod1-leaf-16,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod1-leaf-16,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-16,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-16,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-16,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-16,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-16,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-16,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -275,7 +267,6 @@ pod1-leaf-2,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod1-leaf-2,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-2,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-2,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-2,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -308,7 +299,6 @@ pod1-leaf-3,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod1-leaf-3,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-3,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-3,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-3,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-3,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-3,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-3,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -341,7 +331,6 @@ pod1-leaf-4,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod1-leaf-4,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-4,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-4,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-4,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-4,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-4,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-4,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -374,7 +363,6 @@ pod1-leaf-5,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod1-leaf-5,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-5,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-5,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-5,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-5,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-5,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-5,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -407,7 +395,6 @@ pod1-leaf-6,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod1-leaf-6,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-6,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-6,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-6,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-6,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-6,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-6,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -440,7 +427,6 @@ pod1-leaf-7,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod1-leaf-7,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-7,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-7,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-7,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-7,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-7,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-7,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -473,7 +459,6 @@ pod1-leaf-8,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod1-leaf-8,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-8,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-8,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-8,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-8,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-8,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-8,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -506,7 +491,6 @@ pod1-leaf-9,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod1-leaf-9,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-leaf-9,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod1-leaf-9,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod1-leaf-9,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-leaf-9,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-leaf-9,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-leaf-9,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -537,7 +521,6 @@ pod1-spine-1,VerifyEnvironmentPower,skipped,VerifyEnvironmentPower test is not s
 pod1-spine-1,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooling test is not supported on vEOS-lab,Verifies the device's system cooling status.,Hardware
 pod1-spine-1,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-spine-1,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
-pod1-spine-1,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-spine-1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-spine-1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-spine-1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -564,7 +547,6 @@ pod1-spine-2,VerifyEnvironmentPower,skipped,VerifyEnvironmentPower test is not s
 pod1-spine-2,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooling test is not supported on vEOS-lab,Verifies the device's system cooling status.,Hardware
 pod1-spine-2,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod1-spine-2,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
-pod1-spine-2,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod1-spine-2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod1-spine-2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod1-spine-2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -593,7 +575,6 @@ pod2-leaf-1,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod2-leaf-1,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-1,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-1,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-1,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -626,7 +607,6 @@ pod2-leaf-10,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod2-leaf-10,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-10,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-10,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-10,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-10,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-10,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-10,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -659,7 +639,6 @@ pod2-leaf-11,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod2-leaf-11,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-11,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-11,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-11,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-11,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-11,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-11,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -692,7 +671,6 @@ pod2-leaf-12,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod2-leaf-12,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-12,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-12,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-12,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-12,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-12,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-12,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -725,7 +703,6 @@ pod2-leaf-13,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod2-leaf-13,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-13,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-13,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-13,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-13,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-13,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-13,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -758,7 +735,6 @@ pod2-leaf-14,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod2-leaf-14,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-14,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-14,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-14,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-14,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-14,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-14,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -791,7 +767,6 @@ pod2-leaf-15,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod2-leaf-15,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-15,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-15,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-15,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-15,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-15,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-15,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -824,7 +799,6 @@ pod2-leaf-16,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod2-leaf-16,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-16,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-16,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-16,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-16,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-16,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-16,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -857,7 +831,6 @@ pod2-leaf-2,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod2-leaf-2,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-2,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-2,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-2,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -890,7 +863,6 @@ pod2-leaf-3,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod2-leaf-3,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-3,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-3,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-3,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-3,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-3,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-3,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -923,7 +895,6 @@ pod2-leaf-4,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod2-leaf-4,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-4,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-4,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-4,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-4,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-4,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-4,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -956,7 +927,6 @@ pod2-leaf-5,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod2-leaf-5,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-5,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-5,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-5,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-5,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-5,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-5,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -989,7 +959,6 @@ pod2-leaf-6,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod2-leaf-6,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-6,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-6,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-6,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-6,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-6,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-6,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1022,7 +991,6 @@ pod2-leaf-7,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod2-leaf-7,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-7,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-7,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-7,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-7,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-7,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-7,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1055,7 +1023,6 @@ pod2-leaf-8,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod2-leaf-8,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-8,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-8,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-8,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-8,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-8,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-8,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1088,7 +1055,6 @@ pod2-leaf-9,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod2-leaf-9,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-leaf-9,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod2-leaf-9,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod2-leaf-9,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-leaf-9,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-leaf-9,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-leaf-9,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1119,7 +1085,6 @@ pod2-spine-1,VerifyEnvironmentPower,skipped,VerifyEnvironmentPower test is not s
 pod2-spine-1,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooling test is not supported on vEOS-lab,Verifies the device's system cooling status.,Hardware
 pod2-spine-1,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-spine-1,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
-pod2-spine-1,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-spine-1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-spine-1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-spine-1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1146,7 +1111,6 @@ pod2-spine-2,VerifyEnvironmentPower,skipped,VerifyEnvironmentPower test is not s
 pod2-spine-2,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooling test is not supported on vEOS-lab,Verifies the device's system cooling status.,Hardware
 pod2-spine-2,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod2-spine-2,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
-pod2-spine-2,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod2-spine-2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod2-spine-2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod2-spine-2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1175,7 +1139,6 @@ pod3-leaf-1,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod3-leaf-1,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod3-leaf-1,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod3-leaf-1,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod3-leaf-1,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod3-leaf-1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod3-leaf-1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod3-leaf-1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1208,7 +1171,6 @@ pod3-leaf-2,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod3-leaf-2,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod3-leaf-2,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod3-leaf-2,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod3-leaf-2,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod3-leaf-2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod3-leaf-2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod3-leaf-2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1241,7 +1203,6 @@ pod3-leaf-3,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod3-leaf-3,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod3-leaf-3,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod3-leaf-3,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod3-leaf-3,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod3-leaf-3,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod3-leaf-3,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod3-leaf-3,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1274,7 +1235,6 @@ pod3-leaf-4,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod3-leaf-4,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod3-leaf-4,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod3-leaf-4,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod3-leaf-4,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod3-leaf-4,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod3-leaf-4,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod3-leaf-4,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1305,7 +1265,6 @@ pod3-spine-1,VerifyEnvironmentPower,skipped,VerifyEnvironmentPower test is not s
 pod3-spine-1,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooling test is not supported on vEOS-lab,Verifies the device's system cooling status.,Hardware
 pod3-spine-1,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod3-spine-1,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
-pod3-spine-1,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod3-spine-1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod3-spine-1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod3-spine-1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1332,7 +1291,6 @@ pod3-spine-2,VerifyEnvironmentPower,skipped,VerifyEnvironmentPower test is not s
 pod3-spine-2,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooling test is not supported on vEOS-lab,Verifies the device's system cooling status.,Hardware
 pod3-spine-2,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod3-spine-2,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
-pod3-spine-2,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod3-spine-2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod3-spine-2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod3-spine-2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1361,7 +1319,6 @@ pod4-leaf-1,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod4-leaf-1,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-1,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-1,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-1,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1394,7 +1351,6 @@ pod4-leaf-10,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-10,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-10,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-10,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-10,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-10,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-10,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-10,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1427,7 +1383,6 @@ pod4-leaf-11,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-11,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-11,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-11,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-11,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-11,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-11,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-11,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1460,7 +1415,6 @@ pod4-leaf-12,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-12,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-12,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-12,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-12,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-12,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-12,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-12,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1493,7 +1447,6 @@ pod4-leaf-13,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-13,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-13,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-13,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-13,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-13,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-13,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-13,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1526,7 +1479,6 @@ pod4-leaf-14,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-14,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-14,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-14,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-14,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-14,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-14,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-14,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1559,7 +1511,6 @@ pod4-leaf-15,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-15,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-15,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-15,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-15,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-15,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-15,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-15,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1592,7 +1543,6 @@ pod4-leaf-16,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-16,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-16,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-16,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-16,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-16,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-16,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-16,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1625,7 +1575,6 @@ pod4-leaf-17,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-17,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-17,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-17,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-17,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-17,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-17,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-17,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1658,7 +1607,6 @@ pod4-leaf-18,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-18,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-18,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-18,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-18,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-18,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-18,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-18,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1691,7 +1639,6 @@ pod4-leaf-19,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-19,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-19,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-19,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-19,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-19,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-19,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-19,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1724,7 +1671,6 @@ pod4-leaf-2,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod4-leaf-2,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-2,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-2,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-2,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1757,7 +1703,6 @@ pod4-leaf-20,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-20,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-20,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-20,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-20,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-20,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-20,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-20,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1790,7 +1735,6 @@ pod4-leaf-21,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-21,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-21,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-21,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-21,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-21,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-21,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-21,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1823,7 +1767,6 @@ pod4-leaf-22,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-22,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-22,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-22,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-22,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-22,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-22,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-22,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1856,7 +1799,6 @@ pod4-leaf-23,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-23,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-23,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-23,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-23,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-23,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-23,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-23,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1889,7 +1831,6 @@ pod4-leaf-24,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-24,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-24,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-24,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-24,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-24,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-24,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-24,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1922,7 +1863,6 @@ pod4-leaf-25,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-25,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-25,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-25,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-25,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-25,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-25,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-25,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1955,7 +1895,6 @@ pod4-leaf-26,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooli
 pod4-leaf-26,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-26,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-26,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-26,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-26,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-26,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-26,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -1988,7 +1927,6 @@ pod4-leaf-3,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod4-leaf-3,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-3,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-3,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-3,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-3,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-3,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-3,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2021,7 +1959,6 @@ pod4-leaf-4,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod4-leaf-4,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-4,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-4,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-4,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-4,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-4,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-4,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2054,7 +1991,6 @@ pod4-leaf-5,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod4-leaf-5,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-5,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-5,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-5,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-5,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-5,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-5,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2087,7 +2023,6 @@ pod4-leaf-6,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod4-leaf-6,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-6,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-6,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-6,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-6,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-6,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-6,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2120,7 +2055,6 @@ pod4-leaf-7,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod4-leaf-7,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-7,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-7,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-7,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-7,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-7,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-7,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2153,7 +2087,6 @@ pod4-leaf-8,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod4-leaf-8,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-8,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-8,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-8,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-8,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-8,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-8,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2186,7 +2119,6 @@ pod4-leaf-9,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCoolin
 pod4-leaf-9,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-leaf-9,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 pod4-leaf-9,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-pod4-leaf-9,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-leaf-9,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-leaf-9,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-leaf-9,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2217,7 +2149,6 @@ pod4-spine-1,VerifyEnvironmentPower,skipped,VerifyEnvironmentPower test is not s
 pod4-spine-1,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooling test is not supported on vEOS-lab,Verifies the device's system cooling status.,Hardware
 pod4-spine-1,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-spine-1,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
-pod4-spine-1,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-spine-1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-spine-1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-spine-1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2244,7 +2175,6 @@ pod4-spine-2,VerifyEnvironmentPower,skipped,VerifyEnvironmentPower test is not s
 pod4-spine-2,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooling test is not supported on vEOS-lab,Verifies the device's system cooling status.,Hardware
 pod4-spine-2,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 pod4-spine-2,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
-pod4-spine-2,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 pod4-spine-2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 pod4-spine-2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 pod4-spine-2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2273,7 +2203,6 @@ services-leaf-1,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCo
 services-leaf-1,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 services-leaf-1,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 services-leaf-1,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-services-leaf-1,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 services-leaf-1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 services-leaf-1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 services-leaf-1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2306,7 +2235,6 @@ services-leaf-2,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCo
 services-leaf-2,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 services-leaf-2,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
 services-leaf-2,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in all port channels.,Interfaces
-services-leaf-2,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 services-leaf-2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 services-leaf-2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 services-leaf-2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2338,7 +2266,6 @@ super-spine-1,VerifyEnvironmentPower,skipped,VerifyEnvironmentPower test is not 
 super-spine-1,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooling test is not supported on vEOS-lab,Verifies the device's system cooling status.,Hardware
 super-spine-1,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 super-spine-1,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
-super-spine-1,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 super-spine-1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 super-spine-1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 super-spine-1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
@@ -2366,7 +2293,6 @@ super-spine-2,VerifyEnvironmentPower,skipped,VerifyEnvironmentPower test is not 
 super-spine-2,VerifyEnvironmentSystemCooling,skipped,VerifyEnvironmentSystemCooling test is not supported on vEOS-lab,Verifies the device's system cooling status.,Hardware
 super-spine-2,VerifyTemperature,skipped,VerifyTemperature test is not supported on vEOS-lab,Verifies if the device temperature is within acceptable limits.,Hardware
 super-spine-2,VerifyTransceiversTemperature,skipped,VerifyTransceiversTemperature test is not supported on vEOS-lab,Verifies if all the transceivers are operating at an acceptable temperature.,Hardware
-super-spine-2,VerifyInterfaceDiscards,success,,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
 super-spine-2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
 super-spine-2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
 super-spine-2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces

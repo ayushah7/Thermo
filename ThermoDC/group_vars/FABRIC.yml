@@ -30,9 +30,9 @@ overlay_routing_protocol: ebgp
 
 # For multicast
 
-#underlay_multicast: True
-#evpn_multicast: True
-#igmp_snooping_enabled : True
+underlay_multicast: True
+evpn_multicast: True
+igmp_snooping_enabled : True
 
 local_users: 
   - name: ansible

@@ -26,6 +26,9 @@
   - [IP Routing](#ip-routing)
   - [IPv6 Routing](#ipv6-routing)
   - [Router BGP](#router-bgp)
+- [Multicast](#multicast)
+  - [Router Multicast](#router-multicast)
+  - [PIM Sparse Mode](#pim-sparse-mode)
 - [Filters](#filters)
   - [Prefix-lists](#prefix-lists)
   - [Route-maps](#route-maps)
@@ -232,6 +235,7 @@ interface Ethernet1
    mtu 1500
    no switchport
    ip address 10.255.250.17/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet2
    description P2P_super-spine-2_Ethernet5
@@ -239,6 +243,7 @@ interface Ethernet2
    mtu 1500
    no switchport
    ip address 10.255.250.19/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet3
    description P2P_pod3-leaf-1_Ethernet1
@@ -246,6 +251,7 @@ interface Ethernet3
    mtu 1500
    no switchport
    ip address 10.255.253.0/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet4
    description P2P_pod3-leaf-2_Ethernet1
@@ -253,6 +259,7 @@ interface Ethernet4
    mtu 1500
    no switchport
    ip address 10.255.253.4/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet5
    description P2P_pod3-leaf-3_Ethernet1
@@ -260,6 +267,7 @@ interface Ethernet5
    mtu 1500
    no switchport
    ip address 10.255.253.8/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet6
    description P2P_pod3-leaf-4_Ethernet1
@@ -267,6 +275,7 @@ interface Ethernet6
    mtu 1500
    no switchport
    ip address 10.255.253.12/31
+   pim ipv4 sparse-mode
 ```
 
 ### Loopback Interfaces
@@ -403,6 +412,36 @@ router bgp 65000.152
    address-family ipv4
       neighbor IPv4-UNDERLAY-PEERS activate
 ```
+
+## Multicast
+
+### Router Multicast
+
+#### IP Router Multicast Summary
+
+- Routing for IPv4 multicast is enabled.
+
+#### Router Multicast Device Configuration
+
+```eos
+!
+router multicast
+   ipv4
+      routing
+```
+
+### PIM Sparse Mode
+
+#### PIM Sparse Mode Enabled Interfaces
+
+| Interface Name | VRF Name | IP Version | Border Router | DR Priority | Local Interface | Neighbor Filter |
+| -------------- | -------- | ---------- | ------------- | ----------- | --------------- | --------------- |
+| Ethernet1 | - | IPv4 | - | - | - | - |
+| Ethernet2 | - | IPv4 | - | - | - | - |
+| Ethernet3 | - | IPv4 | - | - | - | - |
+| Ethernet4 | - | IPv4 | - | - | - | - |
+| Ethernet5 | - | IPv4 | - | - | - | - |
+| Ethernet6 | - | IPv4 | - | - | - | - |
 
 ## Filters
 

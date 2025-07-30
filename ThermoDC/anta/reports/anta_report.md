@@ -15,86 +15,86 @@
 
 | Total Tests | Total Tests Success | Total Tests Skipped | Total Tests Failure | Total Tests Error |
 | ----------- | ------------------- | ------------------- | ------------------- | ------------------|
-| 2384 | 1940 | 444 | 0 | 0 |
+| 2310 | 1866 | 444 | 0 | 0 |
 
 ### Summary Totals Device Under Test
 
 | Device Under Test | Total Tests | Tests Success | Tests Skipped | Tests Failure | Tests Error | Categories Skipped | Categories Failed |
 | ------------------| ----------- | ------------- | ------------- | ------------- | ----------- | -------------------| ------------------|
-| pod1-leaf-1 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-10 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-11 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-12 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-13 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-14 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-15 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-16 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-2 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-3 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-4 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-5 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-6 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-7 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-8 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-leaf-9 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-spine-1 | 27 | 21 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod1-spine-2 | 27 | 21 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-1 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-10 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-11 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-12 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-13 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-14 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-15 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-16 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-2 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-3 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-4 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-5 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-6 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-7 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-8 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-leaf-9 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-spine-1 | 27 | 21 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod2-spine-2 | 27 | 21 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod3-leaf-1 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod3-leaf-2 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod3-leaf-3 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod3-leaf-4 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod3-spine-1 | 27 | 21 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod3-spine-2 | 27 | 21 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-1 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-10 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-11 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-12 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-13 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-14 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-15 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-16 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-17 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-18 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-19 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-2 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-20 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-21 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-22 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-23 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-24 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-25 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-26 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-3 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-4 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-5 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-6 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-7 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-8 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-leaf-9 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-spine-1 | 27 | 21 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| pod4-spine-2 | 27 | 21 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| services-leaf-1 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| services-leaf-2 | 33 | 27 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| super-spine-1 | 28 | 22 | 6 | 0 | 0 | Hardware, Interfaces | - |
-| super-spine-2 | 28 | 22 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-1 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-10 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-11 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-12 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-13 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-14 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-15 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-16 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-2 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-3 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-4 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-5 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-6 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-7 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-8 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-leaf-9 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-spine-1 | 26 | 20 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod1-spine-2 | 26 | 20 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-1 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-10 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-11 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-12 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-13 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-14 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-15 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-16 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-2 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-3 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-4 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-5 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-6 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-7 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-8 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-leaf-9 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-spine-1 | 26 | 20 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod2-spine-2 | 26 | 20 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod3-leaf-1 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod3-leaf-2 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod3-leaf-3 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod3-leaf-4 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod3-spine-1 | 26 | 20 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod3-spine-2 | 26 | 20 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-1 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-10 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-11 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-12 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-13 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-14 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-15 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-16 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-17 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-18 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-19 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-2 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-20 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-21 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-22 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-23 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-24 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-25 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-26 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-3 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-4 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-5 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-6 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-7 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-8 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-leaf-9 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-spine-1 | 26 | 20 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| pod4-spine-2 | 26 | 20 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| services-leaf-1 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| services-leaf-2 | 32 | 26 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| super-spine-1 | 27 | 21 | 6 | 0 | 0 | Hardware, Interfaces | - |
+| super-spine-2 | 27 | 21 | 6 | 0 | 0 | Hardware, Interfaces | - |
 
 ### Summary Totals Per Category
 
@@ -104,7 +104,7 @@
 | Configuration | 148 | 148 | 0 | 0 | 0 |
 | Connectivity | 214 | 214 | 0 | 0 | 0 |
 | Hardware | 370 | 0 | 370 | 0 | 0 |
-| Interfaces | 572 | 498 | 74 | 0 | 0 |
+| Interfaces | 498 | 424 | 74 | 0 | 0 |
 | MLAG | 192 | 192 | 0 | 0 | 0 |
 | Routing | 74 | 74 | 0 | 0 | 0 |
 | Security | 74 | 74 | 0 | 0 | 0 |
@@ -128,7 +128,6 @@
 | pod1-leaf-1 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-1 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-1 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-1 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-1 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-1 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-1 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -161,7 +160,6 @@
 | pod1-leaf-10 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-10 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-10 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-10 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-10 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-10 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-10 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -194,7 +192,6 @@
 | pod1-leaf-11 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-11 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-11 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-11 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-11 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-11 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-11 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -227,7 +224,6 @@
 | pod1-leaf-12 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-12 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-12 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-12 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-12 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-12 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-12 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -260,7 +256,6 @@
 | pod1-leaf-13 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-13 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-13 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-13 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-13 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-13 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-13 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -293,7 +288,6 @@
 | pod1-leaf-14 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-14 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-14 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-14 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-14 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-14 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-14 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -326,7 +320,6 @@
 | pod1-leaf-15 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-15 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-15 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-15 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-15 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-15 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-15 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -359,7 +352,6 @@
 | pod1-leaf-16 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-16 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-16 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-16 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-16 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-16 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-16 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -392,7 +384,6 @@
 | pod1-leaf-2 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-2 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-2 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-2 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-2 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-2 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-2 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -425,7 +416,6 @@
 | pod1-leaf-3 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-3 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-3 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-3 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-3 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-3 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-3 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -458,7 +448,6 @@
 | pod1-leaf-4 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-4 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-4 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-4 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-4 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-4 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-4 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -491,7 +480,6 @@
 | pod1-leaf-5 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-5 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-5 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-5 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-5 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-5 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-5 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -524,7 +512,6 @@
 | pod1-leaf-6 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-6 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-6 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-6 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-6 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-6 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-6 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -557,7 +544,6 @@
 | pod1-leaf-7 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-7 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-7 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-7 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-7 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-7 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-7 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -590,7 +576,6 @@
 | pod1-leaf-8 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-8 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-8 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-8 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-8 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-8 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-8 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -623,7 +608,6 @@
 | pod1-leaf-9 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-leaf-9 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod1-leaf-9 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod1-leaf-9 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-9 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-leaf-9 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-leaf-9 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -654,7 +638,6 @@
 | pod1-spine-1 | Hardware | VerifyEnvironmentSystemCooling | Verifies the device's system cooling status. | Generated by AVD | skipped | VerifyEnvironmentSystemCooling test is not supported on vEOS-lab |
 | pod1-spine-1 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-spine-1 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
-| pod1-spine-1 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-spine-1 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-spine-1 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-spine-1 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -681,7 +664,6 @@
 | pod1-spine-2 | Hardware | VerifyEnvironmentSystemCooling | Verifies the device's system cooling status. | Generated by AVD | skipped | VerifyEnvironmentSystemCooling test is not supported on vEOS-lab |
 | pod1-spine-2 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod1-spine-2 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
-| pod1-spine-2 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod1-spine-2 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod1-spine-2 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod1-spine-2 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -710,7 +692,6 @@
 | pod2-leaf-1 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-1 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-1 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-1 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-1 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-1 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-1 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -743,7 +724,6 @@
 | pod2-leaf-10 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-10 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-10 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-10 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-10 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-10 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-10 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -776,7 +756,6 @@
 | pod2-leaf-11 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-11 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-11 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-11 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-11 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-11 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-11 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -809,7 +788,6 @@
 | pod2-leaf-12 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-12 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-12 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-12 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-12 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-12 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-12 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -842,7 +820,6 @@
 | pod2-leaf-13 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-13 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-13 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-13 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-13 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-13 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-13 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -875,7 +852,6 @@
 | pod2-leaf-14 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-14 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-14 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-14 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-14 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-14 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-14 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -908,7 +884,6 @@
 | pod2-leaf-15 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-15 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-15 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-15 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-15 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-15 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-15 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -941,7 +916,6 @@
 | pod2-leaf-16 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-16 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-16 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-16 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-16 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-16 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-16 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -974,7 +948,6 @@
 | pod2-leaf-2 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-2 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-2 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-2 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-2 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-2 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-2 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1007,7 +980,6 @@
 | pod2-leaf-3 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-3 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-3 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-3 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-3 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-3 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-3 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1040,7 +1012,6 @@
 | pod2-leaf-4 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-4 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-4 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-4 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-4 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-4 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-4 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1073,7 +1044,6 @@
 | pod2-leaf-5 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-5 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-5 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-5 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-5 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-5 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-5 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1106,7 +1076,6 @@
 | pod2-leaf-6 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-6 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-6 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-6 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-6 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-6 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-6 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1139,7 +1108,6 @@
 | pod2-leaf-7 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-7 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-7 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-7 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-7 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-7 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-7 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1172,7 +1140,6 @@
 | pod2-leaf-8 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-8 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-8 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-8 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-8 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-8 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-8 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1205,7 +1172,6 @@
 | pod2-leaf-9 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-leaf-9 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod2-leaf-9 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod2-leaf-9 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-9 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-leaf-9 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-leaf-9 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1236,7 +1202,6 @@
 | pod2-spine-1 | Hardware | VerifyEnvironmentSystemCooling | Verifies the device's system cooling status. | Generated by AVD | skipped | VerifyEnvironmentSystemCooling test is not supported on vEOS-lab |
 | pod2-spine-1 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-spine-1 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
-| pod2-spine-1 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-spine-1 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-spine-1 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-spine-1 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1263,7 +1228,6 @@
 | pod2-spine-2 | Hardware | VerifyEnvironmentSystemCooling | Verifies the device's system cooling status. | Generated by AVD | skipped | VerifyEnvironmentSystemCooling test is not supported on vEOS-lab |
 | pod2-spine-2 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod2-spine-2 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
-| pod2-spine-2 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod2-spine-2 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod2-spine-2 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod2-spine-2 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1292,7 +1256,6 @@
 | pod3-leaf-1 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod3-leaf-1 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod3-leaf-1 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod3-leaf-1 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod3-leaf-1 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod3-leaf-1 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod3-leaf-1 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1325,7 +1288,6 @@
 | pod3-leaf-2 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod3-leaf-2 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod3-leaf-2 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod3-leaf-2 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod3-leaf-2 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod3-leaf-2 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod3-leaf-2 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1358,7 +1320,6 @@
 | pod3-leaf-3 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod3-leaf-3 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod3-leaf-3 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod3-leaf-3 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod3-leaf-3 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod3-leaf-3 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod3-leaf-3 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1391,7 +1352,6 @@
 | pod3-leaf-4 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod3-leaf-4 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod3-leaf-4 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod3-leaf-4 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod3-leaf-4 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod3-leaf-4 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod3-leaf-4 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1422,7 +1382,6 @@
 | pod3-spine-1 | Hardware | VerifyEnvironmentSystemCooling | Verifies the device's system cooling status. | Generated by AVD | skipped | VerifyEnvironmentSystemCooling test is not supported on vEOS-lab |
 | pod3-spine-1 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod3-spine-1 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
-| pod3-spine-1 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod3-spine-1 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod3-spine-1 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod3-spine-1 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1449,7 +1408,6 @@
 | pod3-spine-2 | Hardware | VerifyEnvironmentSystemCooling | Verifies the device's system cooling status. | Generated by AVD | skipped | VerifyEnvironmentSystemCooling test is not supported on vEOS-lab |
 | pod3-spine-2 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod3-spine-2 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
-| pod3-spine-2 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod3-spine-2 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod3-spine-2 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod3-spine-2 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1478,7 +1436,6 @@
 | pod4-leaf-1 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-1 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-1 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-1 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-1 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-1 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-1 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1511,7 +1468,6 @@
 | pod4-leaf-10 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-10 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-10 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-10 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-10 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-10 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-10 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1544,7 +1500,6 @@
 | pod4-leaf-11 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-11 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-11 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-11 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-11 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-11 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-11 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1577,7 +1532,6 @@
 | pod4-leaf-12 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-12 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-12 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-12 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-12 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-12 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-12 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1610,7 +1564,6 @@
 | pod4-leaf-13 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-13 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-13 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-13 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-13 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-13 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-13 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1643,7 +1596,6 @@
 | pod4-leaf-14 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-14 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-14 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-14 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-14 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-14 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-14 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1676,7 +1628,6 @@
 | pod4-leaf-15 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-15 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-15 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-15 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-15 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-15 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-15 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1709,7 +1660,6 @@
 | pod4-leaf-16 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-16 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-16 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-16 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-16 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-16 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-16 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1742,7 +1692,6 @@
 | pod4-leaf-17 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-17 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-17 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-17 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-17 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-17 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-17 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1775,7 +1724,6 @@
 | pod4-leaf-18 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-18 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-18 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-18 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-18 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-18 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-18 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1808,7 +1756,6 @@
 | pod4-leaf-19 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-19 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-19 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-19 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-19 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-19 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-19 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1841,7 +1788,6 @@
 | pod4-leaf-2 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-2 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-2 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-2 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-2 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-2 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-2 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1874,7 +1820,6 @@
 | pod4-leaf-20 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-20 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-20 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-20 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-20 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-20 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-20 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1907,7 +1852,6 @@
 | pod4-leaf-21 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-21 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-21 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-21 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-21 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-21 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-21 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1940,7 +1884,6 @@
 | pod4-leaf-22 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-22 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-22 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-22 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-22 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-22 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-22 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -1973,7 +1916,6 @@
 | pod4-leaf-23 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-23 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-23 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-23 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-23 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-23 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-23 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2006,7 +1948,6 @@
 | pod4-leaf-24 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-24 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-24 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-24 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-24 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-24 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-24 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2039,7 +1980,6 @@
 | pod4-leaf-25 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-25 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-25 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-25 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-25 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-25 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-25 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2072,7 +2012,6 @@
 | pod4-leaf-26 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-26 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-26 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-26 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-26 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-26 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-26 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2105,7 +2044,6 @@
 | pod4-leaf-3 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-3 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-3 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-3 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-3 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-3 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-3 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2138,7 +2076,6 @@
 | pod4-leaf-4 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-4 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-4 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-4 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-4 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-4 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-4 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2171,7 +2108,6 @@
 | pod4-leaf-5 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-5 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-5 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-5 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-5 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-5 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-5 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2204,7 +2140,6 @@
 | pod4-leaf-6 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-6 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-6 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-6 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-6 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-6 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-6 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2237,7 +2172,6 @@
 | pod4-leaf-7 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-7 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-7 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-7 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-7 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-7 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-7 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2270,7 +2204,6 @@
 | pod4-leaf-8 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-8 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-8 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-8 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-8 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-8 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-8 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2303,7 +2236,6 @@
 | pod4-leaf-9 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-leaf-9 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | pod4-leaf-9 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| pod4-leaf-9 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-9 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-leaf-9 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-leaf-9 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2334,7 +2266,6 @@
 | pod4-spine-1 | Hardware | VerifyEnvironmentSystemCooling | Verifies the device's system cooling status. | Generated by AVD | skipped | VerifyEnvironmentSystemCooling test is not supported on vEOS-lab |
 | pod4-spine-1 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-spine-1 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
-| pod4-spine-1 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-spine-1 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-spine-1 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-spine-1 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2361,7 +2292,6 @@
 | pod4-spine-2 | Hardware | VerifyEnvironmentSystemCooling | Verifies the device's system cooling status. | Generated by AVD | skipped | VerifyEnvironmentSystemCooling test is not supported on vEOS-lab |
 | pod4-spine-2 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | pod4-spine-2 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
-| pod4-spine-2 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | pod4-spine-2 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | pod4-spine-2 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | pod4-spine-2 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2390,7 +2320,6 @@
 | services-leaf-1 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | services-leaf-1 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | services-leaf-1 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| services-leaf-1 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | services-leaf-1 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | services-leaf-1 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | services-leaf-1 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2423,7 +2352,6 @@
 | services-leaf-2 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | services-leaf-2 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
 | services-leaf-2 | Interfaces | VerifyIllegalLACP | Verifies there are no illegal LACP packets in all port channels. | Generated by AVD | success | - |
-| services-leaf-2 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | services-leaf-2 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | services-leaf-2 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | services-leaf-2 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2455,7 +2383,6 @@
 | super-spine-1 | Hardware | VerifyEnvironmentSystemCooling | Verifies the device's system cooling status. | Generated by AVD | skipped | VerifyEnvironmentSystemCooling test is not supported on vEOS-lab |
 | super-spine-1 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | super-spine-1 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
-| super-spine-1 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | super-spine-1 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | super-spine-1 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | super-spine-1 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |
@@ -2483,7 +2410,6 @@
 | super-spine-2 | Hardware | VerifyEnvironmentSystemCooling | Verifies the device's system cooling status. | Generated by AVD | skipped | VerifyEnvironmentSystemCooling test is not supported on vEOS-lab |
 | super-spine-2 | Hardware | VerifyTemperature | Verifies if the device temperature is within acceptable limits. | Generated by AVD | skipped | VerifyTemperature test is not supported on vEOS-lab |
 | super-spine-2 | Hardware | VerifyTransceiversTemperature | Verifies if all the transceivers are operating at an acceptable temperature. | Generated by AVD | skipped | VerifyTransceiversTemperature test is not supported on vEOS-lab |
-| super-spine-2 | Interfaces | VerifyInterfaceDiscards | Verifies that the interfaces packet discard counters are equal to zero. | Generated by AVD | success | - |
 | super-spine-2 | Interfaces | VerifyInterfaceErrDisabled | Verifies there are no interfaces in the errdisabled state. | Generated by AVD | success | - |
 | super-spine-2 | Interfaces | VerifyInterfaceErrors | Verifies that the interfaces error counters are equal to zero. | Generated by AVD | success | - |
 | super-spine-2 | Interfaces | VerifyInterfaceUtilization | Verifies that the utilization of interfaces is below a certain threshold. | Generated by AVD | success | - |

@@ -19,6 +19,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.21/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: super-spine-1
   peer_interface: Ethernet6
   peer_type: super-spine
@@ -29,6 +32,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.23/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: super-spine-2
   peer_interface: Ethernet6
   peer_type: super-spine
@@ -39,6 +45,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.253.2/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod3-leaf-1
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -49,6 +58,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.253.6/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod3-leaf-2
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -59,6 +71,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.253.10/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod3-leaf-3
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -69,6 +84,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.253.14/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod3-leaf-4
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -195,6 +213,9 @@ router_bgp:
     peer_groups:
     - name: IPv4-UNDERLAY-PEERS
       activate: true
+router_multicast:
+  ipv4:
+    routing: true
 service_routing_protocols_model: multi-agent
 spanning_tree:
   mode: none

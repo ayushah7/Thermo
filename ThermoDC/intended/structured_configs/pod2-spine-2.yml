@@ -19,6 +19,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.13/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: super-spine-1
   peer_interface: Ethernet4
   peer_type: super-spine
@@ -29,6 +32,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.15/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: super-spine-2
   peer_interface: Ethernet4
   peer_type: super-spine
@@ -39,6 +45,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.2/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-1
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -49,6 +58,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.6/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-2
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -59,6 +71,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.10/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-3
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -69,6 +84,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.14/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-4
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -79,6 +97,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.18/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-5
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -89,6 +110,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.22/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-6
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -99,6 +123,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.26/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-7
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -109,6 +136,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.30/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-8
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -119,6 +149,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.34/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-9
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -129,6 +162,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.38/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-10
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -139,6 +175,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.42/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-11
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -149,6 +188,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.46/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-12
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -159,6 +201,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.50/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-13
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -169,6 +214,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.54/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-14
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -179,6 +227,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.58/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-15
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -189,6 +240,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.254.62/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-leaf-16
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -375,6 +429,9 @@ router_bgp:
     peer_groups:
     - name: IPv4-UNDERLAY-PEERS
       activate: true
+router_multicast:
+  ipv4:
+    routing: true
 service_routing_protocols_model: multi-agent
 spanning_tree:
   mode: none

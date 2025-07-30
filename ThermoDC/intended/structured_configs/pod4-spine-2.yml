@@ -19,6 +19,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.29/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: super-spine-1
   peer_interface: Ethernet8
   peer_type: super-spine
@@ -29,6 +32,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.31/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: super-spine-2
   peer_interface: Ethernet8
   peer_type: super-spine
@@ -39,6 +45,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.2/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-1
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -49,6 +58,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.6/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-2
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -59,6 +71,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.10/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-3
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -69,6 +84,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.14/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-4
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -79,6 +97,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.18/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-5
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -89,6 +110,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.22/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-6
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -99,6 +123,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.26/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-7
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -109,6 +136,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.30/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-8
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -119,6 +149,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.34/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-9
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -129,6 +162,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.38/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-10
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -139,6 +175,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.42/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-11
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -149,6 +188,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.46/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-12
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -159,6 +201,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.50/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-13
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -169,6 +214,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.54/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-14
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -179,6 +227,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.58/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-15
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -189,6 +240,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.62/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-16
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -199,6 +253,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.66/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-17
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -209,6 +266,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.70/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-18
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -219,6 +279,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.74/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-19
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -229,6 +292,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.78/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-20
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -239,6 +305,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.82/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-21
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -249,6 +318,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.86/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-22
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -259,6 +331,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.90/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-23
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -269,6 +344,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.94/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-24
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -279,6 +357,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.98/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-25
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -289,6 +370,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.252.102/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-leaf-26
   peer_interface: Ethernet2
   peer_type: l3leaf
@@ -525,6 +609,9 @@ router_bgp:
     peer_groups:
     - name: IPv4-UNDERLAY-PEERS
       activate: true
+router_multicast:
+  ipv4:
+    routing: true
 service_routing_protocols_model: multi-agent
 spanning_tree:
   mode: none

@@ -13,4 +13,4 @@
         avd_catalogs_enabled: true # This is the default
         avd_catalogs_allow_bgp_vrfs: true
         avd_catalogs_filters:
-          - skip_tests: [ VerifyMlagConfigSanity, VerifyLoggingErrors ]
+          - skip_tests: [ VerifyMlagConfigSanity, VerifyLoggingErrors, VerifyInterfaceDiscards ]

@@ -19,6 +19,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.0/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod1-spine-1
   peer_interface: Ethernet1
   peer_type: spine
@@ -29,6 +32,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.4/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod1-spine-2
   peer_interface: Ethernet1
   peer_type: spine
@@ -39,6 +45,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.8/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-spine-1
   peer_interface: Ethernet1
   peer_type: spine
@@ -49,6 +58,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.12/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod2-spine-2
   peer_interface: Ethernet1
   peer_type: spine
@@ -59,6 +71,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.16/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod3-spine-1
   peer_interface: Ethernet1
   peer_type: spine
@@ -69,6 +84,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.20/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod3-spine-2
   peer_interface: Ethernet1
   peer_type: spine
@@ -79,6 +97,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.24/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-spine-1
   peer_interface: Ethernet1
   peer_type: spine
@@ -89,6 +110,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.250.28/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: pod4-spine-2
   peer_interface: Ethernet1
   peer_type: spine
@@ -99,6 +123,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.251.64/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: services-leaf-1
   peer_interface: Ethernet1
   peer_type: l3leaf
@@ -109,6 +136,9 @@ ethernet_interfaces:
   shutdown: false
   mtu: 1500
   ip_address: 10.255.251.68/31
+  pim:
+    ipv4:
+      sparse_mode: true
   peer: services-leaf-2
   peer_interface: Ethernet1
   peer_type: l3leaf
@@ -593,6 +623,9 @@ router_bgp:
       activate: true
     - name: EVPN-OVERLAY-PEERS
       activate: false
+router_multicast:
+  ipv4:
+    routing: true
 service_routing_protocols_model: multi-agent
 spanning_tree:
   mode: none

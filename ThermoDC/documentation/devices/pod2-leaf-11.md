@@ -40,6 +40,8 @@
   - [Router BFD](#router-bfd)
 - [Multicast](#multicast)
   - [IP IGMP Snooping](#ip-igmp-snooping)
+  - [Router Multicast](#router-multicast)
+  - [PIM Sparse Mode](#pim-sparse-mode)
 - [Filters](#filters)
   - [Prefix-lists](#prefix-lists)
   - [Route-maps](#route-maps)
@@ -338,6 +340,7 @@ interface Ethernet1
    mtu 1500
    no switchport
    ip address 10.255.254.41/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet2
    description P2P_pod2-spine-2_Ethernet13
@@ -345,6 +348,7 @@ interface Ethernet2
    mtu 1500
    no switchport
    ip address 10.255.254.43/31
+   pim ipv4 sparse-mode
 !
 interface Ethernet49
    description MLAG_pod2-leaf-12_Ethernet49
@@ -503,6 +507,7 @@ interface Vlan4093
    no shutdown
    mtu 1500
    ip address 10.255.4.20/31
+   pim ipv4 sparse-mode
 !
 interface Vlan4094
    description MLAG
@@ -518,7 +523,8 @@ interface Vlan4094
 
 | Setting | Value |
 | ------- | ----- |
-| Source Interface | Loopback1 |
+| Source Interface | Loopback0 |
+| MLAG Source Interface | Loopback1 |
 | UDP port | 4789 |
 | EVPN MLAG Shared Router MAC | mlag-system-id |
 
@@ -546,7 +552,7 @@ interface Vlan4094
 !
 interface Vxlan1
    description pod2-leaf-11_VTEP
-   vxlan source-interface Loopback1
+   vxlan source-interface Loopback0
    vxlan virtual-router encapsulation mac-address mlag-system-id
    vxlan udp-port 4789
    vxlan vlan 11 vni 10011
@@ -557,6 +563,7 @@ interface Vxlan1
    vxlan vlan 3402 vni 13402
    vxlan vrf VRF10 vni 10
    vxlan vrf VRF11 vni 11
+   vxlan mlag source-interface Loopback1
 ```
 
 ## Routing
@@ -831,6 +838,33 @@ router bfd
 
 ```eos
 ```
+
+### Router Multicast
+
+#### IP Router Multicast Summary
+
+- Routing for IPv4 multicast is enabled.
+- Software forwarding by the Software Forwarding Engine (SFE)
+
+#### Router Multicast Device Configuration
+
+```eos
+!
+router multicast
+   ipv4
+      routing
+      software-forwarding sfe
+```
+
+### PIM Sparse Mode
+
+#### PIM Sparse Mode Enabled Interfaces
+
+| Interface Name | VRF Name | IP Version | Border Router | DR Priority | Local Interface | Neighbor Filter |
+| -------------- | -------- | ---------- | ------------- | ----------- | --------------- | --------------- |
+| Ethernet1 | - | IPv4 | - | - | - | - |
+| Ethernet2 | - | IPv4 | - | - | - | - |
+| Vlan4093 | - | IPv4 | - | - | - | - |
 
 ## Filters
 
