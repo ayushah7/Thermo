@@ -1,7 +1,7 @@
 ---
 type: l3leaf
 
-l3leaf:
+l3leaf: # dynamic_key: node_type
   defaults:
     platform: vEOS-lab
     loopback_ipv4_pool: 100.100.2.0/24

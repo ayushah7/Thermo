@@ -26,9 +26,6 @@
   - [IP Routing](#ip-routing)
   - [IPv6 Routing](#ipv6-routing)
   - [Router BGP](#router-bgp)
-- [Multicast](#multicast)
-  - [Router Multicast](#router-multicast)
-  - [PIM Sparse Mode](#pim-sparse-mode)
 - [Filters](#filters)
   - [Prefix-lists](#prefix-lists)
   - [Route-maps](#route-maps)
@@ -257,7 +254,6 @@ interface Ethernet1
    mtu 1500
    no switchport
    ip address 10.255.250.25/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet2
    description P2P_super-spine-2_Ethernet7
@@ -265,7 +261,6 @@ interface Ethernet2
    mtu 1500
    no switchport
    ip address 10.255.250.27/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet3
    description P2P_pod4-leaf-1_Ethernet1
@@ -273,7 +268,6 @@ interface Ethernet3
    mtu 1500
    no switchport
    ip address 10.255.252.0/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet4
    description P2P_pod4-leaf-2_Ethernet1
@@ -281,7 +275,6 @@ interface Ethernet4
    mtu 1500
    no switchport
    ip address 10.255.252.4/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet5
    description P2P_pod4-leaf-3_Ethernet1
@@ -289,7 +282,6 @@ interface Ethernet5
    mtu 1500
    no switchport
    ip address 10.255.252.8/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet6
    description P2P_pod4-leaf-4_Ethernet1
@@ -297,7 +289,6 @@ interface Ethernet6
    mtu 1500
    no switchport
    ip address 10.255.252.12/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet7
    description P2P_pod4-leaf-5_Ethernet1
@@ -305,7 +296,6 @@ interface Ethernet7
    mtu 1500
    no switchport
    ip address 10.255.252.16/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet8
    description P2P_pod4-leaf-6_Ethernet1
@@ -313,7 +303,6 @@ interface Ethernet8
    mtu 1500
    no switchport
    ip address 10.255.252.20/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet9
    description P2P_pod4-leaf-7_Ethernet1
@@ -321,7 +310,6 @@ interface Ethernet9
    mtu 1500
    no switchport
    ip address 10.255.252.24/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet10
    description P2P_pod4-leaf-8_Ethernet1
@@ -329,7 +317,6 @@ interface Ethernet10
    mtu 1500
    no switchport
    ip address 10.255.252.28/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet11
    description P2P_pod4-leaf-9_Ethernet1
@@ -337,7 +324,6 @@ interface Ethernet11
    mtu 1500
    no switchport
    ip address 10.255.252.32/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet12
    description P2P_pod4-leaf-10_Ethernet1
@@ -345,7 +331,6 @@ interface Ethernet12
    mtu 1500
    no switchport
    ip address 10.255.252.36/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet13
    description P2P_pod4-leaf-11_Ethernet1
@@ -353,7 +338,6 @@ interface Ethernet13
    mtu 1500
    no switchport
    ip address 10.255.252.40/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet14
    description P2P_pod4-leaf-12_Ethernet1
@@ -361,7 +345,6 @@ interface Ethernet14
    mtu 1500
    no switchport
    ip address 10.255.252.44/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet15
    description P2P_pod4-leaf-13_Ethernet1
@@ -369,7 +352,6 @@ interface Ethernet15
    mtu 1500
    no switchport
    ip address 10.255.252.48/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet16
    description P2P_pod4-leaf-14_Ethernet1
@@ -377,7 +359,6 @@ interface Ethernet16
    mtu 1500
    no switchport
    ip address 10.255.252.52/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet17
    description P2P_pod4-leaf-15_Ethernet1
@@ -385,7 +366,6 @@ interface Ethernet17
    mtu 1500
    no switchport
    ip address 10.255.252.56/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet18
    description P2P_pod4-leaf-16_Ethernet1
@@ -393,7 +373,6 @@ interface Ethernet18
    mtu 1500
    no switchport
    ip address 10.255.252.60/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet19
    description P2P_pod4-leaf-17_Ethernet1
@@ -401,7 +380,6 @@ interface Ethernet19
    mtu 1500
    no switchport
    ip address 10.255.252.64/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet20
    description P2P_pod4-leaf-18_Ethernet1
@@ -409,7 +387,6 @@ interface Ethernet20
    mtu 1500
    no switchport
    ip address 10.255.252.68/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet21
    description P2P_pod4-leaf-19_Ethernet1
@@ -417,7 +394,6 @@ interface Ethernet21
    mtu 1500
    no switchport
    ip address 10.255.252.72/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet22
    description P2P_pod4-leaf-20_Ethernet1
@@ -425,7 +401,6 @@ interface Ethernet22
    mtu 1500
    no switchport
    ip address 10.255.252.76/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet23
    description P2P_pod4-leaf-21_Ethernet1
@@ -433,7 +408,6 @@ interface Ethernet23
    mtu 1500
    no switchport
    ip address 10.255.252.80/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet24
    description P2P_pod4-leaf-22_Ethernet1
@@ -441,7 +415,6 @@ interface Ethernet24
    mtu 1500
    no switchport
    ip address 10.255.252.84/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet25
    description P2P_pod4-leaf-23_Ethernet1
@@ -449,7 +422,6 @@ interface Ethernet25
    mtu 1500
    no switchport
    ip address 10.255.252.88/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet26
    description P2P_pod4-leaf-24_Ethernet1
@@ -457,7 +429,6 @@ interface Ethernet26
    mtu 1500
    no switchport
    ip address 10.255.252.92/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet27
    description P2P_pod4-leaf-25_Ethernet1
@@ -465,7 +436,6 @@ interface Ethernet27
    mtu 1500
    no switchport
    ip address 10.255.252.96/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet28
    description P2P_pod4-leaf-26_Ethernet1
@@ -473,7 +443,6 @@ interface Ethernet28
    mtu 1500
    no switchport
    ip address 10.255.252.100/31
-   pim ipv4 sparse-mode
 ```
 
 ### Loopback Interfaces
@@ -698,58 +667,6 @@ router bgp 65000.153
    address-family ipv4
       neighbor IPv4-UNDERLAY-PEERS activate
 ```
-
-## Multicast
-
-### Router Multicast
-
-#### IP Router Multicast Summary
-
-- Routing for IPv4 multicast is enabled.
-
-#### Router Multicast Device Configuration
-
-```eos
-!
-router multicast
-   ipv4
-      routing
-```
-
-### PIM Sparse Mode
-
-#### PIM Sparse Mode Enabled Interfaces
-
-| Interface Name | VRF Name | IP Version | Border Router | DR Priority | Local Interface | Neighbor Filter |
-| -------------- | -------- | ---------- | ------------- | ----------- | --------------- | --------------- |
-| Ethernet1 | - | IPv4 | - | - | - | - |
-| Ethernet2 | - | IPv4 | - | - | - | - |
-| Ethernet3 | - | IPv4 | - | - | - | - |
-| Ethernet4 | - | IPv4 | - | - | - | - |
-| Ethernet5 | - | IPv4 | - | - | - | - |
-| Ethernet6 | - | IPv4 | - | - | - | - |
-| Ethernet7 | - | IPv4 | - | - | - | - |
-| Ethernet8 | - | IPv4 | - | - | - | - |
-| Ethernet9 | - | IPv4 | - | - | - | - |
-| Ethernet10 | - | IPv4 | - | - | - | - |
-| Ethernet11 | - | IPv4 | - | - | - | - |
-| Ethernet12 | - | IPv4 | - | - | - | - |
-| Ethernet13 | - | IPv4 | - | - | - | - |
-| Ethernet14 | - | IPv4 | - | - | - | - |
-| Ethernet15 | - | IPv4 | - | - | - | - |
-| Ethernet16 | - | IPv4 | - | - | - | - |
-| Ethernet17 | - | IPv4 | - | - | - | - |
-| Ethernet18 | - | IPv4 | - | - | - | - |
-| Ethernet19 | - | IPv4 | - | - | - | - |
-| Ethernet20 | - | IPv4 | - | - | - | - |
-| Ethernet21 | - | IPv4 | - | - | - | - |
-| Ethernet22 | - | IPv4 | - | - | - | - |
-| Ethernet23 | - | IPv4 | - | - | - | - |
-| Ethernet24 | - | IPv4 | - | - | - | - |
-| Ethernet25 | - | IPv4 | - | - | - | - |
-| Ethernet26 | - | IPv4 | - | - | - | - |
-| Ethernet27 | - | IPv4 | - | - | - | - |
-| Ethernet28 | - | IPv4 | - | - | - | - |
 
 ## Filters
 

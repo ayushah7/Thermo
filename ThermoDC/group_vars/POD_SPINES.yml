@@ -1,7 +1,7 @@
 ---
 type: spine
 
-spine:
+spine:  # dynamic_key: node_type
   defaults:
     platform: vEOS-lab
     uplink_switches: ['super-spine-1', 'super-spine-2']

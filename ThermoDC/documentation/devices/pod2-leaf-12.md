@@ -40,8 +40,6 @@
   - [Router BFD](#router-bfd)
 - [Multicast](#multicast)
   - [IP IGMP Snooping](#ip-igmp-snooping)
-  - [Router Multicast](#router-multicast)
-  - [PIM Sparse Mode](#pim-sparse-mode)
 - [Filters](#filters)
   - [Prefix-lists](#prefix-lists)
   - [Route-maps](#route-maps)
@@ -260,10 +258,7 @@ vlan internal order ascending range 1006 1199
 | ------- | ---- | ------------ |
 | 11 | VRF10_VLAN11 | - |
 | 12 | VRF10_VLAN12 | - |
-| 21 | VRF11_VLAN21 | - |
-| 22 | VRF11_VLAN22 | - |
 | 3009 | MLAG_L3_VRF_VRF10 | MLAG |
-| 3010 | MLAG_L3_VRF_VRF11 | MLAG |
 | 3401 | L2_VLAN3401 | - |
 | 3402 | L2_VLAN3402 | - |
 | 4093 | MLAG_L3 | MLAG |
@@ -279,18 +274,8 @@ vlan 11
 vlan 12
    name VRF10_VLAN12
 !
-vlan 21
-   name VRF11_VLAN21
-!
-vlan 22
-   name VRF11_VLAN22
-!
 vlan 3009
    name MLAG_L3_VRF_VRF10
-   trunk group MLAG
-!
-vlan 3010
-   name MLAG_L3_VRF_VRF11
    trunk group MLAG
 !
 vlan 3401
@@ -340,7 +325,6 @@ interface Ethernet1
    mtu 1500
    no switchport
    ip address 10.255.254.45/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet2
    description P2P_pod2-spine-2_Ethernet14
@@ -348,7 +332,6 @@ interface Ethernet2
    mtu 1500
    no switchport
    ip address 10.255.254.47/31
-   pim ipv4 sparse-mode
 !
 interface Ethernet49
    description MLAG_pod2-leaf-11_Ethernet49
@@ -394,7 +377,6 @@ interface Port-Channel49
 | Loopback0 | ROUTER_ID | default | 100.100.2.12/32 |
 | Loopback1 | VXLAN_TUNNEL_SOURCE | default | 10.100.2.11/32 |
 | Loopback10 | DIAG_VRF_VRF10 | VRF10 | 10.255.10.12/32 |
-| Loopback11 | DIAG_VRF_VRF11 | VRF11 | 10.255.11.12/32 |
 
 ##### IPv6
 
@@ -403,7 +385,6 @@ interface Port-Channel49
 | Loopback0 | ROUTER_ID | default | - |
 | Loopback1 | VXLAN_TUNNEL_SOURCE | default | - |
 | Loopback10 | DIAG_VRF_VRF10 | VRF10 | - |
-| Loopback11 | DIAG_VRF_VRF11 | VRF11 | - |
 
 #### Loopback Interfaces Device Configuration
 
@@ -424,12 +405,6 @@ interface Loopback10
    no shutdown
    vrf VRF10
    ip address 10.255.10.12/32
-!
-interface Loopback11
-   description DIAG_VRF_VRF11
-   no shutdown
-   vrf VRF11
-   ip address 10.255.11.12/32
 ```
 
 ### VLAN Interfaces
@@ -440,10 +415,7 @@ interface Loopback11
 | --------- | ----------- | --- | ---- | -------- |
 | Vlan11 | VRF10_VLAN11 | VRF10 | - | False |
 | Vlan12 | VRF10_VLAN12 | VRF10 | - | False |
-| Vlan21 | VRF11_VLAN21 | VRF11 | - | False |
-| Vlan22 | VRF11_VLAN22 | VRF11 | - | False |
 | Vlan3009 | MLAG_L3_VRF_VRF10 | VRF10 | 1500 | False |
-| Vlan3010 | MLAG_L3_VRF_VRF11 | VRF11 | 1500 | False |
 | Vlan4093 | MLAG_L3 | default | 1500 | False |
 | Vlan4094 | MLAG | default | 1500 | False |
 
@@ -453,10 +425,7 @@ interface Loopback11
 | --------- | --- | ---------- | ------------------ | ------------------------- | ------ | ------- |
 | Vlan11 |  VRF10  |  -  |  10.10.11.1/24  |  -  |  -  |  -  |
 | Vlan12 |  VRF10  |  -  |  10.10.12.1/24  |  -  |  -  |  -  |
-| Vlan21 |  VRF11  |  -  |  10.10.21.1/24  |  -  |  -  |  -  |
-| Vlan22 |  VRF11  |  -  |  10.10.22.1/24  |  -  |  -  |  -  |
 | Vlan3009 |  VRF10  |  10.255.4.21/31  |  -  |  -  |  -  |  -  |
-| Vlan3010 |  VRF11  |  10.255.4.21/31  |  -  |  -  |  -  |  -  |
 | Vlan4093 |  default  |  10.255.4.21/31  |  -  |  -  |  -  |  -  |
 | Vlan4094 |  default  |  10.255.3.21/31  |  -  |  -  |  -  |  -  |
 
@@ -476,18 +445,6 @@ interface Vlan12
    vrf VRF10
    ip address virtual 10.10.12.1/24
 !
-interface Vlan21
-   description VRF11_VLAN21
-   no shutdown
-   vrf VRF11
-   ip address virtual 10.10.21.1/24
-!
-interface Vlan22
-   description VRF11_VLAN22
-   no shutdown
-   vrf VRF11
-   ip address virtual 10.10.22.1/24
-!
 interface Vlan3009
    description MLAG_L3_VRF_VRF10
    no shutdown
@@ -495,19 +452,11 @@ interface Vlan3009
    vrf VRF10
    ip address 10.255.4.21/31
 !
-interface Vlan3010
-   description MLAG_L3_VRF_VRF11
-   no shutdown
-   mtu 1500
-   vrf VRF11
-   ip address 10.255.4.21/31
-!
 interface Vlan4093
    description MLAG_L3
    no shutdown
    mtu 1500
    ip address 10.255.4.21/31
-   pim ipv4 sparse-mode
 !
 interface Vlan4094
    description MLAG
@@ -523,8 +472,7 @@ interface Vlan4094
 
 | Setting | Value |
 | ------- | ----- |
-| Source Interface | Loopback0 |
-| MLAG Source Interface | Loopback1 |
+| Source Interface | Loopback1 |
 | UDP port | 4789 |
 | EVPN MLAG Shared Router MAC | mlag-system-id |
 
@@ -534,8 +482,6 @@ interface Vlan4094
 | ---- | --- | ---------- | --------------- |
 | 11 | 10011 | - | - |
 | 12 | 10012 | - | - |
-| 21 | 10021 | - | - |
-| 22 | 10022 | - | - |
 | 3401 | 13401 | - | - |
 | 3402 | 13402 | - | - |
 
@@ -544,7 +490,6 @@ interface Vlan4094
 | VRF | VNI | Multicast Group |
 | ---- | --- | --------------- |
 | VRF10 | 10 | - |
-| VRF11 | 11 | - |
 
 #### VXLAN Interface Device Configuration
 
@@ -552,18 +497,14 @@ interface Vlan4094
 !
 interface Vxlan1
    description pod2-leaf-12_VTEP
-   vxlan source-interface Loopback0
+   vxlan source-interface Loopback1
    vxlan virtual-router encapsulation mac-address mlag-system-id
    vxlan udp-port 4789
    vxlan vlan 11 vni 10011
    vxlan vlan 12 vni 10012
-   vxlan vlan 21 vni 10021
-   vxlan vlan 22 vni 10022
    vxlan vlan 3401 vni 13401
    vxlan vlan 3402 vni 13402
    vxlan vrf VRF10 vni 10
-   vxlan vrf VRF11 vni 11
-   vxlan mlag source-interface Loopback1
 ```
 
 ## Routing
@@ -599,7 +540,6 @@ ip virtual-router mac-address 00:1c:73:00:00:99
 | default | True |
 | MGMT | True |
 | VRF10 | True |
-| VRF11 | True |
 
 #### IP Routing Device Configuration
 
@@ -608,7 +548,6 @@ ip virtual-router mac-address 00:1c:73:00:00:99
 ip routing
 ip routing vrf MGMT
 ip routing vrf VRF10
-ip routing vrf VRF11
 ```
 
 ### IPv6 Routing
@@ -620,7 +559,6 @@ ip routing vrf VRF11
 | default | False |
 | MGMT | false |
 | VRF10 | false |
-| VRF11 | false |
 
 ### Router BGP
 
@@ -678,7 +616,6 @@ ASN Notation: asplain
 | 100.100.6.1 | 65000 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 100.100.6.2 | 65000 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 10.255.4.20 | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | VRF10 | - | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | - | - | - | - | - | - |
-| 10.255.4.20 | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | VRF11 | - | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | Inherited from peer group MLAG-IPv4-UNDERLAY-PEER | - | - | - | - | - | - |
 
 #### Router BGP EVPN Address Family
 
@@ -694,8 +631,6 @@ ASN Notation: asplain
 | ---- | ------------------- | ----------------- | ------------------- | ------------------- | ------------ |
 | 11 | 100.100.2.12:10011 | 10011:10011 | - | - | learned |
 | 12 | 100.100.2.12:10012 | 10012:10012 | - | - | learned |
-| 21 | 100.100.2.12:10021 | 10021:10021 | - | - | learned |
-| 22 | 100.100.2.12:10022 | 10022:10022 | - | - | learned |
 | 3401 | 100.100.2.12:13401 | 13401:13401 | - | - | learned |
 | 3402 | 100.100.2.12:13402 | 13402:13402 | - | - | learned |
 
@@ -704,7 +639,6 @@ ASN Notation: asplain
 | VRF | Route-Distinguisher | Redistribute | Graceful Restart |
 | --- | ------------------- | ------------ | ---------------- |
 | VRF10 | 100.100.2.12:10 | connected | - |
-| VRF11 | 100.100.2.12:11 | connected | - |
 
 #### Router BGP Device Configuration
 
@@ -759,16 +693,6 @@ router bgp 65000.138
       route-target both 10012:10012
       redistribute learned
    !
-   vlan 21
-      rd 100.100.2.12:10021
-      route-target both 10021:10021
-      redistribute learned
-   !
-   vlan 22
-      rd 100.100.2.12:10022
-      route-target both 10022:10022
-      redistribute learned
-   !
    vlan 3401
       rd 100.100.2.12:13401
       route-target both 13401:13401
@@ -794,15 +718,6 @@ router bgp 65000.138
       router-id 100.100.2.12
       neighbor 10.255.4.20 peer group MLAG-IPv4-UNDERLAY-PEER
       neighbor 10.255.4.20 description pod2-leaf-11_Vlan3009
-      redistribute connected route-map RM-CONN-2-BGP-VRFS
-   !
-   vrf VRF11
-      rd 100.100.2.12:11
-      route-target import evpn 11:11
-      route-target export evpn 11:11
-      router-id 100.100.2.12
-      neighbor 10.255.4.20 peer group MLAG-IPv4-UNDERLAY-PEER
-      neighbor 10.255.4.20 description pod2-leaf-11_Vlan3010
       redistribute connected route-map RM-CONN-2-BGP-VRFS
 ```
 
@@ -838,33 +753,6 @@ router bfd
 
 ```eos
 ```
-
-### Router Multicast
-
-#### IP Router Multicast Summary
-
-- Routing for IPv4 multicast is enabled.
-- Software forwarding by the Software Forwarding Engine (SFE)
-
-#### Router Multicast Device Configuration
-
-```eos
-!
-router multicast
-   ipv4
-      routing
-      software-forwarding sfe
-```
-
-### PIM Sparse Mode
-
-#### PIM Sparse Mode Enabled Interfaces
-
-| Interface Name | VRF Name | IP Version | Border Router | DR Priority | Local Interface | Neighbor Filter |
-| -------------- | -------- | ---------- | ------------- | ----------- | --------------- | --------------- |
-| Ethernet1 | - | IPv4 | - | - | - | - |
-| Ethernet2 | - | IPv4 | - | - | - | - |
-| Vlan4093 | - | IPv4 | - | - | - | - |
 
 ## Filters
 
@@ -945,7 +833,6 @@ route-map RM-MLAG-PEER-IN permit 10
 | -------- | ---------- |
 | MGMT | enabled |
 | VRF10 | enabled |
-| VRF11 | enabled |
 
 ### VRF Instances Device Configuration
 
@@ -954,8 +841,6 @@ route-map RM-MLAG-PEER-IN permit 10
 vrf instance MGMT
 !
 vrf instance VRF10
-!
-vrf instance VRF11
 ```
 
 ## Virtual Source NAT
@@ -965,14 +850,12 @@ vrf instance VRF11
 | Source NAT VRF | Source NAT IPv4 Address | Source NAT IPv6 Address |
 | -------------- | ----------------------- | ----------------------- |
 | VRF10 | 10.255.10.12 | - |
-| VRF11 | 10.255.11.12 | - |
 
 ### Virtual Source NAT Configuration
 
 ```eos
 !
 ip address virtual source-nat vrf VRF10 address 10.255.10.12
-ip address virtual source-nat vrf VRF11 address 10.255.11.12
 ```
 
 ## EOS CLI Device Configuration
