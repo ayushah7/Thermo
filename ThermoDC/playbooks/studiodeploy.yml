@@ -10,8 +10,6 @@
       vars:
         # Define CVP server from Ansible inventory
         cv_inventory_hostname: cvp
-        # overwrite server data if not defined in Ansible)
-        #cv_server: www.cv-prod-us-central1-a.arista.io
 
         # Workspace state
         cv_submit_workspace: false

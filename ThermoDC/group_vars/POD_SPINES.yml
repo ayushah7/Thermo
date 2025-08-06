@@ -13,30 +13,38 @@ spine:  # dynamic_key: node_type
       bgp_as: 65000.150     # 65000*65536 + 150 = 4259840150
       nodes:
         - name: pod1-spine-1
+          id: 1
           mgmt_ip: 192.168.0.201/24
         - name: pod1-spine-2
+          id: 2
           mgmt_ip: 192.168.0.202/24
 
     - group: POD2-SPINES
       bgp_as: 65000.151
       nodes:
         - name: pod2-spine-1
+          id: 3
           mgmt_ip: 192.168.0.203/24
         - name: pod2-spine-2
+          id: 4
           mgmt_ip: 192.168.0.204/24
 
     - group: POD3-SPINES
       bgp_as: 65000.152
       nodes:
         - name: pod3-spine-1
+          id: 5
           mgmt_ip: 192.168.0.205/24
         - name: pod3-spine-2
+          id: 6
           mgmt_ip: 192.168.0.206/24
 
     - group: POD4-SPINES
       bgp_as: 65000.153
       nodes:
         - name: pod4-spine-1
+          id: 7
           mgmt_ip: 192.168.0.207/24
         - name: pod4-spine-2
+          id: 8
           mgmt_ip: 192.168.0.208/24

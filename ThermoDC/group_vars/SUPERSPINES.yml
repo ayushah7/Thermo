@@ -1,10 +1,12 @@
 ---
     type: super-spine
+    pod_name: SUPERSPINES
     
     super_spine: # dynamic_key: node_type
       defaults:
         platform: vEOS-lab
-        bgp_as: 65000
+        bgp_as: 65300
+        #bgp_as: 65000.200
         loopback_ipv4_pool: 100.100.6.0/26
         loopback_ipv4_offset: 0
     
