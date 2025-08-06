@@ -5,6 +5,7 @@ pod_name: POD1_LEAFS
 l3leaf: # dynamic_key: node_type
   defaults:
     platform: vEOS-lab
+    #platform: 7280R3
     loopback_ipv4_pool: 100.100.1.0/24
     loopback_ipv4_offset: 0
     vtep_loopback_ipv4_pool: 10.100.1.0/24

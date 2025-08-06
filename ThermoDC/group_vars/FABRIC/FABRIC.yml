@@ -34,9 +34,9 @@ overlay_routing_protocol: ebgp
 
 # For multicast
 
-# underlay_multicast: True
-# evpn_multicast: True
-# igmp_snooping_enabled : True
+# underlay_multicast: True  # Enables PIM in underlay
+# evpn_multicast: True    # Enables VXLAN multicast replication (EVPN Type-6)
+# igmp_snooping_enabled : True   # Helps limit multicast flooding
 
 local_users: 
   - name: ansible
@@ -89,7 +89,6 @@ dns_settings:
 # Configure IP routing for the OOB Management VRF.
 mgmt_vrf_routing: true
 
-
 # NTP Servers
 ntp_settings:
   server_vrf: default
@@ -111,9 +110,6 @@ default_interfaces:
     uplink_interfaces: [ Ethernet1-4 ]
     mlag_interfaces: [ Ethernet49-50 ]
     downlink_interfaces: [ Ethernet7-20]
-  # - types: [ l2leaf ]
-  #   platforms: [ default ]
-  #   uplink_interfaces: [ Ethernet1-2 ]
 
 generate_cv_tags:
   topology_hints: true
