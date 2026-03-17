@@ -1,0 +1,201 @@
+all:
+  vars:
+    ansible_user: root
+    ansible_password: cvproot
+    ansible_connection: httpapi
+    ansible_network_os: eos
+    ansible_httpapi_use_ssl: true
+    ansible_httpapi_validate_certs: false
+    ansible_httpapi_port: 443
+
+  children:
+    CLOUDVISION:
+      hosts:
+        cvp:
+          ansible_host: 10.18.146.236
+
+    FABRIC:
+      children:
+        SUPERSPINES:
+          hosts:
+            super-spine-1:
+              ansible_host: 10.18.158.138
+            super-spine-2:
+              ansible_host: 10.18.152.178
+        PODS:
+          children:
+            POD1:
+              children:
+                POD1_SPINES:
+                  hosts:
+                    pod1-spine-1:
+                      ansible_host: 10.18.146.238
+                    pod1-spine-2:
+                      ansible_host: 10.18.152.150
+                POD1_LEAFS:
+                  hosts:
+                    pod1-leaf-1:
+                      ansible_host: 10.18.158.140
+                    pod1-leaf-2:
+                      ansible_host: 10.18.152.218
+                    pod1-leaf-3:
+                      ansible_host: 10.18.158.102
+                    pod1-leaf-4:
+                      ansible_host: 10.18.152.176
+                    pod1-leaf-5:
+                      ansible_host: 10.18.158.116
+                    pod1-leaf-6:
+                      ansible_host: 10.18.152.158
+                    pod1-leaf-7:
+                      ansible_host: 10.18.158.151
+                    pod1-leaf-8:
+                      ansible_host: 10.18.158.119
+                    pod1-leaf-9:
+                      ansible_host: 10.18.158.95
+                    pod1-leaf-10:
+                      ansible_host: 10.18.158.108
+                    pod1-leaf-11:
+                      ansible_host: 10.18.158.114
+                    pod1-leaf-12:
+                      ansible_host: 10.18.158.201
+                    pod1-leaf-13:
+                      ansible_host: 10.18.158.103
+                    pod1-leaf-14:
+                      ansible_host: 10.18.158.117
+                    pod1-leaf-15:
+                      ansible_host: 10.18.158.150
+                    pod1-leaf-16:
+                      ansible_host: 10.18.158.105
+            POD2:
+              children:
+                POD2_SPINES:
+                  hosts:
+                    pod2-spine-1:
+                      ansible_host: 10.18.158.225
+                    pod2-spine-2:
+                      ansible_host: 10.18.158.224
+                POD2_LEAFS:
+                  hosts:
+                    pod2-leaf-1:
+                      ansible_host: 10.18.158.83
+                    pod2-leaf-2:
+                      ansible_host: 10.18.158.98
+                    pod2-leaf-3:
+                      ansible_host: 10.18.158.110
+                    pod2-leaf-4:
+                      ansible_host: 10.18.158.142
+                    pod2-leaf-5:
+                      ansible_host: 10.18.152.161
+                    pod2-leaf-6:
+                      ansible_host: 10.18.158.141
+                    pod2-leaf-7:
+                      ansible_host: 10.18.158.228
+                    pod2-leaf-8:
+                      ansible_host: 10.18.146.180
+                    pod2-leaf-9:
+                      ansible_host: 10.18.158.113
+                    pod2-leaf-10:
+                      ansible_host: 10.18.158.84
+                    pod2-leaf-11:
+                      ansible_host: 10.18.158.220
+                    pod2-leaf-12:
+                      ansible_host: 10.18.152.164
+                    pod2-leaf-13:
+                      ansible_host: 10.18.152.141
+                    pod2-leaf-14:
+                      ansible_host: 10.18.146.199
+                    pod2-leaf-15:
+                      ansible_host: 10.18.147.20
+                    pod2-leaf-16:
+                      ansible_host: 10.18.146.229
+            POD3:
+              children:
+                POD3_SPINES:
+                  hosts:
+                    pod3-spine-1:
+                      ansible_host: 10.18.158.128
+                    pod3-spine-2:
+                      ansible_host: 10.18.158.106
+                POD3_LEAFS:
+                  hosts:
+                    pod3-leaf-1:
+                      ansible_host: 10.18.158.86
+                    pod3-leaf-2:
+                      ansible_host: 10.18.158.156
+                    pod3-leaf-3:
+                      ansible_host: 10.18.152.147
+                    pod3-leaf-4:
+                      ansible_host: 10.18.152.179
+            POD4:
+              children:
+                POD4_SPINES:
+                  hosts:
+                    pod4-spine-1:
+                      ansible_host: 10.18.149.251
+                    pod4-spine-2:
+                      ansible_host: 10.18.158.203
+                POD4_LEAFS:
+                  hosts:
+                    pod4-leaf-1:
+                      ansible_host: 10.18.158.223
+                    pod4-leaf-2:
+                      ansible_host: 10.18.158.118
+                    pod4-leaf-3:
+                      ansible_host: 10.18.158.143
+                    pod4-leaf-4:
+                      ansible_host: 10.18.158.107
+                    pod4-leaf-5:
+                      ansible_host: 10.18.158.153
+                    pod4-leaf-6:
+                      ansible_host: 10.18.152.230
+                    pod4-leaf-7:
+                      ansible_host: 10.18.158.210
+                    pod4-leaf-8:
+                      ansible_host: 10.18.158.157
+                    pod4-leaf-9:
+                      ansible_host: 10.18.152.154
+                    pod4-leaf-10:
+                      ansible_host: 10.18.158.219
+                    pod4-leaf-11:
+                      ansible_host: 10.18.152.162
+                    pod4-leaf-12:
+                      ansible_host: 10.18.158.109
+                    pod4-leaf-13:
+                      ansible_host: 10.18.152.207
+                    pod4-leaf-14:
+                      ansible_host: 10.18.158.111
+                    pod4-leaf-15:
+                      ansible_host: 10.18.158.152
+                    pod4-leaf-16:
+                      ansible_host: 10.18.158.206
+                    pod4-leaf-17:
+                      ansible_host: 10.18.158.104
+                    pod4-leaf-18:
+                      ansible_host: 10.18.158.154
+                    pod4-leaf-19:
+                      ansible_host: 10.18.158.112
+                    pod4-leaf-20:
+                      ansible_host: 10.18.152.163
+                    pod4-leaf-21:
+                      ansible_host: 10.18.147.30
+                    pod4-leaf-22:
+                      ansible_host: 10.18.158.170
+                    pod4-leaf-23:
+                      ansible_host: 10.18.158.226
+                    pod4-leaf-24:
+                      ansible_host: 10.18.152.170
+                    pod4-leaf-25:
+                      ansible_host: 10.18.152.148
+                    pod4-leaf-26:
+                      ansible_host: 10.18.152.153
+
+        SERVICES:
+          hosts:
+            services-leaf-1:
+              ansible_host: 10.18.158.144
+            services-leaf-2:
+              ansible_host: 10.18.158.145
+
+    POD_SPINES:
+      hosts:
+        pod1-sp

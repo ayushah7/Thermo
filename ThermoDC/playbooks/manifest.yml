@@ -1,0 +1,67 @@
+- name: Configuration deployment with CVP
+  hosts: FABRIC # EOS device to deploy to
+  connection: local
+  gather_facts: false
+  vars_files: ../vault.yml
+  tasks:
+    - name: Deploy configurations and tags to CloudVision
+      ansible.builtin.import_role:
+        name: arista.avd.cv_deploy
+      vars:
+        # Define CVP server from Ansible inventory
+        #cv_inventory_hostname: cv_server
+        cv_server: www.cv-staging.corp.arista.io
+        # overwrite server data if not defined in Ansible)
+        # cv_server: "www.cv-prod-na-northeast1-b.arista.io"
+
+        # Workspace state
+        cv_submit_workspace: false
+
+        # overwite the structured config location
+        #structured_dir_name: 'structured_configs_static'
+
+        # Change Control state
+        cv_run_change_control: false
+
+        # Set the template to be used to generate the configlet names in CloudVision Static Config Studio.
+        cv_configlet_name_template: "AVD-${hostname}"
+        cv_verify_certs: false
+        cv_token: "{{lookup('file', '/workspaces/thermo/thermoDC/playbooks/studios_service-token')}}"
+
+        # manifest only deployment
+        cv_devices: []
+
+        # Static Configuration Studio deployment
+        cv_static_config_manifest:
+          configlets:
+            - name: DATACENTER2
+              file: Studio_configs/DataCenter/custom_configlets/DATACENTER2.cfg
+            - name: DC2
+              file: Studio_configs/DataCenter/custom_configlets/DC2.cfg
+            - name: LEAFS2
+              file: Studio_configs/DataCenter/custom_configlets/LEAFS.cfg
+            - name: DATACENTER2-1
+              file: Studio_configs/DataCenter/custom_configlets/DATACENTER2-1.cfg
+
+          # A list of dictionaries defining the root containers in the Static Configuration hierarchy.
+          # Container names must be unique among sibling containers (at the same level).
+          containers:
+            - name: DATACENTER2
+              description: "customer configlets uploaded by AVD"
+              tag_query: "configlets: DATACENTER2"
+              # match_policy: "match_first"
+              configlets:
+                - name: DATACENTER2
+                - name: DATACENTER2-1
+              sub_containers:
+                - name: DC2
+                  tag_query: "configlets: DC2"
+                  # match_policy: "match_first"
+                  configlets:
+                    - name: DC2
+                  sub_containers: 
+                    - name: LEAFS2
+                      tag_query: "configlets: LEAFS2"
+                      # match_policy: "match_first"
+                      configlets:
+                        - name: LEAFS2
