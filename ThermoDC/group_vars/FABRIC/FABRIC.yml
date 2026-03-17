@@ -38,19 +38,38 @@ overlay_routing_protocol: ebgp
 # evpn_multicast: True    # Enables VXLAN multicast replication (EVPN Type-6)
 # igmp_snooping_enabled : True   # Helps limit multicast flooding
 
-local_users: 
-  - name: ansible
-    privilege: 15
-    role: network-admin
-    sha512_password: "{{ansible_pass}}"
-  # - name: admin
-  #   privilege: 15
-  #   role: network-admin
-  #   no_password: true
-  - name: cvpadmin
-    privilege: 15
-    role: network-admin
-    sha512_password: "{{cvpadmin_pass}}"
+# local_users: 
+#   - name: ansible
+#     privilege: 15
+#     role: network-admin
+#     sha512_password: "{{ansible_pass}}"
+#   # - name: admin
+#   #   privilege: 15
+#   #   role: network-admin
+#   #   no_password: true
+#   - name: cvpadmin
+#     privilege: 15
+#     role: network-admin
+#     sha512_password: "{{cvpadmin_pass}}"
+
+aaa_settings:
+  local_users:
+    - name: ansible
+      privilege: 15
+      role: network-admin
+      sha512_password: "{{ ansible_pass }}"
+
+    # - name: admin
+    #   privilege: 15
+    #   role: network-admin
+    #   no_password: true
+
+    - name: cvpadmin
+      privilege: 15
+      role: network-admin
+      sha512_password: "{{ cvpadmin_pass }}"
+
+
 
 bgp_peer_groups: 
   evpn_overlay_peers:

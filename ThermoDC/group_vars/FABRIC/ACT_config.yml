@@ -1,4 +1,4 @@
-eos_cli: |
+custom_structured_configuration_eos_cli: |
   no aaa root
   no username admin
   username cwomble secret *

@@ -12,7 +12,7 @@ all:
     CLOUDVISION:
       hosts:
         cvp:
-          ansible_host: 	10.18.165.53
+          ansible_host: 10.18.165.53
 
     FABRIC:
       children:
